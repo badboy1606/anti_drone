@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Drone RF Detector Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Drone RF Detection Dashboard</h1>
+
+<input type="file" id="iqfile">
+<button onclick="upload()">Upload & Detect</button>
+
+<h2>Spectrogram</h2>
+<img id="spec" width="900" style="display:none;"/>
+
+<h2>Detection Output</h2>
+<img id="detected" width="900" style="display:none;"/>
+
+<pre id="log"></pre>
+
+<script>
+function upload() {
+    let file = document.getElementById("iqfile").files[0];
+    if (!file) {
+        alert("Please select an IQ file first");
+        return;
+    }
+
+    let form = new FormData();
+    form.append("file", file);
+
+    document.getElementById("log").innerText = "Processing...";
+
+    fetch("/upload_iq", { method: "POST", body: form })
+        .then(r => r.json())
+        .then(data => {
+            document.getElementById("log").innerText =
+                JSON.stringify(data, null, 2);
+
+            // Update displayed images
+            document.getElementById("spec").src =
+                "/spectrogram?" + new Date().getTime();
+            document.getElementById("spec").style.display = "block";
+
+            document.getElementById("detected").src =
+                "/detected?" + new Date().getTime();
+            document.getElementById("detected").style.display = "block";
+        })
+        .catch(err => {
+            document.getElementById("log").innerText = "Error: " + err;
+        });
+}
+</script>
+
+</body>
+</html>
