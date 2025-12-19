@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Users\laksh\Desktop\gps_drift_rx_oled\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: C:\Users\laksh\anti_drone\Spoofing\gps_drift_rx_oled\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

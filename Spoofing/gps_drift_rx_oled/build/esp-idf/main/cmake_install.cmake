@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/laksh/Desktop/gps_drift_rx_oled/main
+# Install script for directory: C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

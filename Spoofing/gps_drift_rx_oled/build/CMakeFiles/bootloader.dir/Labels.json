@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/CMakeFiles/bootloader"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/CMakeFiles/bootloader.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "C:/Users/laksh/Desktop/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

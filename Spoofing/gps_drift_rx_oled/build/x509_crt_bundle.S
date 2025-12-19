@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/laksh/Desktop/gps_drift_rx_oled/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/laksh/anti_drone/Spoofing/gps_drift_rx_oled/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
