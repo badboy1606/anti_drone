@@ -1,0 +1,1666 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2025 11:27:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20c40h (134208) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030c68 vaddr=3ffb0000 size=03d14h ( 15636) load[0m
+[0;32mI (157) esp_image: segment 2: paddr=00034984 vaddr=40080000 size=0b694h ( 46740) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8205ch (532572) map[0m
+[0;32mI (358) esp_image: segment 4: paddr=000c2084 vaddr=4008b694 size=0b790h ( 46992) load[0m
+[0;32mI (388) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (388) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (409) cpu_start: Pro cpu start user code[0m
+[0;32mI (409) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (409) cpu_start: Application information:[0m
+[0;32mI (412) cpu_start: Project name:     gps_drift_rx_oled[0m
+[0;32mI (418) cpu_start: App version:      1[0m
+[0;32mI (422) cpu_start: Compile time:     Dec 11 2025 11:24:43[0m
+[0;32mI (428) cpu_start: ELF file SHA256:  298f6847f...[0m
+[0;32mI (434) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (439) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (444) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (449) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (454) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (461) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (467) heap_init: At 3FFB7E50 len 000281B0 (160 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (486) heap_init: At 40096E24 len 000091DC (36 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (514) main_task: Started on CPU0[0m
+[0;32mI (524) main_task: Calling app_main()[0m
+[0;32mI (554) wifi:wifi driver task: 3ffbfa88, prio:23, stack:6656, core=0[0m
+[0;32mI (564) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (564) wifi:wifi certification version: v7.0[0m
+[0;32mI (564) wifi:config NVS flash: enabled[0m
+[0;32mI (564) wifi:config nano formating: disabled[0m
+[0;32mI (564) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (574) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (574) wifi:Init management short buffer num: 32[0m
+[0;32mI (584) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (584) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (594) wifi:Init static rx buffer num: 10[0m
+[0;32mI (594) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (594) wifi_init: rx ba win: 6[0m
+[0;32mI (604) wifi_init: tcpip mbox: 32[0m
+[0;32mI (604) wifi_init: udp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp tx win: 5760[0m
+[0;32mI (614) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (624) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (634) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (724) wifi:mode : sta (88:57:21:c1:c7:3c)[0m
+[0;32mI (724) wifi:enable tsf[0m
+[0;32mI (724) GPS_RX: Receiver forced to channel 1[0m
+[0;32mI (724) wifi:ic_enable_sniffer[0m
+[0;32mI (724) GPS_RX: Receiver MAC: 88:57:21:C1:C7:3C[0m
+[0;32mI (734) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (744) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (854) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (854) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (854) GPS_RX: Display: Alt: 0.0[0m
+[0;32mI (854) ESPNOW: espnow [version: 1.0] init[0m
+[0;32mI (854) GPS_RX: Ready...[0m
+[0;32mI (864) main_task: Returned from app_main()[0m
+[0;32mI (1164) GPS_RX: ESP-NOW signal detected! LOCKED to channel 1[0m
+[0;32mI (1164) GPS_RX: REGISTERED SATELLITE MAC: 20:E7:C8:68:84:68[0m
+[0;32mI (1174) GPS_RX: First ESP-NOW packet source registered[0m
+[0;32mI (9174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (9174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (9174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (10164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (10174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (10174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (11164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (11174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (11174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (12174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (12174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (12174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (13164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (13164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (13164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (14164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (14164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (14164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (15174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (15174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (15174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (16164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (16164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (16164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (17164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (17164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (17164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (18174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (18174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (18174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (19164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (19164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (19164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (20174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (20174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (20174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (21174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (21174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (21174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (22164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (22164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (22164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (23174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (23174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (23174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (24164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (24164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (24164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (25164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (25164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (25164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (26164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (26164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (26164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (27164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (27164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (27164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (28164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (28164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (28164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (29174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (29174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (29174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (29514) GPS_RX: REGISTERED SPOOFER MAC: 88:57:21:B3:4E:38[0m
+[0;32mI (29514) GPS_RX: Display: Lat: 30.000000[0m
+[0;32mI (29514) GPS_RX: Display: Lon: 60.000000[0m
+[0;32mI (29514) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (29824) GPS_RX: Display: Lat: 30.010000[0m
+[0;32mI (29824) GPS_RX: Display: Lon: 60.009998[0m
+[0;32mI (29824) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30114) GPS_RX: Display: Lat: 30.020000[0m
+[0;32mI (30114) GPS_RX: Display: Lon: 60.019997[0m
+[0;32mI (30114) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (30174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (30174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (30414) GPS_RX: Display: Lat: 30.030001[0m
+[0;32mI (30414) GPS_RX: Display: Lon: 60.029995[0m
+[0;32mI (30414) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30714) GPS_RX: Display: Lat: 30.040001[0m
+[0;32mI (30714) GPS_RX: Display: Lon: 60.039993[0m
+[0;32mI (30714) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31024) GPS_RX: Display: Lat: 30.050001[0m
+[0;32mI (31024) GPS_RX: Display: Lon: 60.049992[0m
+[0;32mI (31024) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (31164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (31164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (31314) GPS_RX: Display: Lat: 30.060001[0m
+[0;32mI (31314) GPS_RX: Display: Lon: 60.059990[0m
+[0;32mI (31314) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31614) GPS_RX: Display: Lat: 30.070002[0m
+[0;32mI (31614) GPS_RX: Display: Lon: 60.069988[0m
+[0;32mI (31614) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31914) GPS_RX: Display: Lat: 30.080002[0m
+[0;32mI (31914) GPS_RX: Display: Lon: 60.079987[0m
+[0;32mI (31914) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (32174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (32174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (32214) GPS_RX: Display: Lat: 30.090002[0m
+[0;32mI (32214) GPS_RX: Display: Lon: 60.089985[0m
+[0;32mI (32214) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32514) GPS_RX: Display: Lat: 30.100002[0m
+[0;32mI (32514) GPS_RX: Display: Lon: 60.099983[0m
+[0;32mI (32514) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32814) GPS_RX: Display: Lat: 30.110003[0m
+[0;32mI (32814) GPS_RX: Display: Lon: 60.109982[0m
+[0;32mI (32814) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33114) GPS_RX: Display: Lat: 30.120003[0m
+[0;32mI (33114) GPS_RX: Display: Lon: 60.119980[0m
+[0;32mI (33114) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (33164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (33164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (33414) GPS_RX: Display: Lat: 30.130003[0m
+[0;32mI (33414) GPS_RX: Display: Lon: 60.129978[0m
+[0;32mI (33414) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33714) GPS_RX: Display: Lat: 30.140003[0m
+[0;32mI (33714) GPS_RX: Display: Lon: 60.139977[0m
+[0;32mI (33714) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34014) GPS_RX: Display: Lat: 30.150003[0m
+[0;32mI (34014) GPS_RX: Display: Lon: 60.149975[0m
+[0;32mI (34014) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (34174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (34174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (34324) GPS_RX: Display: Lat: 30.160004[0m
+[0;32mI (34324) GPS_RX: Display: Lon: 60.159973[0m
+[0;32mI (34324) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34614) GPS_RX: Display: Lat: 30.170004[0m
+[0;32mI (34614) GPS_RX: Display: Lon: 60.169971[0m
+[0;32mI (34614) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34914) GPS_RX: Display: Lat: 30.180004[0m
+[0;32mI (34914) GPS_RX: Display: Lon: 60.179970[0m
+[0;32mI (34914) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (35164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (35164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (35224) GPS_RX: Display: Lat: 30.190004[0m
+[0;32mI (35224) GPS_RX: Display: Lon: 60.189968[0m
+[0;32mI (35224) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35514) GPS_RX: Display: Lat: 30.200005[0m
+[0;32mI (35514) GPS_RX: Display: Lon: 60.199966[0m
+[0;32mI (35514) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35814) GPS_RX: Display: Lat: 30.210005[0m
+[0;32mI (35814) GPS_RX: Display: Lon: 60.209965[0m
+[0;32mI (35814) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36114) GPS_RX: Display: Lat: 30.220005[0m
+[0;32mI (36114) GPS_RX: Display: Lon: 60.219963[0m
+[0;32mI (36114) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (36164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (36164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (36414) GPS_RX: Display: Lat: 30.230005[0m
+[0;32mI (36414) GPS_RX: Display: Lon: 60.229961[0m
+[0;32mI (36414) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36724) GPS_RX: Display: Lat: 30.240005[0m
+[0;32mI (36724) GPS_RX: Display: Lon: 60.239960[0m
+[0;32mI (36724) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37014) GPS_RX: Display: Lat: 30.250006[0m
+[0;32mI (37014) GPS_RX: Display: Lon: 60.249958[0m
+[0;32mI (37014) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (37164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (37164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (37324) GPS_RX: Display: Lat: 30.260006[0m
+[0;32mI (37324) GPS_RX: Display: Lon: 60.259956[0m
+[0;32mI (37324) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37914) GPS_RX: Display: Lat: 30.280006[0m
+[0;32mI (37914) GPS_RX: Display: Lon: 60.279953[0m
+[0;32mI (37914) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (38164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (38164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (38214) GPS_RX: Display: Lat: 30.290007[0m
+[0;32mI (38214) GPS_RX: Display: Lon: 60.289951[0m
+[0;32mI (38214) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38524) GPS_RX: Display: Lat: 30.300007[0m
+[0;32mI (38524) GPS_RX: Display: Lon: 60.299950[0m
+[0;32mI (38524) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38814) GPS_RX: Display: Lat: 30.310007[0m
+[0;32mI (38814) GPS_RX: Display: Lon: 60.309948[0m
+[0;32mI (38814) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39114) GPS_RX: Display: Lat: 30.320007[0m
+[0;32mI (39114) GPS_RX: Display: Lon: 60.319946[0m
+[0;32mI (39114) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (39164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (39164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (39414) GPS_RX: Display: Lat: 30.330008[0m
+[0;32mI (39414) GPS_RX: Display: Lon: 60.329945[0m
+[0;32mI (39414) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39714) GPS_RX: Display: Lat: 30.340008[0m
+[0;32mI (39714) GPS_RX: Display: Lon: 60.339943[0m
+[0;32mI (39714) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40014) GPS_RX: Display: Lat: 30.350008[0m
+[0;32mI (40014) GPS_RX: Display: Lon: 60.349941[0m
+[0;32mI (40014) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (40164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (40164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (40314) GPS_RX: Display: Lat: 30.360008[0m
+[0;32mI (40314) GPS_RX: Display: Lon: 60.359940[0m
+[0;32mI (40314) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40614) GPS_RX: Display: Lat: 30.370008[0m
+[0;32mI (40614) GPS_RX: Display: Lon: 60.369938[0m
+[0;32mI (40614) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40914) GPS_RX: Display: Lat: 30.380009[0m
+[0;32mI (40914) GPS_RX: Display: Lon: 60.379936[0m
+[0;32mI (40914) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (41174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (41174) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (41224) GPS_RX: Display: Lat: 30.390009[0m
+[0;32mI (41224) GPS_RX: Display: Lon: 60.389935[0m
+[0;32mI (41224) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41514) GPS_RX: Display: Lat: 30.400009[0m
+[0;32mI (41514) GPS_RX: Display: Lon: 60.399933[0m
+[0;32mI (41514) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41814) GPS_RX: Display: Lat: 30.410009[0m
+[0;32mI (41814) GPS_RX: Display: Lon: 60.409931[0m
+[0;32mI (41814) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42114) GPS_RX: Display: Lat: 30.420010[0m
+[0;32mI (42114) GPS_RX: Display: Lon: 60.419930[0m
+[0;32mI (42114) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (42164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (42164) GPS_RX: Display: Alt: 10.0[0m
+[0;32mI (42414) GPS_RX: Display: Lat: 30.430010[0m
+[0;32mI (42414) GPS_RX: Display: Lon: 60.429928[0m
+[0;32mI (42414) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (42714) GPS_RX: TAKEOVER: Spoofer stronger (-49.7 dB > -57.7 dB)[0m
+[0;32mI (42714) GPS_RX: Display: Lat: 30.440010[0m
+[0;32mI (42714) GPS_RX: Display: Lon: 60.439926[0m
+[0;32mI (42724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (43014) GPS_RX: TAKEOVER: Spoofer stronger (-49.2 dB > -57.7 dB)[0m
+[0;32mI (43014) GPS_RX: Display: Lat: 30.450010[0m
+[0;32mI (43014) GPS_RX: Display: Lon: 60.449924[0m
+[0;32mI (43024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (43164) GPS_RX: TAKEOVER: Spoofer stronger (-49.2 dB > -58.0 dB)[0m
+[0;32mI (43164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (43164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (43174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (43314) GPS_RX: TAKEOVER: Spoofer stronger (-48.7 dB > -58.0 dB)[0m
+[0;32mI (43314) GPS_RX: Display: Lat: 30.460011[0m
+[0;32mI (43314) GPS_RX: Display: Lon: 60.459923[0m
+[0;32mI (43324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (43614) GPS_RX: TAKEOVER: Spoofer stronger (-48.8 dB > -58.0 dB)[0m
+[0;32mI (43614) GPS_RX: Display: Lat: 30.470011[0m
+[0;32mI (43614) GPS_RX: Display: Lon: 60.469921[0m
+[0;32mI (43624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (43914) GPS_RX: TAKEOVER: Spoofer stronger (-48.3 dB > -58.0 dB)[0m
+[0;32mI (43914) GPS_RX: Display: Lat: 30.480011[0m
+[0;32mI (43914) GPS_RX: Display: Lon: 60.479919[0m
+[0;32mI (43924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (44164) GPS_RX: TAKEOVER: Spoofer stronger (-48.3 dB > -59.0 dB)[0m
+[0;32mI (44164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (44164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (44174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (44214) GPS_RX: TAKEOVER: Spoofer stronger (-48.5 dB > -59.0 dB)[0m
+[0;32mI (44214) GPS_RX: Display: Lat: 30.490011[0m
+[0;32mI (44214) GPS_RX: Display: Lon: 60.489918[0m
+[0;32mI (44224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (44514) GPS_RX: TAKEOVER: Spoofer stronger (-49.4 dB > -59.0 dB)[0m
+[0;32mI (44514) GPS_RX: Display: Lat: 30.500011[0m
+[0;32mI (44514) GPS_RX: Display: Lon: 60.499916[0m
+[0;32mI (44524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (44814) GPS_RX: TAKEOVER: Spoofer stronger (-49.8 dB > -59.0 dB)[0m
+[0;32mI (44814) GPS_RX: Display: Lat: 30.510012[0m
+[0;32mI (44814) GPS_RX: Display: Lon: 60.509914[0m
+[0;32mI (44824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (45114) GPS_RX: TAKEOVER: Spoofer stronger (-50.8 dB > -59.0 dB)[0m
+[0;32mI (45114) GPS_RX: Display: Lat: 30.520012[0m
+[0;32mI (45114) GPS_RX: Display: Lon: 60.519913[0m
+[0;32mI (45124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (45174) GPS_RX: TAKEOVER: Spoofer stronger (-50.8 dB > -58.8 dB)[0m
+[0;32mI (45174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (45174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (45184) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (45414) GPS_RX: TAKEOVER: Spoofer stronger (-51.9 dB > -58.8 dB)[0m
+[0;32mI (45414) GPS_RX: Display: Lat: 30.530012[0m
+[0;32mI (45414) GPS_RX: Display: Lon: 60.529911[0m
+[0;32mI (45424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (45714) GPS_RX: TAKEOVER: Spoofer stronger (-51.2 dB > -58.8 dB)[0m
+[0;32mI (45714) GPS_RX: Display: Lat: 30.540012[0m
+[0;32mI (45714) GPS_RX: Display: Lon: 60.539909[0m
+[0;32mI (45724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (46014) GPS_RX: TAKEOVER: Spoofer stronger (-50.6 dB > -58.8 dB)[0m
+[0;32mI (46014) GPS_RX: Display: Lat: 30.550013[0m
+[0;32mI (46014) GPS_RX: Display: Lon: 60.549908[0m
+[0;32mI (46024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (46314) GPS_RX: TAKEOVER: Spoofer stronger (-50.5 dB > -58.8 dB)[0m
+[0;32mI (46314) GPS_RX: Display: Lat: 30.560013[0m
+[0;32mI (46314) GPS_RX: Display: Lon: 60.559906[0m
+[0;32mI (46324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (46614) GPS_RX: TAKEOVER: Spoofer stronger (-49.3 dB > -58.8 dB)[0m
+[0;32mI (46614) GPS_RX: Display: Lat: 30.570013[0m
+[0;32mI (46614) GPS_RX: Display: Lon: 60.569904[0m
+[0;32mI (46624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (46914) GPS_RX: TAKEOVER: Spoofer stronger (-46.5 dB > -58.8 dB)[0m
+[0;32mI (46914) GPS_RX: Display: Lat: 30.580013[0m
+[0;32mI (46914) GPS_RX: Display: Lon: 60.579903[0m
+[0;32mI (46924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (47164) GPS_RX: TAKEOVER: Spoofer stronger (-46.5 dB > -59.6 dB)[0m
+[0;32mI (47164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (47164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (47174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (47214) GPS_RX: TAKEOVER: Spoofer stronger (-44.4 dB > -59.6 dB)[0m
+[0;32mI (47214) GPS_RX: Display: Lat: 30.590014[0m
+[0;32mI (47214) GPS_RX: Display: Lon: 60.589901[0m
+[0;32mI (47224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (47524) GPS_RX: TAKEOVER: Spoofer stronger (-43.3 dB > -59.6 dB)[0m
+[0;32mI (47524) GPS_RX: Display: Lat: 30.600014[0m
+[0;32mI (47524) GPS_RX: Display: Lon: 60.599899[0m
+[0;32mI (47524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (47814) GPS_RX: TAKEOVER: Spoofer stronger (-42.5 dB > -59.6 dB)[0m
+[0;32mI (47814) GPS_RX: Display: Lat: 30.610014[0m
+[0;32mI (47814) GPS_RX: Display: Lon: 60.609898[0m
+[0;32mI (47824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (48114) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -59.6 dB)[0m
+[0;32mI (48114) GPS_RX: Display: Lat: 30.620014[0m
+[0;32mI (48114) GPS_RX: Display: Lon: 60.619896[0m
+[0;32mI (48124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (48174) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -62.7 dB)[0m
+[0;32mI (48174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (48174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (48184) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (48414) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.7 dB)[0m
+[0;32mI (48414) GPS_RX: Display: Lat: 30.630014[0m
+[0;32mI (48414) GPS_RX: Display: Lon: 60.629894[0m
+[0;32mI (48424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (48714) GPS_RX: TAKEOVER: Spoofer stronger (-40.3 dB > -62.7 dB)[0m
+[0;32mI (48714) GPS_RX: Display: Lat: 30.640015[0m
+[0;32mI (48714) GPS_RX: Display: Lon: 60.639893[0m
+[0;32mI (48724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (49014) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -62.7 dB)[0m
+[0;32mI (49014) GPS_RX: Display: Lat: 30.650015[0m
+[0;32mI (49014) GPS_RX: Display: Lon: 60.649891[0m
+[0;32mI (49024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (49174) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -65.8 dB)[0m
+[0;32mI (49174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (49174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (49174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (49314) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -65.8 dB)[0m
+[0;32mI (49314) GPS_RX: Display: Lat: 30.660015[0m
+[0;32mI (49314) GPS_RX: Display: Lon: 60.659889[0m
+[0;32mI (49324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (49614) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -65.8 dB)[0m
+[0;32mI (49614) GPS_RX: Display: Lat: 30.670015[0m
+[0;32mI (49614) GPS_RX: Display: Lon: 60.669888[0m
+[0;32mI (49624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (49924) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -65.8 dB)[0m
+[0;32mI (49924) GPS_RX: Display: Lat: 30.680016[0m
+[0;32mI (49924) GPS_RX: Display: Lon: 60.679886[0m
+[0;32mI (49934) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (50164) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -63.8 dB)[0m
+[0;32mI (50164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (50164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (50174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (50214) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -63.8 dB)[0m
+[0;32mI (50214) GPS_RX: Display: Lat: 30.690016[0m
+[0;32mI (50214) GPS_RX: Display: Lon: 60.689884[0m
+[0;32mI (50224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (50514) GPS_RX: TAKEOVER: Spoofer stronger (-38.0 dB > -63.8 dB)[0m
+[0;32mI (50514) GPS_RX: Display: Lat: 30.700016[0m
+[0;32mI (50514) GPS_RX: Display: Lon: 60.699883[0m
+[0;32mI (50524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (50814) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -63.8 dB)[0m
+[0;32mI (50814) GPS_RX: Display: Lat: 30.710016[0m
+[0;32mI (50814) GPS_RX: Display: Lon: 60.709881[0m
+[0;32mI (50824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (51124) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -63.8 dB)[0m
+[0;32mI (51124) GPS_RX: Display: Lat: 30.720016[0m
+[0;32mI (51124) GPS_RX: Display: Lon: 60.719879[0m
+[0;32mI (51124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (51174) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -62.6 dB)[0m
+[0;32mI (51174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (51174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (51174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (51414) GPS_RX: TAKEOVER: Spoofer stronger (-38.6 dB > -62.6 dB)[0m
+[0;32mI (51414) GPS_RX: Display: Lat: 30.730017[0m
+[0;32mI (51414) GPS_RX: Display: Lon: 60.729877[0m
+[0;32mI (51424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (51714) GPS_RX: TAKEOVER: Spoofer stronger (-38.2 dB > -62.6 dB)[0m
+[0;32mI (51714) GPS_RX: Display: Lat: 30.740017[0m
+[0;32mI (51714) GPS_RX: Display: Lon: 60.739876[0m
+[0;32mI (51724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (52014) GPS_RX: TAKEOVER: Spoofer stronger (-38.6 dB > -62.6 dB)[0m
+[0;32mI (52014) GPS_RX: Display: Lat: 30.750017[0m
+[0;32mI (52014) GPS_RX: Display: Lon: 60.749874[0m
+[0;32mI (52024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (52164) GPS_RX: TAKEOVER: Spoofer stronger (-38.6 dB > -60.5 dB)[0m
+[0;32mI (52164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (52164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (52174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (52314) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -60.5 dB)[0m
+[0;32mI (52314) GPS_RX: Display: Lat: 30.760017[0m
+[0;32mI (52314) GPS_RX: Display: Lon: 60.759872[0m
+[0;32mI (52324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (52614) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -60.5 dB)[0m
+[0;32mI (52614) GPS_RX: Display: Lat: 30.770018[0m
+[0;32mI (52614) GPS_RX: Display: Lon: 60.769871[0m
+[0;32mI (52624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (52914) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -60.5 dB)[0m
+[0;32mI (52914) GPS_RX: Display: Lat: 30.780018[0m
+[0;32mI (52914) GPS_RX: Display: Lon: 60.779869[0m
+[0;32mI (52924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (53164) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -60.6 dB)[0m
+[0;32mI (53164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (53164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (53174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (53214) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -60.6 dB)[0m
+[0;32mI (53214) GPS_RX: Display: Lat: 30.790018[0m
+[0;32mI (53214) GPS_RX: Display: Lon: 60.789867[0m
+[0;32mI (53224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (53514) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -60.6 dB)[0m
+[0;32mI (53514) GPS_RX: Display: Lat: 30.800018[0m
+[0;32mI (53514) GPS_RX: Display: Lon: 60.799866[0m
+[0;32mI (53524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (53814) GPS_RX: TAKEOVER: Spoofer stronger (-38.2 dB > -60.6 dB)[0m
+[0;32mI (53814) GPS_RX: Display: Lat: 30.810019[0m
+[0;32mI (53814) GPS_RX: Display: Lon: 60.809864[0m
+[0;32mI (53824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (54114) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -60.6 dB)[0m
+[0;32mI (54114) GPS_RX: Display: Lat: 30.820019[0m
+[0;32mI (54114) GPS_RX: Display: Lon: 60.819862[0m
+[0;32mI (54124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (54174) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -62.2 dB)[0m
+[0;32mI (54174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (54174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (54174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (54414) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -62.2 dB)[0m
+[0;32mI (54414) GPS_RX: Display: Lat: 30.830019[0m
+[0;32mI (54414) GPS_RX: Display: Lon: 60.829861[0m
+[0;32mI (54424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (54714) GPS_RX: TAKEOVER: Spoofer stronger (-38.2 dB > -62.2 dB)[0m
+[0;32mI (54714) GPS_RX: Display: Lat: 30.840019[0m
+[0;32mI (54714) GPS_RX: Display: Lon: 60.839859[0m
+[0;32mI (54724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (55014) GPS_RX: TAKEOVER: Spoofer stronger (-38.1 dB > -62.2 dB)[0m
+[0;32mI (55014) GPS_RX: Display: Lat: 30.850019[0m
+[0;32mI (55014) GPS_RX: Display: Lon: 60.849857[0m
+[0;32mI (55024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (55174) GPS_RX: TAKEOVER: Spoofer stronger (-38.1 dB > -63.4 dB)[0m
+[0;32mI (55174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (55174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (55174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (55314) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -63.4 dB)[0m
+[0;32mI (55314) GPS_RX: Display: Lat: 30.860020[0m
+[0;32mI (55314) GPS_RX: Display: Lon: 60.859856[0m
+[0;32mI (55324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (55614) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -63.4 dB)[0m
+[0;32mI (55624) GPS_RX: Display: Lat: 30.870020[0m
+[0;32mI (55624) GPS_RX: Display: Lon: 60.869854[0m
+[0;32mI (55624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (55914) GPS_RX: TAKEOVER: Spoofer stronger (-37.7 dB > -63.4 dB)[0m
+[0;32mI (55914) GPS_RX: Display: Lat: 30.880020[0m
+[0;32mI (55914) GPS_RX: Display: Lon: 60.879852[0m
+[0;32mI (55924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (56164) GPS_RX: TAKEOVER: Spoofer stronger (-37.7 dB > -62.3 dB)[0m
+[0;32mI (56164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (56164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (56174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (56214) GPS_RX: TAKEOVER: Spoofer stronger (-37.0 dB > -62.3 dB)[0m
+[0;32mI (56214) GPS_RX: Display: Lat: 30.890020[0m
+[0;32mI (56214) GPS_RX: Display: Lon: 60.889851[0m
+[0;32mI (56224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (56514) GPS_RX: TAKEOVER: Spoofer stronger (-36.8 dB > -62.3 dB)[0m
+[0;32mI (56514) GPS_RX: Display: Lat: 30.900021[0m
+[0;32mI (56514) GPS_RX: Display: Lon: 60.899849[0m
+[0;32mI (56524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (56814) GPS_RX: TAKEOVER: Spoofer stronger (-37.1 dB > -62.3 dB)[0m
+[0;32mI (56814) GPS_RX: Display: Lat: 30.910021[0m
+[0;32mI (56814) GPS_RX: Display: Lon: 60.909847[0m
+[0;32mI (56824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (57114) GPS_RX: TAKEOVER: Spoofer stronger (-36.8 dB > -62.3 dB)[0m
+[0;32mI (57114) GPS_RX: Display: Lat: 30.920021[0m
+[0;32mI (57114) GPS_RX: Display: Lon: 60.919846[0m
+[0;32mI (57124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (57164) GPS_RX: TAKEOVER: Spoofer stronger (-36.8 dB > -61.5 dB)[0m
+[0;32mI (57164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (57164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (57174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (57414) GPS_RX: TAKEOVER: Spoofer stronger (-36.9 dB > -61.5 dB)[0m
+[0;32mI (57414) GPS_RX: Display: Lat: 30.930021[0m
+[0;32mI (57414) GPS_RX: Display: Lon: 60.929844[0m
+[0;32mI (57424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (57714) GPS_RX: TAKEOVER: Spoofer stronger (-36.9 dB > -61.5 dB)[0m
+[0;32mI (57714) GPS_RX: Display: Lat: 30.940022[0m
+[0;32mI (57714) GPS_RX: Display: Lon: 60.939842[0m
+[0;32mI (57724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (58014) GPS_RX: TAKEOVER: Spoofer stronger (-36.7 dB > -61.5 dB)[0m
+[0;32mI (58014) GPS_RX: Display: Lat: 30.950022[0m
+[0;32mI (58014) GPS_RX: Display: Lon: 60.949841[0m
+[0;32mI (58024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (58164) GPS_RX: TAKEOVER: Spoofer stronger (-36.7 dB > -60.9 dB)[0m
+[0;32mI (58164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (58164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (58174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (58314) GPS_RX: TAKEOVER: Spoofer stronger (-37.3 dB > -60.9 dB)[0m
+[0;32mI (58314) GPS_RX: Display: Lat: 30.960022[0m
+[0;32mI (58314) GPS_RX: Display: Lon: 60.959839[0m
+[0;32mI (58324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (58614) GPS_RX: TAKEOVER: Spoofer stronger (-37.4 dB > -60.9 dB)[0m
+[0;32mI (58614) GPS_RX: Display: Lat: 30.970022[0m
+[0;32mI (58614) GPS_RX: Display: Lon: 60.969837[0m
+[0;32mI (58624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (58914) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -60.9 dB)[0m
+[0;32mI (58914) GPS_RX: Display: Lat: 30.980022[0m
+[0;32mI (58914) GPS_RX: Display: Lon: 60.979836[0m
+[0;32mI (58924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (59174) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -60.6 dB)[0m
+[0;32mI (59174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (59174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (59174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (59214) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -60.6 dB)[0m
+[0;32mI (59214) GPS_RX: Display: Lat: 30.990023[0m
+[0;32mI (59214) GPS_RX: Display: Lon: 60.989834[0m
+[0;32mI (59224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (59514) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -60.6 dB)[0m
+[0;32mI (59514) GPS_RX: Display: Lat: 31.000023[0m
+[0;32mI (59514) GPS_RX: Display: Lon: 60.999832[0m
+[0;32mI (59524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (59824) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -60.6 dB)[0m
+[0;32mI (59824) GPS_RX: Display: Lat: 31.010023[0m
+[0;32mI (59824) GPS_RX: Display: Lon: 61.009830[0m
+[0;32mI (59824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (60114) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -60.6 dB)[0m
+[0;32mI (60114) GPS_RX: Display: Lat: 31.020023[0m
+[0;32mI (60114) GPS_RX: Display: Lon: 61.019829[0m
+[0;32mI (60124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (60164) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -59.5 dB)[0m
+[0;32mI (60164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (60164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (60174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (60414) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -59.5 dB)[0m
+[0;32mI (60414) GPS_RX: Display: Lat: 31.030024[0m
+[0;32mI (60414) GPS_RX: Display: Lon: 61.029827[0m
+[0;32mI (60424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (60714) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -59.5 dB)[0m
+[0;32mI (60714) GPS_RX: Display: Lat: 31.040024[0m
+[0;32mI (60714) GPS_RX: Display: Lon: 61.039825[0m
+[0;32mI (60724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (61014) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -59.5 dB)[0m
+[0;32mI (61014) GPS_RX: Display: Lat: 31.050024[0m
+[0;32mI (61014) GPS_RX: Display: Lon: 61.049824[0m
+[0;32mI (61024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (61174) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -58.1 dB)[0m
+[0;32mI (61174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (61174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (61174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (61314) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -58.1 dB)[0m
+[0;32mI (61314) GPS_RX: Display: Lat: 31.060024[0m
+[0;32mI (61314) GPS_RX: Display: Lon: 61.059822[0m
+[0;32mI (61324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (61624) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -58.1 dB)[0m
+[0;32mI (61624) GPS_RX: Display: Lat: 31.070024[0m
+[0;32mI (61624) GPS_RX: Display: Lon: 61.069820[0m
+[0;32mI (61624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (61914) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -58.1 dB)[0m
+[0;32mI (61914) GPS_RX: Display: Lat: 31.080025[0m
+[0;32mI (61914) GPS_RX: Display: Lon: 61.079819[0m
+[0;32mI (61924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (62174) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -59.6 dB)[0m
+[0;32mI (62174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (62174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (62174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (62214) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -59.6 dB)[0m
+[0;32mI (62214) GPS_RX: Display: Lat: 31.090025[0m
+[0;32mI (62214) GPS_RX: Display: Lon: 61.089817[0m
+[0;32mI (62224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (62514) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -59.6 dB)[0m
+[0;32mI (62514) GPS_RX: Display: Lat: 31.100025[0m
+[0;32mI (62514) GPS_RX: Display: Lon: 61.099815[0m
+[0;32mI (62524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (62814) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -59.6 dB)[0m
+[0;32mI (62814) GPS_RX: Display: Lat: 31.110025[0m
+[0;32mI (62814) GPS_RX: Display: Lon: 61.109814[0m
+[0;32mI (62824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (63124) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -59.6 dB)[0m
+[0;32mI (63124) GPS_RX: Display: Lat: 31.120026[0m
+[0;32mI (63124) GPS_RX: Display: Lon: 61.119812[0m
+[0;32mI (63124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (63164) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -61.4 dB)[0m
+[0;32mI (63164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (63174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (63174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (63414) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -61.4 dB)[0m
+[0;32mI (63414) GPS_RX: Display: Lat: 31.130026[0m
+[0;32mI (63414) GPS_RX: Display: Lon: 61.129810[0m
+[0;32mI (63424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (63714) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -61.4 dB)[0m
+[0;32mI (63714) GPS_RX: Display: Lat: 31.140026[0m
+[0;32mI (63714) GPS_RX: Display: Lon: 61.139809[0m
+[0;32mI (63724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (64014) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -61.4 dB)[0m
+[0;32mI (64014) GPS_RX: Display: Lat: 31.150026[0m
+[0;32mI (64014) GPS_RX: Display: Lon: 61.149807[0m
+[0;32mI (64024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (64164) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -62.8 dB)[0m
+[0;32mI (64164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (64164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (64174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (64314) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -62.8 dB)[0m
+[0;32mI (64314) GPS_RX: Display: Lat: 31.160027[0m
+[0;32mI (64314) GPS_RX: Display: Lon: 61.159805[0m
+[0;32mI (64324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (64614) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -62.8 dB)[0m
+[0;32mI (64614) GPS_RX: Display: Lat: 31.170027[0m
+[0;32mI (64614) GPS_RX: Display: Lon: 61.169804[0m
+[0;32mI (64624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (64914) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -62.8 dB)[0m
+[0;32mI (64914) GPS_RX: Display: Lat: 31.180027[0m
+[0;32mI (64914) GPS_RX: Display: Lon: 61.179802[0m
+[0;32mI (64924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (65174) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -62.9 dB)[0m
+[0;32mI (65174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (65174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (65174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (65214) GPS_RX: TAKEOVER: Spoofer stronger (-37.3 dB > -62.9 dB)[0m
+[0;32mI (65214) GPS_RX: Display: Lat: 31.190027[0m
+[0;32mI (65214) GPS_RX: Display: Lon: 61.189800[0m
+[0;32mI (65224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (65514) GPS_RX: TAKEOVER: Spoofer stronger (-37.8 dB > -62.9 dB)[0m
+[0;32mI (65514) GPS_RX: Display: Lat: 31.200027[0m
+[0;32mI (65514) GPS_RX: Display: Lon: 61.199799[0m
+[0;32mI (65524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (65814) GPS_RX: TAKEOVER: Spoofer stronger (-38.1 dB > -62.9 dB)[0m
+[0;32mI (65814) GPS_RX: Display: Lat: 31.210028[0m
+[0;32mI (65814) GPS_RX: Display: Lon: 61.209797[0m
+[0;32mI (65824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (66114) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -62.9 dB)[0m
+[0;32mI (66114) GPS_RX: Display: Lat: 31.220028[0m
+[0;32mI (66114) GPS_RX: Display: Lon: 61.219795[0m
+[0;32mI (66124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (66164) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -63.2 dB)[0m
+[0;32mI (66164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (66164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (66174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (66414) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -63.2 dB)[0m
+[0;32mI (66414) GPS_RX: Display: Lat: 31.230028[0m
+[0;32mI (66414) GPS_RX: Display: Lon: 61.229794[0m
+[0;32mI (66424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (66714) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -63.2 dB)[0m
+[0;32mI (66714) GPS_RX: Display: Lat: 31.240028[0m
+[0;32mI (66714) GPS_RX: Display: Lon: 61.239792[0m
+[0;32mI (66724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (67014) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -63.2 dB)[0m
+[0;32mI (67014) GPS_RX: Display: Lat: 31.250029[0m
+[0;32mI (67014) GPS_RX: Display: Lon: 61.249790[0m
+[0;32mI (67024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (67174) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -63.9 dB)[0m
+[0;32mI (67174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (67174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (67174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (67314) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -63.9 dB)[0m
+[0;32mI (67314) GPS_RX: Display: Lat: 31.260029[0m
+[0;32mI (67314) GPS_RX: Display: Lon: 61.259789[0m
+[0;32mI (67324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (67614) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -63.9 dB)[0m
+[0;32mI (67614) GPS_RX: Display: Lat: 31.270029[0m
+[0;32mI (67614) GPS_RX: Display: Lon: 61.269787[0m
+[0;32mI (67624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (67914) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -63.9 dB)[0m
+[0;32mI (67914) GPS_RX: Display: Lat: 31.280029[0m
+[0;32mI (67914) GPS_RX: Display: Lon: 61.279785[0m
+[0;32mI (67924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (68174) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -63.6 dB)[0m
+[0;32mI (68174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (68174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (68174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (68214) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -63.6 dB)[0m
+[0;32mI (68214) GPS_RX: Display: Lat: 31.290030[0m
+[0;32mI (68214) GPS_RX: Display: Lon: 61.289783[0m
+[0;32mI (68224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (68524) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -63.6 dB)[0m
+[0;32mI (68524) GPS_RX: Display: Lat: 31.300030[0m
+[0;32mI (68524) GPS_RX: Display: Lon: 61.299782[0m
+[0;32mI (68524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (68814) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -63.6 dB)[0m
+[0;32mI (68814) GPS_RX: Display: Lat: 31.310030[0m
+[0;32mI (68814) GPS_RX: Display: Lon: 61.309780[0m
+[0;32mI (68824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (69114) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -63.6 dB)[0m
+[0;32mI (69114) GPS_RX: Display: Lat: 31.320030[0m
+[0;32mI (69114) GPS_RX: Display: Lon: 61.319778[0m
+[0;32mI (69124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (69174) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -63.2 dB)[0m
+[0;32mI (69174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (69174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (69174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (69414) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -63.2 dB)[0m
+[0;32mI (69414) GPS_RX: Display: Lat: 31.330030[0m
+[0;32mI (69414) GPS_RX: Display: Lon: 61.329777[0m
+[0;32mI (69424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (69714) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -63.2 dB)[0m
+[0;32mI (69714) GPS_RX: Display: Lat: 31.340031[0m
+[0;32mI (69714) GPS_RX: Display: Lon: 61.339775[0m
+[0;32mI (69724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (70014) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -63.2 dB)[0m
+[0;32mI (70014) GPS_RX: Display: Lat: 31.350031[0m
+[0;32mI (70014) GPS_RX: Display: Lon: 61.349773[0m
+[0;32mI (70024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (70164) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -60.7 dB)[0m
+[0;32mI (70174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (70174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (70174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (70314) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -60.7 dB)[0m
+[0;32mI (70314) GPS_RX: Display: Lat: 31.360031[0m
+[0;32mI (70314) GPS_RX: Display: Lon: 61.359772[0m
+[0;32mI (70324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (70614) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -60.7 dB)[0m
+[0;32mI (70614) GPS_RX: Display: Lat: 31.370031[0m
+[0;32mI (70614) GPS_RX: Display: Lon: 61.369770[0m
+[0;32mI (70624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (70924) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -60.7 dB)[0m
+[0;32mI (70924) GPS_RX: Display: Lat: 31.380032[0m
+[0;32mI (70924) GPS_RX: Display: Lon: 61.379768[0m
+[0;32mI (70924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (71164) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -60.8 dB)[0m
+[0;32mI (71164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (71164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (71174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (71224) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -60.8 dB)[0m
+[0;32mI (71224) GPS_RX: Display: Lat: 31.390032[0m
+[0;32mI (71224) GPS_RX: Display: Lon: 61.389767[0m
+[0;32mI (71224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (71514) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -60.8 dB)[0m
+[0;32mI (71514) GPS_RX: Display: Lat: 31.400032[0m
+[0;32mI (71514) GPS_RX: Display: Lon: 61.399765[0m
+[0;32mI (71524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (71814) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -60.8 dB)[0m
+[0;32mI (71814) GPS_RX: Display: Lat: 31.410032[0m
+[0;32mI (71814) GPS_RX: Display: Lon: 61.409763[0m
+[0;32mI (71824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (72114) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -60.8 dB)[0m
+[0;32mI (72114) GPS_RX: Display: Lat: 31.420033[0m
+[0;32mI (72114) GPS_RX: Display: Lon: 61.419762[0m
+[0;32mI (72124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (72164) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -61.6 dB)[0m
+[0;32mI (72164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (72164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (72174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (72414) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -61.6 dB)[0m
+[0;32mI (72414) GPS_RX: Display: Lat: 31.430033[0m
+[0;32mI (72414) GPS_RX: Display: Lon: 61.429760[0m
+[0;32mI (72424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (72714) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -61.6 dB)[0m
+[0;32mI (72714) GPS_RX: Display: Lat: 31.440033[0m
+[0;32mI (72714) GPS_RX: Display: Lon: 61.439758[0m
+[0;32mI (72724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (73014) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -61.6 dB)[0m
+[0;32mI (73014) GPS_RX: Display: Lat: 31.450033[0m
+[0;32mI (73014) GPS_RX: Display: Lon: 61.449757[0m
+[0;32mI (73024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (73164) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -62.2 dB)[0m
+[0;32mI (73164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (73164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (73174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (73334) GPS_RX: TAKEOVER: Spoofer stronger (-40.1 dB > -62.2 dB)[0m
+[0;32mI (73344) GPS_RX: Display: Lat: 31.460033[0m
+[0;32mI (73344) GPS_RX: Display: Lon: 61.459755[0m
+[0;32mI (73344) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (73624) GPS_RX: TAKEOVER: Spoofer stronger (-40.1 dB > -62.2 dB)[0m
+[0;32mI (73624) GPS_RX: Display: Lat: 31.470034[0m
+[0;32mI (73624) GPS_RX: Display: Lon: 61.469753[0m
+[0;32mI (73624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (73914) GPS_RX: TAKEOVER: Spoofer stronger (-40.1 dB > -62.2 dB)[0m
+[0;32mI (73914) GPS_RX: Display: Lat: 31.480034[0m
+[0;32mI (73914) GPS_RX: Display: Lon: 61.479752[0m
+[0;32mI (73924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (74164) GPS_RX: TAKEOVER: Spoofer stronger (-40.1 dB > -61.6 dB)[0m
+[0;32mI (74164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (74164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (74174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (74214) GPS_RX: TAKEOVER: Spoofer stronger (-40.1 dB > -61.6 dB)[0m
+[0;32mI (74214) GPS_RX: Display: Lat: 31.490034[0m
+[0;32mI (74214) GPS_RX: Display: Lon: 61.489750[0m
+[0;32mI (74224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (74514) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -61.6 dB)[0m
+[0;32mI (74514) GPS_RX: Display: Lat: 31.500034[0m
+[0;32mI (74514) GPS_RX: Display: Lon: 61.499748[0m
+[0;32mI (74524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (74824) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -61.6 dB)[0m
+[0;32mI (74824) GPS_RX: Display: Lat: 31.510035[0m
+[0;32mI (74824) GPS_RX: Display: Lon: 61.509747[0m
+[0;32mI (74824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (75114) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -61.6 dB)[0m
+[0;32mI (75114) GPS_RX: Display: Lat: 31.520035[0m
+[0;32mI (75114) GPS_RX: Display: Lon: 61.519745[0m
+[0;32mI (75124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (75164) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -63.0 dB)[0m
+[0;32mI (75164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (75164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (75174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (75414) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -63.0 dB)[0m
+[0;32mI (75414) GPS_RX: Display: Lat: 31.530035[0m
+[0;32mI (75414) GPS_RX: Display: Lon: 61.529743[0m
+[0;32mI (75424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (75714) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -63.0 dB)[0m
+[0;32mI (75714) GPS_RX: Display: Lat: 31.540035[0m
+[0;32mI (75714) GPS_RX: Display: Lon: 61.539742[0m
+[0;32mI (75724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (76014) GPS_RX: TAKEOVER: Spoofer stronger (-40.1 dB > -63.0 dB)[0m
+[0;32mI (76014) GPS_RX: Display: Lat: 31.550035[0m
+[0;32mI (76014) GPS_RX: Display: Lon: 61.549740[0m
+[0;32mI (76024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (76164) GPS_RX: TAKEOVER: Spoofer stronger (-40.1 dB > -62.7 dB)[0m
+[0;32mI (76164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (76164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (76174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (76314) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -62.7 dB)[0m
+[0;32mI (76314) GPS_RX: Display: Lat: 31.560036[0m
+[0;32mI (76314) GPS_RX: Display: Lon: 61.559738[0m
+[0;32mI (76324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (76614) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -62.7 dB)[0m
+[0;32mI (76614) GPS_RX: Display: Lat: 31.570036[0m
+[0;32mI (76614) GPS_RX: Display: Lon: 61.569736[0m
+[0;32mI (76624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (76954) GPS_RX: TAKEOVER: Spoofer stronger (-40.3 dB > -62.7 dB)[0m
+[0;32mI (76954) GPS_RX: Display: Lat: 31.580036[0m
+[0;32mI (76954) GPS_RX: Display: Lon: 61.579735[0m
+[0;32mI (76964) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (77164) GPS_RX: TAKEOVER: Spoofer stronger (-40.3 dB > -64.5 dB)[0m
+[0;32mI (77164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (77164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (77174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (77224) GPS_RX: TAKEOVER: Spoofer stronger (-40.2 dB > -64.5 dB)[0m
+[0;32mI (77224) GPS_RX: Display: Lat: 31.590036[0m
+[0;32mI (77224) GPS_RX: Display: Lon: 61.589733[0m
+[0;32mI (77224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (77514) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -64.5 dB)[0m
+[0;32mI (77514) GPS_RX: Display: Lat: 31.600037[0m
+[0;32mI (77514) GPS_RX: Display: Lon: 61.599731[0m
+[0;32mI (77524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (77824) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -64.5 dB)[0m
+[0;32mI (77824) GPS_RX: Display: Lat: 31.610037[0m
+[0;32mI (77824) GPS_RX: Display: Lon: 61.609730[0m
+[0;32mI (77824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (78114) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -64.5 dB)[0m
+[0;32mI (78114) GPS_RX: Display: Lat: 31.620037[0m
+[0;32mI (78114) GPS_RX: Display: Lon: 61.619728[0m
+[0;32mI (78124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (78164) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -66.2 dB)[0m
+[0;32mI (78164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (78164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (78174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (78414) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -66.2 dB)[0m
+[0;32mI (78414) GPS_RX: Display: Lat: 31.630037[0m
+[0;32mI (78414) GPS_RX: Display: Lon: 61.629726[0m
+[0;32mI (78424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (78714) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -66.2 dB)[0m
+[0;32mI (78714) GPS_RX: Display: Lat: 31.640038[0m
+[0;32mI (78714) GPS_RX: Display: Lon: 61.639725[0m
+[0;32mI (78724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (79014) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -66.2 dB)[0m
+[0;32mI (79014) GPS_RX: Display: Lat: 31.650038[0m
+[0;32mI (79014) GPS_RX: Display: Lon: 61.649723[0m
+[0;32mI (79024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (79164) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -66.6 dB)[0m
+[0;32mI (79164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (79164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (79174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (79314) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -66.6 dB)[0m
+[0;32mI (79314) GPS_RX: Display: Lat: 31.660038[0m
+[0;32mI (79314) GPS_RX: Display: Lon: 61.659721[0m
+[0;32mI (79324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (79614) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -66.6 dB)[0m
+[0;32mI (79614) GPS_RX: Display: Lat: 31.670038[0m
+[0;32mI (79614) GPS_RX: Display: Lon: 61.669720[0m
+[0;32mI (79624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (79914) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -66.6 dB)[0m
+[0;32mI (79914) GPS_RX: Display: Lat: 31.680038[0m
+[0;32mI (79914) GPS_RX: Display: Lon: 61.679718[0m
+[0;32mI (79924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (80164) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -66.5 dB)[0m
+[0;32mI (80164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (80164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (80174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (80214) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -66.5 dB)[0m
+[0;32mI (80214) GPS_RX: Display: Lat: 31.690039[0m
+[0;32mI (80214) GPS_RX: Display: Lon: 61.689716[0m
+[0;32mI (80224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (80514) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -66.5 dB)[0m
+[0;32mI (80514) GPS_RX: Display: Lat: 31.700039[0m
+[0;32mI (80514) GPS_RX: Display: Lon: 61.699715[0m
+[0;32mI (80524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (80824) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -66.5 dB)[0m
+[0;32mI (80824) GPS_RX: Display: Lat: 31.710039[0m
+[0;32mI (80824) GPS_RX: Display: Lon: 61.709713[0m
+[0;32mI (80824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (81114) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -66.5 dB)[0m
+[0;32mI (81114) GPS_RX: Display: Lat: 31.720039[0m
+[0;32mI (81114) GPS_RX: Display: Lon: 61.719711[0m
+[0;32mI (81124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (81164) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -65.8 dB)[0m
+[0;32mI (81164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (81164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (81174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (81414) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -65.8 dB)[0m
+[0;32mI (81414) GPS_RX: Display: Lat: 31.730040[0m
+[0;32mI (81414) GPS_RX: Display: Lon: 61.729710[0m
+[0;32mI (81424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (81714) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -65.8 dB)[0m
+[0;32mI (81714) GPS_RX: Display: Lat: 31.740040[0m
+[0;32mI (81714) GPS_RX: Display: Lon: 61.739708[0m
+[0;32mI (81724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (82044) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -65.8 dB)[0m
+[0;32mI (82044) GPS_RX: Display: Lat: 31.750040[0m
+[0;32mI (82044) GPS_RX: Display: Lon: 61.749706[0m
+[0;32mI (82044) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (82164) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -65.1 dB)[0m
+[0;32mI (82164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (82164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (82174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (82314) GPS_RX: TAKEOVER: Spoofer stronger (-38.5 dB > -65.1 dB)[0m
+[0;32mI (82314) GPS_RX: Display: Lat: 31.760040[0m
+[0;32mI (82314) GPS_RX: Display: Lon: 61.759705[0m
+[0;32mI (82324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (82614) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -65.1 dB)[0m
+[0;32mI (82614) GPS_RX: Display: Lat: 31.770041[0m
+[0;32mI (82614) GPS_RX: Display: Lon: 61.769703[0m
+[0;32mI (82624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (82914) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -65.1 dB)[0m
+[0;32mI (82914) GPS_RX: Display: Lat: 31.780041[0m
+[0;32mI (82914) GPS_RX: Display: Lon: 61.779701[0m
+[0;32mI (82924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (83214) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -65.1 dB)[0m
+[0;32mI (83214) GPS_RX: Display: Lat: 31.790041[0m
+[0;32mI (83214) GPS_RX: Display: Lon: 61.789700[0m
+[0;32mI (83224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (83514) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -65.1 dB)[0m
+[0;32mI (83514) GPS_RX: Display: Lat: 31.800041[0m
+[0;32mI (83514) GPS_RX: Display: Lon: 61.799698[0m
+[0;32mI (83524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (83814) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -65.1 dB)[0m
+[0;32mI (83814) GPS_RX: Display: Lat: 31.810041[0m
+[0;32mI (83814) GPS_RX: Display: Lon: 61.809696[0m
+[0;32mI (83824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (84114) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -65.1 dB)[0m
+[0;32mI (84114) GPS_RX: Display: Lat: 31.820042[0m
+[0;32mI (84114) GPS_RX: Display: Lon: 61.819695[0m
+[0;32mI (84124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (84164) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -67.6 dB)[0m
+[0;32mI (84164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (84164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (84174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (84414) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -67.6 dB)[0m
+[0;32mI (84414) GPS_RX: Display: Lat: 31.830042[0m
+[0;32mI (84414) GPS_RX: Display: Lon: 61.829693[0m
+[0;32mI (84424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (84724) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -67.6 dB)[0m
+[0;32mI (84724) GPS_RX: Display: Lat: 31.840042[0m
+[0;32mI (84724) GPS_RX: Display: Lon: 61.839691[0m
+[0;32mI (84724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (85014) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -67.6 dB)[0m
+[0;32mI (85014) GPS_RX: Display: Lat: 31.850042[0m
+[0;32mI (85014) GPS_RX: Display: Lon: 61.849689[0m
+[0;32mI (85024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (85164) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -71.5 dB)[0m
+[0;32mI (85164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (85164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (85174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (85314) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -71.5 dB)[0m
+[0;32mI (85324) GPS_RX: Display: Lat: 31.860043[0m
+[0;32mI (85324) GPS_RX: Display: Lon: 61.859688[0m
+[0;32mI (85324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (85614) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -71.5 dB)[0m
+[0;32mI (85614) GPS_RX: Display: Lat: 31.870043[0m
+[0;32mI (85614) GPS_RX: Display: Lon: 61.869686[0m
+[0;32mI (85624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (85914) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -71.5 dB)[0m
+[0;32mI (85914) GPS_RX: Display: Lat: 31.880043[0m
+[0;32mI (85914) GPS_RX: Display: Lon: 61.879684[0m
+[0;32mI (85924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (86164) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -73.3 dB)[0m
+[0;32mI (86164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (86164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (86174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (86214) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -73.3 dB)[0m
+[0;32mI (86214) GPS_RX: Display: Lat: 31.890043[0m
+[0;32mI (86214) GPS_RX: Display: Lon: 61.889683[0m
+[0;32mI (86224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (86514) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -73.3 dB)[0m
+[0;32mI (86514) GPS_RX: Display: Lat: 31.900043[0m
+[0;32mI (86514) GPS_RX: Display: Lon: 61.899681[0m
+[0;32mI (86524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (86814) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -73.3 dB)[0m
+[0;32mI (86814) GPS_RX: Display: Lat: 31.910044[0m
+[0;32mI (86814) GPS_RX: Display: Lon: 61.909679[0m
+[0;32mI (86824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (87114) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -73.3 dB)[0m
+[0;32mI (87114) GPS_RX: Display: Lat: 31.920044[0m
+[0;32mI (87114) GPS_RX: Display: Lon: 61.919678[0m
+[0;32mI (87124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (87164) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -77.3 dB)[0m
+[0;32mI (87164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (87164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (87174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (87414) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -77.3 dB)[0m
+[0;32mI (87414) GPS_RX: Display: Lat: 31.930044[0m
+[0;32mI (87414) GPS_RX: Display: Lon: 61.929676[0m
+[0;32mI (87424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (87714) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -77.3 dB)[0m
+[0;32mI (87714) GPS_RX: Display: Lat: 31.940044[0m
+[0;32mI (87714) GPS_RX: Display: Lon: 61.939674[0m
+[0;32mI (87724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (88014) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -77.3 dB)[0m
+[0;32mI (88014) GPS_RX: Display: Lat: 31.950045[0m
+[0;32mI (88014) GPS_RX: Display: Lon: 61.949673[0m
+[0;32mI (88024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (88174) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -77.7 dB)[0m
+[0;32mI (88174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (88174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (88184) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (88314) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -77.7 dB)[0m
+[0;32mI (88314) GPS_RX: Display: Lat: 31.960045[0m
+[0;32mI (88314) GPS_RX: Display: Lon: 61.959671[0m
+[0;32mI (88324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (88614) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -77.7 dB)[0m
+[0;32mI (88614) GPS_RX: Display: Lat: 31.970045[0m
+[0;32mI (88614) GPS_RX: Display: Lon: 61.969669[0m
+[0;32mI (88624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (88914) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -77.7 dB)[0m
+[0;32mI (88914) GPS_RX: Display: Lat: 31.980045[0m
+[0;32mI (88914) GPS_RX: Display: Lon: 61.979668[0m
+[0;32mI (88924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (89164) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -77.5 dB)[0m
+[0;32mI (89164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (89164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (89174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (89224) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -77.5 dB)[0m
+[0;32mI (89224) GPS_RX: Display: Lat: 31.990046[0m
+[0;32mI (89224) GPS_RX: Display: Lon: 61.989666[0m
+[0;32mI (89234) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (89514) GPS_RX: TAKEOVER: Spoofer stronger (-38.6 dB > -77.5 dB)[0m
+[0;32mI (89514) GPS_RX: Display: Lat: 32.000046[0m
+[0;32mI (89514) GPS_RX: Display: Lon: 61.999664[0m
+[0;32mI (89524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (89824) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -77.5 dB)[0m
+[0;32mI (89824) GPS_RX: Display: Lat: 32.010044[0m
+[0;32mI (89824) GPS_RX: Display: Lon: 62.009663[0m
+[0;32mI (89834) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (90114) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -77.5 dB)[0m
+[0;32mI (90114) GPS_RX: Display: Lat: 32.020042[0m
+[0;32mI (90114) GPS_RX: Display: Lon: 62.019661[0m
+[0;32mI (90124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (90414) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -77.5 dB)[0m
+[0;32mI (90414) GPS_RX: Display: Lat: 32.030041[0m
+[0;32mI (90414) GPS_RX: Display: Lon: 62.029659[0m
+[0;32mI (90424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (90724) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -77.5 dB)[0m
+[0;32mI (90724) GPS_RX: Display: Lat: 32.040039[0m
+[0;32mI (90724) GPS_RX: Display: Lon: 62.039658[0m
+[0;32mI (90724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (91034) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -77.5 dB)[0m
+[0;32mI (91034) GPS_RX: Display: Lat: 32.050037[0m
+[0;32mI (91034) GPS_RX: Display: Lon: 62.049656[0m
+[0;32mI (91034) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (91174) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -76.9 dB)[0m
+[0;32mI (91174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (91174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (91174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (91314) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -76.9 dB)[0m
+[0;32mI (91314) GPS_RX: Display: Lat: 32.060036[0m
+[0;32mI (91314) GPS_RX: Display: Lon: 62.059654[0m
+[0;32mI (91324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (91614) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -76.9 dB)[0m
+[0;32mI (91614) GPS_RX: Display: Lat: 32.070034[0m
+[0;32mI (91614) GPS_RX: Display: Lon: 62.069653[0m
+[0;32mI (91624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (91914) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -76.9 dB)[0m
+[0;32mI (91914) GPS_RX: Display: Lat: 32.080032[0m
+[0;32mI (91914) GPS_RX: Display: Lon: 62.079651[0m
+[0;32mI (91924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (92164) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -75.7 dB)[0m
+[0;32mI (92164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (92164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (92174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (92214) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -75.7 dB)[0m
+[0;32mI (92214) GPS_RX: Display: Lat: 32.090031[0m
+[0;32mI (92214) GPS_RX: Display: Lon: 62.089649[0m
+[0;32mI (92224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (92514) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -75.7 dB)[0m
+[0;32mI (92514) GPS_RX: Display: Lat: 32.100029[0m
+[0;32mI (92514) GPS_RX: Display: Lon: 62.099648[0m
+[0;32mI (92524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (92814) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -75.7 dB)[0m
+[0;32mI (92814) GPS_RX: Display: Lat: 32.110027[0m
+[0;32mI (92814) GPS_RX: Display: Lon: 62.109646[0m
+[0;32mI (92824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (93114) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -75.7 dB)[0m
+[0;32mI (93114) GPS_RX: Display: Lat: 32.120026[0m
+[0;32mI (93114) GPS_RX: Display: Lon: 62.119644[0m
+[0;32mI (93124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (93164) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -76.2 dB)[0m
+[0;32mI (93164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (93164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (93174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (93424) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -76.2 dB)[0m
+[0;32mI (93424) GPS_RX: Display: Lat: 32.130024[0m
+[0;32mI (93424) GPS_RX: Display: Lon: 62.129642[0m
+[0;32mI (93424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (93724) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -76.2 dB)[0m
+[0;32mI (93724) GPS_RX: Display: Lat: 32.140022[0m
+[0;32mI (93724) GPS_RX: Display: Lon: 62.139641[0m
+[0;32mI (93724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (94024) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -76.2 dB)[0m
+[0;32mI (94024) GPS_RX: Display: Lat: 32.150021[0m
+[0;32mI (94024) GPS_RX: Display: Lon: 62.149639[0m
+[0;32mI (94034) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (94174) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -75.4 dB)[0m
+[0;32mI (94174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (94174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (94174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (94314) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -75.4 dB)[0m
+[0;32mI (94314) GPS_RX: Display: Lat: 32.160019[0m
+[0;32mI (94314) GPS_RX: Display: Lon: 62.159637[0m
+[0;32mI (94324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (94614) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -75.4 dB)[0m
+[0;32mI (94614) GPS_RX: Display: Lat: 32.170017[0m
+[0;32mI (94614) GPS_RX: Display: Lon: 62.169636[0m
+[0;32mI (94624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (94914) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -75.4 dB)[0m
+[0;32mI (94914) GPS_RX: Display: Lat: 32.180016[0m
+[0;32mI (94914) GPS_RX: Display: Lon: 62.179634[0m
+[0;32mI (94924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (95164) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -74.8 dB)[0m
+[0;32mI (95174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (95174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (95174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (95224) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -74.8 dB)[0m
+[0;32mI (95224) GPS_RX: Display: Lat: 32.190014[0m
+[0;32mI (95224) GPS_RX: Display: Lon: 62.189632[0m
+[0;32mI (95234) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (95514) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -74.8 dB)[0m
+[0;32mI (95514) GPS_RX: Display: Lat: 32.200012[0m
+[0;32mI (95514) GPS_RX: Display: Lon: 62.199631[0m
+[0;32mI (95524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (95814) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -74.8 dB)[0m
+[0;32mI (95814) GPS_RX: Display: Lat: 32.210011[0m
+[0;32mI (95814) GPS_RX: Display: Lon: 62.209629[0m
+[0;32mI (95824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (96114) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -74.8 dB)[0m
+[0;32mI (96114) GPS_RX: Display: Lat: 32.220009[0m
+[0;32mI (96114) GPS_RX: Display: Lon: 62.219627[0m
+[0;32mI (96124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (96414) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -74.8 dB)[0m
+[0;32mI (96414) GPS_RX: Display: Lat: 32.230007[0m
+[0;32mI (96414) GPS_RX: Display: Lon: 62.229626[0m
+[0;32mI (96424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (96714) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -74.8 dB)[0m
+[0;32mI (96714) GPS_RX: Display: Lat: 32.240005[0m
+[0;32mI (96714) GPS_RX: Display: Lon: 62.239624[0m
+[0;32mI (96724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (97014) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -74.8 dB)[0m
+[0;32mI (97014) GPS_RX: Display: Lat: 32.250004[0m
+[0;32mI (97014) GPS_RX: Display: Lon: 62.249622[0m
+[0;32mI (97024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (97314) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -74.8 dB)[0m
+[0;32mI (97314) GPS_RX: Display: Lat: 32.260002[0m
+[0;32mI (97314) GPS_RX: Display: Lon: 62.259621[0m
+[0;32mI (97324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (97614) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -74.8 dB)[0m
+[0;32mI (97614) GPS_RX: Display: Lat: 32.270000[0m
+[0;32mI (97614) GPS_RX: Display: Lon: 62.269619[0m
+[0;32mI (97624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (97914) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -74.8 dB)[0m
+[0;32mI (97914) GPS_RX: Display: Lat: 32.279999[0m
+[0;32mI (97914) GPS_RX: Display: Lon: 62.279617[0m
+[0;32mI (97924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (98164) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -73.9 dB)[0m
+[0;32mI (98164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (98164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (98174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (98214) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -73.9 dB)[0m
+[0;32mI (98224) GPS_RX: Display: Lat: 32.289997[0m
+[0;32mI (98224) GPS_RX: Display: Lon: 62.289616[0m
+[0;32mI (98224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (98514) GPS_RX: TAKEOVER: Spoofer stronger (-38.6 dB > -73.9 dB)[0m
+[0;32mI (98514) GPS_RX: Display: Lat: 32.299995[0m
+[0;32mI (98514) GPS_RX: Display: Lon: 62.299614[0m
+[0;32mI (98524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (98814) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -73.9 dB)[0m
+[0;32mI (98814) GPS_RX: Display: Lat: 32.309994[0m
+[0;32mI (98814) GPS_RX: Display: Lon: 62.309612[0m
+[0;32mI (98824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (99114) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -73.9 dB)[0m
+[0;32mI (99114) GPS_RX: Display: Lat: 32.319992[0m
+[0;32mI (99114) GPS_RX: Display: Lon: 62.319611[0m
+[0;32mI (99124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (99164) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -72.2 dB)[0m
+[0;32mI (99164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (99164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (99174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (99424) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -72.2 dB)[0m
+[0;32mI (99424) GPS_RX: Display: Lat: 32.329990[0m
+[0;32mI (99424) GPS_RX: Display: Lon: 62.329609[0m
+[0;32mI (99434) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (99714) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -72.2 dB)[0m
+[0;32mI (99714) GPS_RX: Display: Lat: 32.339989[0m
+[0;32mI (99714) GPS_RX: Display: Lon: 62.339607[0m
+[0;32mI (99724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (100014) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -72.2 dB)[0m
+[0;32mI (100014) GPS_RX: Display: Lat: 32.349987[0m
+[0;32mI (100014) GPS_RX: Display: Lon: 62.349606[0m
+[0;32mI (100024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (100164) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -69.9 dB)[0m
+[0;32mI (100164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (100164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (100174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (100314) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -69.9 dB)[0m
+[0;32mI (100314) GPS_RX: Display: Lat: 32.359985[0m
+[0;32mI (100314) GPS_RX: Display: Lon: 62.359604[0m
+[0;32mI (100324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (100614) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -69.9 dB)[0m
+[0;32mI (100614) GPS_RX: Display: Lat: 32.369984[0m
+[0;32mI (100614) GPS_RX: Display: Lon: 62.369602[0m
+[0;32mI (100624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (100914) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -69.9 dB)[0m
+[0;32mI (100914) GPS_RX: Display: Lat: 32.379982[0m
+[0;32mI (100914) GPS_RX: Display: Lon: 62.379601[0m
+[0;32mI (100924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (101164) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -68.4 dB)[0m
+[0;32mI (101164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (101164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (101174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (101214) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -68.4 dB)[0m
+[0;32mI (101214) GPS_RX: Display: Lat: 32.389980[0m
+[0;32mI (101214) GPS_RX: Display: Lon: 62.389599[0m
+[0;32mI (101224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (101514) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -68.4 dB)[0m
+[0;32mI (101514) GPS_RX: Display: Lat: 32.399979[0m
+[0;32mI (101514) GPS_RX: Display: Lon: 62.399597[0m
+[0;32mI (101524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (101814) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -68.4 dB)[0m
+[0;32mI (101814) GPS_RX: Display: Lat: 32.409977[0m
+[0;32mI (101814) GPS_RX: Display: Lon: 62.409595[0m
+[0;32mI (101824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (102114) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -68.4 dB)[0m
+[0;32mI (102114) GPS_RX: Display: Lat: 32.419975[0m
+[0;32mI (102114) GPS_RX: Display: Lon: 62.419594[0m
+[0;32mI (102124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (102164) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -67.3 dB)[0m
+[0;32mI (102164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (102164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (102174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (102414) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -67.3 dB)[0m
+[0;32mI (102414) GPS_RX: Display: Lat: 32.429974[0m
+[0;32mI (102414) GPS_RX: Display: Lon: 62.429592[0m
+[0;32mI (102424) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (102714) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -67.3 dB)[0m
+[0;32mI (102714) GPS_RX: Display: Lat: 32.439972[0m
+[0;32mI (102714) GPS_RX: Display: Lon: 62.439590[0m
+[0;32mI (102724) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (103014) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -67.3 dB)[0m
+[0;32mI (103014) GPS_RX: Display: Lat: 32.449970[0m
+[0;32mI (103014) GPS_RX: Display: Lon: 62.449589[0m
+[0;32mI (103024) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (103164) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -64.0 dB)[0m
+[0;32mI (103164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (103164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (103174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (103314) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -64.0 dB)[0m
+[0;32mI (103314) GPS_RX: Display: Lat: 32.459969[0m
+[0;32mI (103314) GPS_RX: Display: Lon: 62.459587[0m
+[0;32mI (103324) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (103614) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -64.0 dB)[0m
+[0;32mI (103614) GPS_RX: Display: Lat: 32.469967[0m
+[0;32mI (103614) GPS_RX: Display: Lon: 62.469585[0m
+[0;32mI (103624) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (103914) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -64.0 dB)[0m
+[0;32mI (103914) GPS_RX: Display: Lat: 32.479965[0m
+[0;32mI (103914) GPS_RX: Display: Lon: 62.479584[0m
+[0;32mI (103924) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (104164) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -61.5 dB)[0m
+[0;32mI (104164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (104164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (104174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (104214) GPS_RX: TAKEOVER: Spoofer stronger (-41.0 dB > -61.5 dB)[0m
+[0;32mI (104214) GPS_RX: Display: Lat: 32.489964[0m
+[0;32mI (104214) GPS_RX: Display: Lon: 62.489582[0m
+[0;32mI (104224) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (104514) GPS_RX: TAKEOVER: Spoofer stronger (-40.5 dB > -61.5 dB)[0m
+[0;32mI (104514) GPS_RX: Display: Lat: 32.499962[0m
+[0;32mI (104514) GPS_RX: Display: Lon: 62.499580[0m
+[0;32mI (104524) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (104814) GPS_RX: TAKEOVER: Spoofer stronger (-40.4 dB > -61.5 dB)[0m
+[0;32mI (104814) GPS_RX: Display: Lat: 32.509960[0m
+[0;32mI (104814) GPS_RX: Display: Lon: 62.509579[0m
+[0;32mI (104824) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (105114) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.5 dB)[0m
+[0;32mI (105114) GPS_RX: Display: Lat: 32.519958[0m
+[0;32mI (105114) GPS_RX: Display: Lon: 62.519577[0m
+[0;32mI (105124) GPS_RX: Display: Alt: 25.0[0m
+[0;33mW (105164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.1 dB)[0m
+[0;32mI (105164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (105164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (105174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (106164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.1 dB)[0m
+[0;32mI (106164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (106164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (106174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (107164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.1 dB)[0m
+[0;32mI (107164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (107164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (107174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (108164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -56.8 dB)[0m
+[0;32mI (108164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (108164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (108174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (109174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.1 dB)[0m
+[0;32mI (109174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (109174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (109184) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (110164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.1 dB)[0m
+[0;32mI (110164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (110164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (110174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (111164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.3 dB)[0m
+[0;32mI (111164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (111164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (111174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (112164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.2 dB)[0m
+[0;32mI (112164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (112164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (112174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (113174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.2 dB)[0m
+[0;32mI (113174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (113174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (113174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (114164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.1 dB)[0m
+[0;32mI (114164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (114164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (114174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (115164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.8 dB)[0m
+[0;32mI (115164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (115164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (115174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (116174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.6 dB)[0m
+[0;32mI (116174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (116174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (116174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (117164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.7 dB)[0m
+[0;32mI (117164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (117164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (117174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (118164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.0 dB)[0m
+[0;32mI (118164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (118164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (118174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (119164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.5 dB)[0m
+[0;32mI (119164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (119164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (119174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (120164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.2 dB)[0m
+[0;32mI (120164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (120164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (120174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (121164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.4 dB)[0m
+[0;32mI (121164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (121164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (121174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (122164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.3 dB)[0m
+[0;32mI (122164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (122164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (122174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (123164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.2 dB)[0m
+[0;32mI (123164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (123164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (123174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (124164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -63.2 dB)[0m
+[0;32mI (124164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (124164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (124174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (125164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -64.6 dB)[0m
+[0;32mI (125164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (125164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (125174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (126174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.7 dB)[0m
+[0;32mI (126174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (126174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (126184) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (127164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.3 dB)[0m
+[0;32mI (127164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (127164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (127174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (128164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.7 dB)[0m
+[0;32mI (128164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (128164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (128174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (129164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.0 dB)[0m
+[0;32mI (129164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (129164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (129174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (130174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.8 dB)[0m
+[0;32mI (130174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (130174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (130174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (132164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.3 dB)[0m
+[0;32mI (132164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (132164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (132174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (133164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -66.2 dB)[0m
+[0;32mI (133164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (133164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (133174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (134164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -64.2 dB)[0m
+[0;32mI (134164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (134164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (134174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (135164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.9 dB)[0m
+[0;32mI (135164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (135164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (135174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (136164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.7 dB)[0m
+[0;32mI (136164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (136164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (136174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (137164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.3 dB)[0m
+[0;32mI (137164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (137164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (137174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (140164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.7 dB)[0m
+[0;32mI (140164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (140164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (140174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (141164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.0 dB)[0m
+[0;32mI (141164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (141164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (141174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (142164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.8 dB)[0m
+[0;32mI (142164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (142164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (142174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (143174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -59.1 dB)[0m
+[0;32mI (143174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (143174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (143174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (144164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.8 dB)[0m
+[0;32mI (144164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (144164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (144174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (145164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.6 dB)[0m
+[0;32mI (145164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (145164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (145174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (146164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.2 dB)[0m
+[0;32mI (146164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (146164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (146174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (147164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -58.9 dB)[0m
+[0;32mI (147164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (147164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (147174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (148164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.7 dB)[0m
+[0;32mI (148164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (148164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (148174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (149164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.3 dB)[0m
+[0;32mI (149164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (149164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (149174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (150164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.9 dB)[0m
+[0;32mI (150164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (150164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (150174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (151164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.2 dB)[0m
+[0;32mI (151164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (151164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (151174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (152174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.4 dB)[0m
+[0;32mI (152174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (152174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (152174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (153164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.8 dB)[0m
+[0;32mI (153164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (153164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (153174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (154164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.4 dB)[0m
+[0;32mI (154164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (154164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (154164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (155164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.5 dB)[0m
+[0;32mI (155164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (155164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (155174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (156164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.9 dB)[0m
+[0;32mI (156164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (156164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (156164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (158164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -63.2 dB)[0m
+[0;32mI (158164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (158164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (158174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (159164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -63.4 dB)[0m
+[0;32mI (159164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (159164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (159174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (160174) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -63.0 dB)[0m
+[0;32mI (160174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (160174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (160174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (161164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -62.0 dB)[0m
+[0;32mI (161164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (161164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (161164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (162164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.0 dB)[0m
+[0;32mI (162164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (162164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (162164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (163164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.8 dB)[0m
+[0;32mI (163164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (163164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (163174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (164164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.3 dB)[0m
+[0;32mI (164164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (164164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (164174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (165164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.5 dB)[0m
+[0;32mI (165164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (165164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (165164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (168164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.9 dB)[0m
+[0;32mI (168164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (168164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (168164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (169164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.7 dB)[0m
+[0;32mI (169164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (169164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (169164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (170164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -61.2 dB)[0m
+[0;32mI (170164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (170164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (170164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (172164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.9 dB)[0m
+[0;32mI (172164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (172164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (172174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (174164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -60.9 dB)[0m
+[0;32mI (174164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (174164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (174164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (175164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -64.0 dB)[0m
+[0;32mI (175164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (175164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (175174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (176164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -66.0 dB)[0m
+[0;32mI (176164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (176164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (176164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (177164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -67.0 dB)[0m
+[0;32mI (177174) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (177174) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (177174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (178164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.5 dB)[0m
+[0;32mI (178164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (178164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (178164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (180164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -64.9 dB)[0m
+[0;32mI (180164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (180164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (180174) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (181164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -63.6 dB)[0m
+[0;32mI (181164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (181164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (181164) GPS_RX: Display: Alt: 10.0[0m
+[0;33mW (182164) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -63.7 dB)[0m
+[0;32mI (182164) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (182164) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (182164) GPS_RX: Display: Alt: 10.0[0m

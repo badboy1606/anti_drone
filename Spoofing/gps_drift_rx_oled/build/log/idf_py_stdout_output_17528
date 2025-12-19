@@ -1,0 +1,436 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2025 11:27:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e408h (123912) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=0002e430 vaddr=3ffb0000 size=01be8h (  7144) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=7d760h (513888) map[0m
+[0;32mI (329) esp_image: segment 3: paddr=000ad788 vaddr=3ffb1be8 size=020e4h (  8420) load[0m
+[0;32mI (332) esp_image: segment 4: paddr=000af874 vaddr=40080000 size=16af0h ( 92912) load[0m
+[0;32mI (383) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (383) boot: Disabling RNG early entropy source...[0m
+[0;32mI (394) cpu_start: Multicore app[0m
+[0;32mI (403) cpu_start: Pro cpu start user code[0m
+[0;32mI (403) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (403) cpu_start: Application information:[0m
+[0;32mI (406) cpu_start: Project name:     gps_drift_rx_oled[0m
+[0;32mI (412) cpu_start: App version:      1[0m
+[0;32mI (417) cpu_start: Compile time:     Dec 11 2025 11:24:43[0m
+[0;32mI (423) cpu_start: ELF file SHA256:  bce350d9d...[0m
+[0;32mI (428) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (433) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (438) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (443) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (448) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (455) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (461) heap_init: At 3FFB7DE8 len 00028218 (160 KiB): DRAM[0m
+[0;32mI (467) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (480) heap_init: At 40096AF0 len 00009510 (37 KiB): IRAM[0m
+[0;32mI (488) spi_flash: detected chip: generic[0m
+[0;32mI (491) spi_flash: flash io: dio[0m
+[0;33mW (495) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[0;32mI (549) wifi:wifi driver task: 3ffbfaa4, prio:23, stack:6656, core=0[0m
+[0;32mI (559) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (559) wifi:wifi certification version: v7.0[0m
+[0;32mI (559) wifi:config NVS flash: enabled[0m
+[0;32mI (559) wifi:config nano formating: disabled[0m
+[0;32mI (559) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (569) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (569) wifi:Init management short buffer num: 32[0m
+[0;32mI (579) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (579) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (589) wifi:Init static rx buffer num: 10[0m
+[0;32mI (589) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (589) wifi_init: rx ba win: 6[0m
+[0;32mI (599) wifi_init: tcpip mbox: 32[0m
+[0;32mI (599) wifi_init: udp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp mbox: 6[0m
+[0;32mI (609) wifi_init: tcp tx win: 5760[0m
+[0;32mI (609) wifi_init: tcp rx win: 5760[0m
+[0;32mI (619) wifi_init: tcp mss: 1440[0m
+[0;32mI (619) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (629) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (629) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (719) wifi:mode : sta (88:57:21:c1:c7:3c)[0m
+[0;32mI (719) wifi:enable tsf[0m
+[0;32mI (719) GPS_RX: Receiver forced to channel 1[0m
+[0;32mI (719) wifi:ic_enable_sniffer[0m
+[0;32mI (719) GPS_RX: Receiver MAC: 88:57:21:C1:C7:3C[0m
+[0;32mI (729) GPS_RX: Lat: 19.000000 | Lon: 72.000000 | Alt: 0.0[0m
+[0;32mI (729) ESPNOW: espnow [version: 1.0] init[0m
+[0;32mI (739) GPS_RX: Ready...[0m
+[0;32mI (739) main_task: Returned from app_main()[0m
+[0;32mI (1409) GPS_RX: ESP-NOW signal detected! LOCKED to channel 1[0m
+[0;32mI (1409) GPS_RX: REGISTERED SATELLITE MAC: 20:E7:C8:68:84:68[0m
+[0;32mI (1419) GPS_RX: First ESP-NOW packet source registered[0m
+[0;32mI (9409) GPS_RX: Lat: 19.899986 | Lon: 72.900055 | Alt: 10.0[0m
+[0;32mI (10409) GPS_RX: Lat: 19.949986 | Lon: 72.950058 | Alt: 10.0[0m
+[0;32mI (11409) GPS_RX: Lat: 19.999985 | Lon: 73.000061 | Alt: 10.0[0m
+[0;32mI (12409) GPS_RX: Lat: 20.049984 | Lon: 73.050064 | Alt: 10.0[0m
+[0;32mI (13409) GPS_RX: Lat: 20.099983 | Lon: 73.100067 | Alt: 10.0[0m
+[0;32mI (14409) GPS_RX: Lat: 20.149982 | Lon: 73.150070 | Alt: 10.0[0m
+[0;32mI (15409) GPS_RX: Lat: 20.199982 | Lon: 73.200073 | Alt: 10.0[0m
+[0;32mI (16409) GPS_RX: Lat: 20.249981 | Lon: 73.250076 | Alt: 10.0[0m
+[0;32mI (17409) GPS_RX: Lat: 20.299980 | Lon: 73.300079 | Alt: 10.0[0m
+[0;32mI (18409) GPS_RX: Lat: 20.349979 | Lon: 73.350082 | Alt: 10.0[0m
+[0;32mI (19409) GPS_RX: Lat: 20.399979 | Lon: 73.400085 | Alt: 10.0[0m
+[0;32mI (20109) GPS_RX: REGISTERED SPOOFER MAC: 88:57:21:B3:4E:38[0m
+[0;32mI (20109) GPS_RX: Lat: 30.000000 | Lon: 60.000000 | Alt: 25.0[0m
+[0;32mI (20409) GPS_RX: Lat: 20.449978 | Lon: 73.450089 | Alt: 10.0[0m
+[0;33mW (20419) GPS_RX: TAKEOVER: Spoofer stronger (-48.0 dB > -70.6 dB)[0m
+[0;32mI (20419) GPS_RX: Lat: 30.010000 | Lon: 60.009998 | Alt: 25.0[0m
+[0;33mW (20709) GPS_RX: TAKEOVER: Spoofer stronger (-45.2 dB > -70.6 dB)[0m
+[0;32mI (20709) GPS_RX: Lat: 30.020000 | Lon: 60.019997 | Alt: 25.0[0m
+[0;33mW (21009) GPS_RX: TAKEOVER: Spoofer stronger (-43.2 dB > -70.6 dB)[0m
+[0;32mI (21009) GPS_RX: Lat: 30.030001 | Lon: 60.029995 | Alt: 25.0[0m
+[0;33mW (21309) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -70.6 dB)[0m
+[0;32mI (21309) GPS_RX: Lat: 30.040001 | Lon: 60.039993 | Alt: 25.0[0m
+[0;33mW (21409) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -67.7 dB)[0m
+[0;32mI (21409) GPS_RX: Lat: 20.499977 | Lon: 73.500092 | Alt: 10.0[0m
+[0;33mW (21609) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -67.7 dB)[0m
+[0;32mI (21609) GPS_RX: Lat: 30.050001 | Lon: 60.049992 | Alt: 25.0[0m
+[0;33mW (21909) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -67.7 dB)[0m
+[0;32mI (21909) GPS_RX: Lat: 30.060001 | Lon: 60.059990 | Alt: 25.0[0m
+[0;33mW (22209) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -67.7 dB)[0m
+[0;32mI (22209) GPS_RX: Lat: 30.070002 | Lon: 60.069988 | Alt: 25.0[0m
+[0;33mW (22409) GPS_RX: TAKEOVER: Spoofer stronger (-38.3 dB > -64.8 dB)[0m
+[0;32mI (22409) GPS_RX: Lat: 20.549976 | Lon: 73.550095 | Alt: 10.0[0m
+[0;33mW (22509) GPS_RX: TAKEOVER: Spoofer stronger (-38.7 dB > -64.8 dB)[0m
+[0;32mI (22509) GPS_RX: Lat: 30.080002 | Lon: 60.079987 | Alt: 25.0[0m
+[0;33mW (22809) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -64.8 dB)[0m
+[0;32mI (22809) GPS_RX: Lat: 30.090002 | Lon: 60.089985 | Alt: 25.0[0m
+[0;33mW (23109) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -64.8 dB)[0m
+[0;32mI (23109) GPS_RX: Lat: 30.100002 | Lon: 60.099983 | Alt: 25.0[0m
+[0;33mW (23409) GPS_RX: TAKEOVER: Spoofer stronger (-40.2 dB > -64.8 dB)[0m
+[0;32mI (23409) GPS_RX: Lat: 30.110003 | Lon: 60.109982 | Alt: 25.0[0m
+[0;33mW (23409) GPS_RX: TAKEOVER: Spoofer stronger (-40.2 dB > -62.8 dB)[0m
+[0;32mI (23419) GPS_RX: Lat: 20.599976 | Lon: 73.600098 | Alt: 10.0[0m
+[0;33mW (23709) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -62.8 dB)[0m
+[0;32mI (23709) GPS_RX: Lat: 30.120003 | Lon: 60.119980 | Alt: 25.0[0m
+[0;33mW (24009) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -62.8 dB)[0m
+[0;32mI (24009) GPS_RX: Lat: 30.130003 | Lon: 60.129978 | Alt: 25.0[0m
+[0;33mW (24309) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -62.8 dB)[0m
+[0;32mI (24309) GPS_RX: Lat: 30.140003 | Lon: 60.139977 | Alt: 25.0[0m
+[0;33mW (24409) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -62.1 dB)[0m
+[0;32mI (24409) GPS_RX: Lat: 20.649975 | Lon: 73.650101 | Alt: 10.0[0m
+[0;33mW (24609) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -62.1 dB)[0m
+[0;32mI (24609) GPS_RX: Lat: 30.150003 | Lon: 60.149975 | Alt: 25.0[0m
+[0;33mW (24909) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -62.1 dB)[0m
+[0;32mI (24909) GPS_RX: Lat: 30.160004 | Lon: 60.159973 | Alt: 25.0[0m
+[0;33mW (25209) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -62.1 dB)[0m
+[0;32mI (25209) GPS_RX: Lat: 30.170004 | Lon: 60.169971 | Alt: 25.0[0m
+[0;33mW (25409) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -64.3 dB)[0m
+[0;32mI (25419) GPS_RX: Lat: 20.699974 | Lon: 73.700104 | Alt: 10.0[0m
+[0;33mW (25509) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -64.3 dB)[0m
+[0;32mI (25509) GPS_RX: Lat: 30.180004 | Lon: 60.179970 | Alt: 25.0[0m
+[0;33mW (25809) GPS_RX: TAKEOVER: Spoofer stronger (-38.1 dB > -64.3 dB)[0m
+[0;32mI (25809) GPS_RX: Lat: 30.190004 | Lon: 60.189968 | Alt: 25.0[0m
+[0;33mW (26109) GPS_RX: TAKEOVER: Spoofer stronger (-37.6 dB > -64.3 dB)[0m
+[0;32mI (26109) GPS_RX: Lat: 30.200005 | Lon: 60.199966 | Alt: 25.0[0m
+[0;33mW (26409) GPS_RX: TAKEOVER: Spoofer stronger (-37.2 dB > -64.3 dB)[0m
+[0;32mI (26409) GPS_RX: Lat: 30.210005 | Lon: 60.209965 | Alt: 25.0[0m
+[0;33mW (26409) GPS_RX: TAKEOVER: Spoofer stronger (-37.2 dB > -63.8 dB)[0m
+[0;32mI (26419) GPS_RX: Lat: 20.749973 | Lon: 73.750107 | Alt: 10.0[0m
+[0;33mW (26709) GPS_RX: TAKEOVER: Spoofer stronger (-36.9 dB > -63.8 dB)[0m
+[0;32mI (26709) GPS_RX: Lat: 30.220005 | Lon: 60.219963 | Alt: 25.0[0m
+[0;33mW (27009) GPS_RX: TAKEOVER: Spoofer stronger (-36.7 dB > -63.8 dB)[0m
+[0;32mI (27009) GPS_RX: Lat: 30.230005 | Lon: 60.229961 | Alt: 25.0[0m
+[0;33mW (27309) GPS_RX: TAKEOVER: Spoofer stronger (-35.7 dB > -63.8 dB)[0m
+[0;32mI (27309) GPS_RX: Lat: 30.240005 | Lon: 60.239960 | Alt: 25.0[0m
+[0;33mW (27409) GPS_RX: TAKEOVER: Spoofer stronger (-35.7 dB > -62.8 dB)[0m
+[0;32mI (27409) GPS_RX: Lat: 20.799973 | Lon: 73.800110 | Alt: 10.0[0m
+[0;33mW (27629) GPS_RX: TAKEOVER: Spoofer stronger (-34.3 dB > -62.8 dB)[0m
+[0;32mI (27629) GPS_RX: Lat: 30.250006 | Lon: 60.249958 | Alt: 25.0[0m
+[0;33mW (27909) GPS_RX: TAKEOVER: Spoofer stronger (-33.7 dB > -62.8 dB)[0m
+[0;32mI (27909) GPS_RX: Lat: 30.260006 | Lon: 60.259956 | Alt: 25.0[0m
+[0;33mW (28209) GPS_RX: TAKEOVER: Spoofer stronger (-36.5 dB > -62.8 dB)[0m
+[0;32mI (28209) GPS_RX: Lat: 30.270006 | Lon: 60.269955 | Alt: 25.0[0m
+[0;33mW (28409) GPS_RX: TAKEOVER: Spoofer stronger (-36.5 dB > -64.6 dB)[0m
+[0;32mI (28409) GPS_RX: Lat: 20.849972 | Lon: 73.850113 | Alt: 10.0[0m
+[0;33mW (28509) GPS_RX: TAKEOVER: Spoofer stronger (-36.9 dB > -64.6 dB)[0m
+[0;32mI (28509) GPS_RX: Lat: 30.280006 | Lon: 60.279953 | Alt: 25.0[0m
+[0;33mW (28809) GPS_RX: TAKEOVER: Spoofer stronger (-37.9 dB > -64.6 dB)[0m
+[0;32mI (28809) GPS_RX: Lat: 30.290007 | Lon: 60.289951 | Alt: 25.0[0m
+[0;33mW (29109) GPS_RX: TAKEOVER: Spoofer stronger (-38.4 dB > -64.6 dB)[0m
+[0;32mI (29109) GPS_RX: Lat: 30.300007 | Lon: 60.299950 | Alt: 25.0[0m
+[0;33mW (29409) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -64.6 dB)[0m
+[0;32mI (29409) GPS_RX: Lat: 30.310007 | Lon: 60.309948 | Alt: 25.0[0m
+[0;33mW (29409) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -64.2 dB)[0m
+[0;32mI (29419) GPS_RX: Lat: 20.899971 | Lon: 73.900116 | Alt: 10.0[0m
+[0;33mW (29709) GPS_RX: TAKEOVER: Spoofer stronger (-38.8 dB > -64.2 dB)[0m
+[0;32mI (29709) GPS_RX: Lat: 30.320007 | Lon: 60.319946 | Alt: 25.0[0m
+[0;33mW (30009) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -64.2 dB)[0m
+[0;32mI (30009) GPS_RX: Lat: 30.330008 | Lon: 60.329945 | Alt: 25.0[0m
+[0;33mW (30319) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -64.2 dB)[0m
+[0;32mI (30319) GPS_RX: Lat: 30.340008 | Lon: 60.339943 | Alt: 25.0[0m
+[0;33mW (30409) GPS_RX: TAKEOVER: Spoofer stronger (-38.9 dB > -62.4 dB)[0m
+[0;32mI (30409) GPS_RX: Lat: 20.949970 | Lon: 73.950119 | Alt: 10.0[0m
+[0;33mW (30609) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -62.4 dB)[0m
+[0;32mI (30609) GPS_RX: Lat: 30.350008 | Lon: 60.349941 | Alt: 25.0[0m
+[0;33mW (30909) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -62.4 dB)[0m
+[0;32mI (30909) GPS_RX: Lat: 30.360008 | Lon: 60.359940 | Alt: 25.0[0m
+[0;33mW (31209) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -62.4 dB)[0m
+[0;32mI (31209) GPS_RX: Lat: 30.370008 | Lon: 60.369938 | Alt: 25.0[0m
+[0;33mW (31419) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -61.3 dB)[0m
+[0;32mI (31419) GPS_RX: Lat: 20.999969 | Lon: 74.000122 | Alt: 10.0[0m
+[0;33mW (31509) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -61.3 dB)[0m
+[0;32mI (31509) GPS_RX: Lat: 30.380009 | Lon: 60.379936 | Alt: 25.0[0m
+[0;33mW (31809) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -61.3 dB)[0m
+[0;32mI (31809) GPS_RX: Lat: 30.390009 | Lon: 60.389935 | Alt: 25.0[0m
+[0;33mW (32109) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -61.3 dB)[0m
+[0;32mI (32109) GPS_RX: Lat: 30.400009 | Lon: 60.399933 | Alt: 25.0[0m
+[0;33mW (32409) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -61.3 dB)[0m
+[0;32mI (32409) GPS_RX: Lat: 30.410009 | Lon: 60.409931 | Alt: 25.0[0m
+[0;33mW (32409) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -60.2 dB)[0m
+[0;32mI (32419) GPS_RX: Lat: 21.049969 | Lon: 74.050125 | Alt: 10.0[0m
+[0;33mW (32739) GPS_RX: TAKEOVER: Spoofer stronger (-39.1 dB > -60.2 dB)[0m
+[0;32mI (32739) GPS_RX: Lat: 30.420010 | Lon: 60.419930 | Alt: 25.0[0m
+[0;33mW (33009) GPS_RX: TAKEOVER: Spoofer stronger (-39.3 dB > -60.2 dB)[0m
+[0;32mI (33009) GPS_RX: Lat: 30.430010 | Lon: 60.429928 | Alt: 25.0[0m
+[0;33mW (33309) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -60.2 dB)[0m
+[0;32mI (33309) GPS_RX: Lat: 30.440010 | Lon: 60.439926 | Alt: 25.0[0m
+[0;33mW (33409) GPS_RX: TAKEOVER: Spoofer stronger (-39.0 dB > -58.9 dB)[0m
+[0;32mI (33409) GPS_RX: Lat: 21.099968 | Lon: 74.100128 | Alt: 10.0[0m
+[0;33mW (33609) GPS_RX: TAKEOVER: Spoofer stronger (-39.2 dB > -58.9 dB)[0m
+[0;32mI (33609) GPS_RX: Lat: 30.450010 | Lon: 60.449924 | Alt: 25.0[0m
+[0;33mW (33909) GPS_RX: TAKEOVER: Spoofer stronger (-39.4 dB > -58.9 dB)[0m
+[0;32mI (33909) GPS_RX: Lat: 30.460011 | Lon: 60.459923 | Alt: 25.0[0m
+[0;33mW (34209) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -58.9 dB)[0m
+[0;32mI (34209) GPS_RX: Lat: 30.470011 | Lon: 60.469921 | Alt: 25.0[0m
+[0;33mW (34409) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -58.2 dB)[0m
+[0;32mI (34409) GPS_RX: Lat: 21.149967 | Lon: 74.150131 | Alt: 10.0[0m
+[0;33mW (34509) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -58.2 dB)[0m
+[0;32mI (34509) GPS_RX: Lat: 30.480011 | Lon: 60.479919 | Alt: 25.0[0m
+[0;33mW (34809) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -58.2 dB)[0m
+[0;32mI (34809) GPS_RX: Lat: 30.490011 | Lon: 60.489918 | Alt: 25.0[0m
+[0;33mW (35109) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -58.2 dB)[0m
+[0;32mI (35109) GPS_RX: Lat: 30.500011 | Lon: 60.499916 | Alt: 25.0[0m
+[0;33mW (35409) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -58.2 dB)[0m
+[0;32mI (35409) GPS_RX: Lat: 30.510012 | Lon: 60.509914 | Alt: 25.0[0m
+[0;33mW (35409) GPS_RX: TAKEOVER: Spoofer stronger (-39.8 dB > -57.4 dB)[0m
+[0;32mI (35419) GPS_RX: Lat: 21.199966 | Lon: 74.200134 | Alt: 10.0[0m
+[0;33mW (35709) GPS_RX: TAKEOVER: Spoofer stronger (-39.6 dB > -57.4 dB)[0m
+[0;32mI (35709) GPS_RX: Lat: 30.520012 | Lon: 60.519913 | Alt: 25.0[0m
+[0;33mW (36009) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -57.4 dB)[0m
+[0;32mI (36009) GPS_RX: Lat: 30.530012 | Lon: 60.529911 | Alt: 25.0[0m
+[0;33mW (36309) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -57.4 dB)[0m
+[0;32mI (36309) GPS_RX: Lat: 30.540012 | Lon: 60.539909 | Alt: 25.0[0m
+[0;33mW (36409) GPS_RX: TAKEOVER: Spoofer stronger (-39.5 dB > -57.3 dB)[0m
+[0;32mI (36409) GPS_RX: Lat: 21.249966 | Lon: 74.250137 | Alt: 10.0[0m
+[0;33mW (36609) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -57.3 dB)[0m
+[0;32mI (36609) GPS_RX: Lat: 30.550013 | Lon: 60.549908 | Alt: 25.0[0m
+[0;33mW (36909) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -57.3 dB)[0m
+[0;32mI (36909) GPS_RX: Lat: 30.560013 | Lon: 60.559906 | Alt: 25.0[0m
+[0;33mW (37209) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -57.3 dB)[0m
+[0;32mI (37209) GPS_RX: Lat: 30.570013 | Lon: 60.569904 | Alt: 25.0[0m
+[0;33mW (37409) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -56.7 dB)[0m
+[0;32mI (37409) GPS_RX: Lat: 21.299965 | Lon: 74.300140 | Alt: 10.0[0m
+[0;33mW (37509) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -56.7 dB)[0m
+[0;32mI (37509) GPS_RX: Lat: 30.580013 | Lon: 60.579903 | Alt: 25.0[0m
+[0;33mW (37809) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -56.7 dB)[0m
+[0;32mI (37809) GPS_RX: Lat: 30.590014 | Lon: 60.589901 | Alt: 25.0[0m
+[0;33mW (38109) GPS_RX: TAKEOVER: Spoofer stronger (-39.7 dB > -56.7 dB)[0m
+[0;32mI (38109) GPS_RX: Lat: 30.600014 | Lon: 60.599899 | Alt: 25.0[0m
+[0;33mW (38409) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -56.7 dB)[0m
+[0;32mI (38409) GPS_RX: Lat: 30.610014 | Lon: 60.609898 | Alt: 25.0[0m
+[0;33mW (38409) GPS_RX: TAKEOVER: Spoofer stronger (-40.0 dB > -60.0 dB)[0m
+[0;32mI (38419) GPS_RX: Lat: 21.349964 | Lon: 74.350143 | Alt: 10.0[0m
+[0;33mW (38709) GPS_RX: TAKEOVER: Spoofer stronger (-40.3 dB > -60.0 dB)[0m
+[0;32mI (38709) GPS_RX: Lat: 30.620014 | Lon: 60.619896 | Alt: 25.0[0m
+[0;33mW (39009) GPS_RX: TAKEOVER: Spoofer stronger (-40.5 dB > -60.0 dB)[0m
+[0;32mI (39009) GPS_RX: Lat: 30.630014 | Lon: 60.629894 | Alt: 25.0[0m
+[0;33mW (39309) GPS_RX: TAKEOVER: Spoofer stronger (-40.6 dB > -60.0 dB)[0m
+[0;32mI (39309) GPS_RX: Lat: 30.640015 | Lon: 60.639893 | Alt: 25.0[0m
+[0;33mW (39409) GPS_RX: TAKEOVER: Spoofer stronger (-40.6 dB > -61.5 dB)[0m
+[0;32mI (39409) GPS_RX: Lat: 21.399963 | Lon: 74.400146 | Alt: 10.0[0m
+[0;33mW (39609) GPS_RX: TAKEOVER: Spoofer stronger (-40.4 dB > -61.5 dB)[0m
+[0;32mI (39609) GPS_RX: Lat: 30.650015 | Lon: 60.649891 | Alt: 25.0[0m
+[0;33mW (39909) GPS_RX: TAKEOVER: Spoofer stronger (-40.6 dB > -61.5 dB)[0m
+[0;32mI (39909) GPS_RX: Lat: 30.660015 | Lon: 60.659889 | Alt: 25.0[0m
+[0;33mW (40209) GPS_RX: TAKEOVER: Spoofer stronger (-40.7 dB > -61.5 dB)[0m
+[0;32mI (40209) GPS_RX: Lat: 30.670015 | Lon: 60.669888 | Alt: 25.0[0m
+[0;33mW (40409) GPS_RX: TAKEOVER: Spoofer stronger (-40.7 dB > -66.4 dB)[0m
+[0;32mI (40409) GPS_RX: Lat: 21.449963 | Lon: 74.450150 | Alt: 10.0[0m
+[0;33mW (40509) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -66.4 dB)[0m
+[0;32mI (40509) GPS_RX: Lat: 30.680016 | Lon: 60.679886 | Alt: 25.0[0m
+[0;33mW (40819) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -66.4 dB)[0m
+[0;32mI (40819) GPS_RX: Lat: 30.690016 | Lon: 60.689884 | Alt: 25.0[0m
+[0;33mW (41109) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -66.4 dB)[0m
+[0;32mI (41109) GPS_RX: Lat: 30.700016 | Lon: 60.699883 | Alt: 25.0[0m
+[0;33mW (41409) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -67.3 dB)[0m
+[0;32mI (41409) GPS_RX: Lat: 21.499962 | Lon: 74.500153 | Alt: 10.0[0m
+[0;33mW (41419) GPS_RX: TAKEOVER: Spoofer stronger (-41.0 dB > -67.3 dB)[0m
+[0;32mI (41419) GPS_RX: Lat: 30.710016 | Lon: 60.709881 | Alt: 25.0[0m
+[0;33mW (41709) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -67.3 dB)[0m
+[0;32mI (41709) GPS_RX: Lat: 30.720016 | Lon: 60.719879 | Alt: 25.0[0m
+[0;33mW (42009) GPS_RX: TAKEOVER: Spoofer stronger (-41.0 dB > -67.3 dB)[0m
+[0;32mI (42009) GPS_RX: Lat: 30.730017 | Lon: 60.729877 | Alt: 25.0[0m
+[0;33mW (42309) GPS_RX: TAKEOVER: Spoofer stronger (-40.5 dB > -67.3 dB)[0m
+[0;32mI (42309) GPS_RX: Lat: 30.740017 | Lon: 60.739876 | Alt: 25.0[0m
+[0;33mW (42409) GPS_RX: TAKEOVER: Spoofer stronger (-40.5 dB > -64.5 dB)[0m
+[0;32mI (42409) GPS_RX: Lat: 21.549961 | Lon: 74.550156 | Alt: 10.0[0m
+[0;33mW (42609) GPS_RX: TAKEOVER: Spoofer stronger (-40.6 dB > -64.5 dB)[0m
+[0;32mI (42609) GPS_RX: Lat: 30.750017 | Lon: 60.749874 | Alt: 25.0[0m
+[0;33mW (42909) GPS_RX: TAKEOVER: Spoofer stronger (-40.7 dB > -64.5 dB)[0m
+[0;32mI (42909) GPS_RX: Lat: 30.760017 | Lon: 60.759872 | Alt: 25.0[0m
+[0;33mW (43209) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -64.5 dB)[0m
+[0;32mI (43209) GPS_RX: Lat: 30.770018 | Lon: 60.769871 | Alt: 25.0[0m
+[0;33mW (43409) GPS_RX: TAKEOVER: Spoofer stronger (-40.8 dB > -65.6 dB)[0m
+[0;32mI (43409) GPS_RX: Lat: 21.599960 | Lon: 74.600159 | Alt: 10.0[0m
+[0;33mW (43509) GPS_RX: TAKEOVER: Spoofer stronger (-40.6 dB > -65.6 dB)[0m
+[0;32mI (43509) GPS_RX: Lat: 30.780018 | Lon: 60.779869 | Alt: 25.0[0m
+[0;33mW (43819) GPS_RX: TAKEOVER: Spoofer stronger (-40.7 dB > -65.6 dB)[0m
+[0;32mI (43819) GPS_RX: Lat: 30.790018 | Lon: 60.789867 | Alt: 25.0[0m
+[0;33mW (44109) GPS_RX: TAKEOVER: Spoofer stronger (-40.5 dB > -65.6 dB)[0m
+[0;32mI (44109) GPS_RX: Lat: 30.800018 | Lon: 60.799866 | Alt: 25.0[0m
+[0;33mW (44409) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -65.6 dB)[0m
+[0;32mI (44409) GPS_RX: Lat: 30.810019 | Lon: 60.809864 | Alt: 25.0[0m
+[0;33mW (44409) GPS_RX: TAKEOVER: Spoofer stronger (-39.9 dB > -65.2 dB)[0m
+[0;32mI (44419) GPS_RX: Lat: 21.649960 | Lon: 74.650162 | Alt: 10.0[0m
+[0;33mW (44709) GPS_RX: TAKEOVER: Spoofer stronger (-40.4 dB > -65.2 dB)[0m
+[0;32mI (44709) GPS_RX: Lat: 30.820019 | Lon: 60.819862 | Alt: 25.0[0m
+[0;33mW (45009) GPS_RX: TAKEOVER: Spoofer stronger (-40.6 dB > -65.2 dB)[0m
+[0;32mI (45009) GPS_RX: Lat: 30.830019 | Lon: 60.829861 | Alt: 25.0[0m
+[0;33mW (45309) GPS_RX: TAKEOVER: Spoofer stronger (-40.9 dB > -65.2 dB)[0m
+[0;32mI (45309) GPS_RX: Lat: 30.840019 | Lon: 60.839859 | Alt: 25.0[0m
+[0;33mW (45409) GPS_RX: TAKEOVER: Spoofer stronger (-40.9 dB > -64.4 dB)[0m
+[0;32mI (45409) GPS_RX: Lat: 21.699959 | Lon: 74.700165 | Alt: 10.0[0m
+[0;33mW (45609) GPS_RX: TAKEOVER: Spoofer stronger (-41.2 dB > -64.4 dB)[0m
+[0;32mI (45609) GPS_RX: Lat: 30.850019 | Lon: 60.849857 | Alt: 25.0[0m
+[0;33mW (45919) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -64.4 dB)[0m
+[0;32mI (45919) GPS_RX: Lat: 30.860020 | Lon: 60.859856 | Alt: 25.0[0m
+[0;33mW (46209) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -64.4 dB)[0m
+[0;32mI (46209) GPS_RX: Lat: 30.870020 | Lon: 60.869854 | Alt: 25.0[0m
+[0;33mW (46409) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -63.1 dB)[0m
+[0;32mI (46409) GPS_RX: Lat: 21.749958 | Lon: 74.750168 | Alt: 10.0[0m
+[0;33mW (46509) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -63.1 dB)[0m
+[0;32mI (46509) GPS_RX: Lat: 30.880020 | Lon: 60.879852 | Alt: 25.0[0m
+[0;33mW (46809) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -63.1 dB)[0m
+[0;32mI (46809) GPS_RX: Lat: 30.890020 | Lon: 60.889851 | Alt: 25.0[0m
+[0;33mW (47109) GPS_RX: TAKEOVER: Spoofer stronger (-41.2 dB > -63.1 dB)[0m
+[0;32mI (47109) GPS_RX: Lat: 30.900021 | Lon: 60.899849 | Alt: 25.0[0m
+[0;33mW (47409) GPS_RX: TAKEOVER: Spoofer stronger (-41.2 dB > -63.1 dB)[0m
+[0;32mI (47409) GPS_RX: Lat: 30.910021 | Lon: 60.909847 | Alt: 25.0[0m
+[0;33mW (47409) GPS_RX: TAKEOVER: Spoofer stronger (-41.2 dB > -62.0 dB)[0m
+[0;32mI (47419) GPS_RX: Lat: 21.799957 | Lon: 74.800171 | Alt: 10.0[0m
+[0;33mW (47709) GPS_RX: TAKEOVER: Spoofer stronger (-41.1 dB > -62.0 dB)[0m
+[0;32mI (47709) GPS_RX: Lat: 30.920021 | Lon: 60.919846 | Alt: 25.0[0m
+[0;33mW (48009) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -62.0 dB)[0m
+[0;32mI (48009) GPS_RX: Lat: 30.930021 | Lon: 60.929844 | Alt: 25.0[0m
+[0;33mW (48309) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -62.0 dB)[0m
+[0;32mI (48309) GPS_RX: Lat: 30.940022 | Lon: 60.939842 | Alt: 25.0[0m
+[0;33mW (48419) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -60.3 dB)[0m
+[0;32mI (48419) GPS_RX: Lat: 21.849957 | Lon: 74.850174 | Alt: 10.0[0m
+[0;33mW (48609) GPS_RX: TAKEOVER: Spoofer stronger (-41.4 dB > -60.3 dB)[0m
+[0;32mI (48609) GPS_RX: Lat: 30.950022 | Lon: 60.949841 | Alt: 25.0[0m
+[0;33mW (48909) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -60.3 dB)[0m
+[0;32mI (48909) GPS_RX: Lat: 30.960022 | Lon: 60.959839 | Alt: 25.0[0m
+[0;33mW (49219) GPS_RX: TAKEOVER: Spoofer stronger (-41.3 dB > -60.3 dB)[0m
+[0;32mI (49219) GPS_RX: Lat: 30.970022 | Lon: 60.969837 | Alt: 25.0[0m
+[0;33mW (49509) GPS_RX: TAKEOVER: Spoofer stronger (-41.7 dB > -60.3 dB)[0m
+[0;32mI (49509) GPS_RX: Lat: 30.980022 | Lon: 60.979836 | Alt: 25.0[0m
+[0;33mW (49809) GPS_RX: TAKEOVER: Spoofer stronger (-41.8 dB > -60.3 dB)[0m
+[0;32mI (49809) GPS_RX: Lat: 30.990023 | Lon: 60.989834 | Alt: 25.0[0m
+[0;33mW (50109) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (50109) GPS_RX: Lat: 31.000023 | Lon: 60.999832 | Alt: 25.0[0m
+[0;33mW (50409) GPS_RX: TAKEOVER: Spoofer stronger (-42.6 dB > -60.3 dB)[0m
+[0;32mI (50409) GPS_RX: Lat: 31.010023 | Lon: 61.009830 | Alt: 25.0[0m
+[0;33mW (50709) GPS_RX: TAKEOVER: Spoofer stronger (-42.4 dB > -60.3 dB)[0m
+[0;32mI (50709) GPS_RX: Lat: 31.020023 | Lon: 61.019829 | Alt: 25.0[0m
+[0;33mW (51009) GPS_RX: TAKEOVER: Spoofer stronger (-42.6 dB > -60.3 dB)[0m
+[0;32mI (51009) GPS_RX: Lat: 31.030024 | Lon: 61.029827 | Alt: 25.0[0m
+[0;33mW (51309) GPS_RX: TAKEOVER: Spoofer stronger (-42.4 dB > -60.3 dB)[0m
+[0;32mI (51309) GPS_RX: Lat: 31.040024 | Lon: 61.039825 | Alt: 25.0[0m
+[0;33mW (51609) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (51609) GPS_RX: Lat: 31.050024 | Lon: 61.049824 | Alt: 25.0[0m
+[0;33mW (51909) GPS_RX: TAKEOVER: Spoofer stronger (-41.8 dB > -60.3 dB)[0m
+[0;32mI (51909) GPS_RX: Lat: 31.060024 | Lon: 61.059822 | Alt: 25.0[0m
+[0;33mW (52209) GPS_RX: TAKEOVER: Spoofer stronger (-41.8 dB > -60.3 dB)[0m
+[0;32mI (52209) GPS_RX: Lat: 31.070024 | Lon: 61.069820 | Alt: 25.0[0m
+[0;33mW (52509) GPS_RX: TAKEOVER: Spoofer stronger (-41.6 dB > -60.3 dB)[0m
+[0;32mI (52509) GPS_RX: Lat: 31.080025 | Lon: 61.079819 | Alt: 25.0[0m
+[0;33mW (52809) GPS_RX: TAKEOVER: Spoofer stronger (-42.0 dB > -60.3 dB)[0m
+[0;32mI (52809) GPS_RX: Lat: 31.090025 | Lon: 61.089817 | Alt: 25.0[0m
+[0;33mW (53109) GPS_RX: TAKEOVER: Spoofer stronger (-41.7 dB > -60.3 dB)[0m
+[0;32mI (53109) GPS_RX: Lat: 31.100025 | Lon: 61.099815 | Alt: 25.0[0m
+[0;33mW (53409) GPS_RX: TAKEOVER: Spoofer stronger (-41.6 dB > -60.3 dB)[0m
+[0;32mI (53409) GPS_RX: Lat: 31.110025 | Lon: 61.109814 | Alt: 25.0[0m
+[0;33mW (53709) GPS_RX: TAKEOVER: Spoofer stronger (-41.7 dB > -60.3 dB)[0m
+[0;32mI (53709) GPS_RX: Lat: 31.120026 | Lon: 61.119812 | Alt: 25.0[0m
+[0;33mW (54009) GPS_RX: TAKEOVER: Spoofer stronger (-41.7 dB > -60.3 dB)[0m
+[0;32mI (54009) GPS_RX: Lat: 31.130026 | Lon: 61.129810 | Alt: 25.0[0m
+[0;33mW (54309) GPS_RX: TAKEOVER: Spoofer stronger (-41.8 dB > -60.3 dB)[0m
+[0;32mI (54309) GPS_RX: Lat: 31.140026 | Lon: 61.139809 | Alt: 25.0[0m
+[0;33mW (54609) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (54609) GPS_RX: Lat: 31.150026 | Lon: 61.149807 | Alt: 25.0[0m
+[0;33mW (54909) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (54909) GPS_RX: Lat: 31.160027 | Lon: 61.159805 | Alt: 25.0[0m
+[0;33mW (55209) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (55209) GPS_RX: Lat: 31.170027 | Lon: 61.169804 | Alt: 25.0[0m
+[0;33mW (55509) GPS_RX: TAKEOVER: Spoofer stronger (-42.0 dB > -60.3 dB)[0m
+[0;32mI (55509) GPS_RX: Lat: 31.180027 | Lon: 61.179802 | Alt: 25.0[0m
+[0;33mW (55809) GPS_RX: TAKEOVER: Spoofer stronger (-42.0 dB > -60.3 dB)[0m
+[0;32mI (55809) GPS_RX: Lat: 31.190027 | Lon: 61.189800 | Alt: 25.0[0m
+[0;33mW (56109) GPS_RX: TAKEOVER: Spoofer stronger (-42.0 dB > -60.3 dB)[0m
+[0;32mI (56109) GPS_RX: Lat: 31.200027 | Lon: 61.199799 | Alt: 25.0[0m
+[0;33mW (56409) GPS_RX: TAKEOVER: Spoofer stronger (-42.0 dB > -60.3 dB)[0m
+[0;32mI (56409) GPS_RX: Lat: 31.210028 | Lon: 61.209797 | Alt: 25.0[0m
+[0;33mW (56729) GPS_RX: TAKEOVER: Spoofer stronger (-42.3 dB > -60.3 dB)[0m
+[0;32mI (56729) GPS_RX: Lat: 31.220028 | Lon: 61.219795 | Alt: 25.0[0m
+[0;33mW (57009) GPS_RX: TAKEOVER: Spoofer stronger (-42.2 dB > -60.3 dB)[0m
+[0;32mI (57009) GPS_RX: Lat: 31.230028 | Lon: 61.229794 | Alt: 25.0[0m
+[0;33mW (57309) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (57309) GPS_RX: Lat: 31.240028 | Lon: 61.239792 | Alt: 25.0[0m
+[0;33mW (57609) GPS_RX: TAKEOVER: Spoofer stronger (-41.9 dB > -60.3 dB)[0m
+[0;32mI (57609) GPS_RX: Lat: 31.250029 | Lon: 61.249790 | Alt: 25.0[0m
+[0;33mW (57909) GPS_RX: TAKEOVER: Spoofer stronger (-41.9 dB > -60.3 dB)[0m
+[0;32mI (57909) GPS_RX: Lat: 31.260029 | Lon: 61.259789 | Alt: 25.0[0m
+[0;33mW (58209) GPS_RX: TAKEOVER: Spoofer stronger (-41.9 dB > -60.3 dB)[0m
+[0;32mI (58209) GPS_RX: Lat: 31.270029 | Lon: 61.269787 | Alt: 25.0[0m
+[0;33mW (58509) GPS_RX: TAKEOVER: Spoofer stronger (-41.9 dB > -60.3 dB)[0m
+[0;32mI (58509) GPS_RX: Lat: 31.280029 | Lon: 61.279785 | Alt: 25.0[0m
+[0;33mW (58809) GPS_RX: TAKEOVER: Spoofer stronger (-42.2 dB > -60.3 dB)[0m
+[0;32mI (58809) GPS_RX: Lat: 31.290030 | Lon: 61.289783 | Alt: 25.0[0m
+[0;33mW (59109) GPS_RX: TAKEOVER: Spoofer stronger (-42.2 dB > -60.3 dB)[0m
+[0;32mI (59109) GPS_RX: Lat: 31.300030 | Lon: 61.299782 | Alt: 25.0[0m
+[0;33mW (59409) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (59409) GPS_RX: Lat: 31.310030 | Lon: 61.309780 | Alt: 25.0[0m
+[0;33mW (59709) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (59709) GPS_RX: Lat: 31.320030 | Lon: 61.319778 | Alt: 25.0[0m
+[0;33mW (60009) GPS_RX: TAKEOVER: Spoofer stronger (-42.1 dB > -60.3 dB)[0m
+[0;32mI (60009) GPS_RX: Lat: 31.330030 | Lon: 61.329777 | Alt: 25.0[0m
+[0;33mW (60309) GPS_RX: TAKEOVER: Spoofer stronger (-42.0 dB > -60.3 dB)[0m
+[0;32mI (60309) GPS_RX: Lat: 31.340031 | Lon: 61.339775 | Alt: 25.0[0m
+[0;33mW (60609) GPS_RX: TAKEOVER: Spoofer stronger (-42.5 dB > -60.3 dB)[0m
+[0;32mI (60609) GPS_RX: Lat: 31.350031 | Lon: 61.349773 | Alt: 25.0[0m
+[0;33mW (60909) GPS_RX: TAKEOVER: Spoofer stronger (-42.4 dB > -60.3 dB)[0m
+[0;32mI (60909) GPS_RX: Lat: 31.360031 | Lon: 61.359772 | Alt: 25.0[0m
+[0;33mW (61209) GPS_RX: TAKEOVER: Spoofer stronger (-42.3 dB > -60.3 dB)[0m
+[0;32mI (61209) GPS_RX: Lat: 31.370031 | Lon: 61.369770 | Alt: 25.0[0m
+[0;33mW (61509) GPS_RX: TAKEOVER: Spoofer stronger (-42.2 dB > -60.3 dB)[0m
+[0;32mI (61509) GPS_RX: Lat: 31.380032 | Lon: 61.379768 | Alt: 25.0[0m

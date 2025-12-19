@@ -1,0 +1,322 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM13 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM13 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+[0m
+[0;33m--- 0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817f2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/panic.c:466
+0x400896e1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/esp_system_chip.c:93
+0x40090c7d: abort at C:/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/abort.c:38
+0x400896d7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/esp_err.c:50
+0x400d5faf: init_oled at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:75 (discriminator 1)
+0x400d62c6: app_main at C:/Users/laksh/Desktop/gps_drift_rx_oled/main/gps_drift_rx_oled.c:160
+0x4014fac3: main_task at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/app_startup.c:208
+0x4008a245: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

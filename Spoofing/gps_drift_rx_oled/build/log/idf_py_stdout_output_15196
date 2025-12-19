@@ -1,0 +1,156 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2025 11:27:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e408h (123912) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=0002e430 vaddr=3ffb0000 size=01be8h (  7144) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=7d760h (513888) map[0m
+[0;32mI (329) esp_image: segment 3: paddr=000ad788 vaddr=3ffb1be8 size=020e4h (  8420) load[0m
+[0;32mI (332) esp_image: segment 4: paddr=000af874 vaddr=40080000 size=16af0h ( 92912) load[0m
+[0;32mI (383) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (383) boot: Disabling RNG early entropy source...[0m
+[0;32mI (394) cpu_start: Multicore app[0m
+[0;32mI (403) cpu_start: Pro cpu start user code[0m
+[0;32mI (403) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (403) cpu_start: Application information:[0m
+[0;32mI (406) cpu_start: Project name:     gps_drift_rx_oled[0m
+[0;32mI (412) cpu_start: App version:      1[0m
+[0;32mI (417) cpu_start: Compile time:     Dec 11 2025 11:24:43[0m
+[0;32mI (423) cpu_start: ELF file SHA256:  bce350d9d...[0m
+[0;32mI (428) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (433) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (438) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (443) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (448) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (455) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (461) heap_init: At 3FFB7DE8 len 00028218 (160 KiB): DRAM[0m
+[0;32mI (467) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (480) heap_init: At 40096AF0 len 00009510 (37 KiB): IRAM[0m
+[0;32mI (488) spi_flash: detected chip: generic[0m
+[0;32mI (491) spi_flash: flash io: dio[0m
+[0;33mW (495) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[0;32mI (549) wifi:wifi driver task: 3ffbfaa4, prio:23, stack:6656, core=0[0m
+[0;32mI (559) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (559) wifi:wifi certification version: v7.0[0m
+[0;32mI (559) wifi:config NVS flash: enabled[0m
+[0;32mI (559) wifi:config nano formating: disabled[0m
+[0;32mI (559) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (569) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (569) wifi:Init management short buffer num: 32[0m
+[0;32mI (579) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (579) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (589) wifi:Init static rx buffer num: 10[0m
+[0;32mI (589) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (589) wifi_init: rx ba win: 6[0m
+[0;32mI (599) wifi_init: tcpip mbox: 32[0m
+[0;32mI (599) wifi_init: udp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp mbox: 6[0m
+[0;32mI (609) wifi_init: tcp tx win: 5760[0m
+[0;32mI (609) wifi_init: tcp rx win: 5760[0m
+[0;32mI (619) wifi_init: tcp mss: 1440[0m
+[0;32mI (619) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (629) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (629) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (719) wifi:mode : sta (88:57:21:c1:c7:3c)[0m
+[0;32mI (719) wifi:enable tsf[0m
+[0;32mI (719) GPS_RX: Receiver forced to channel 1[0m
+[0;32mI (729) wifi:ic_enable_sniffer[0m
+[0;32mI (729) GPS_RX: Receiver MAC: 88:57:21:C1:C7:3C[0m
+[0;32mI (729) GPS_RX: Lat: 19.000000 | Lon: 72.000000 | Alt: 0.0[0m
+[0;32mI (739) ESPNOW: espnow [version: 1.0] init[0m
+[0;32mI (739) GPS_RX: Ready...[0m
+[0;32mI (739) main_task: Returned from app_main()[0m
+[0;32mI (1019) GPS_RX: ESP-NOW signal detected! LOCKED to channel 1[0m
+[0;32mI (1019) GPS_RX: REGISTERED SATELLITE MAC: 20:E7:C8:68:84:68[0m
+[0;32mI (1019) GPS_RX: First ESP-NOW packet source registered[0m
+[0;32mI (9009) GPS_RX: Lat: 28.699852 | Lon: 81.700592 | Alt: 10.0[0m
+[0;32mI (10009) GPS_RX: Lat: 28.749851 | Lon: 81.750595 | Alt: 10.0[0m
+[0;32mI (11009) GPS_RX: Lat: 28.799850 | Lon: 81.800598 | Alt: 10.0[0m
+[0;32mI (12009) GPS_RX: Lat: 28.849850 | Lon: 81.850601 | Alt: 10.0[0m
+[0;32mI (13009) GPS_RX: Lat: 28.899849 | Lon: 81.900604 | Alt: 10.0[0m
+[0;32mI (14009) GPS_RX: Lat: 28.949848 | Lon: 81.950607 | Alt: 10.0[0m
+[0;32mI (15009) GPS_RX: Lat: 28.999847 | Lon: 82.000610 | Alt: 10.0[0m
+[0;32mI (16009) GPS_RX: Lat: 29.049847 | Lon: 82.050613 | Alt: 10.0[0m
+[0;32mI (17009) GPS_RX: Lat: 29.099846 | Lon: 82.100616 | Alt: 10.0[0m
+[0;32mI (18039) GPS_RX: Lat: 29.149845 | Lon: 82.150620 | Alt: 10.0[0m
+[0;32mI (19009) GPS_RX: Lat: 29.199844 | Lon: 82.200623 | Alt: 10.0[0m
+[0;32mI (21009) GPS_RX: Lat: 29.299843 | Lon: 82.300629 | Alt: 10.0[0m
+[0;32mI (22009) GPS_RX: Lat: 29.349842 | Lon: 82.350632 | Alt: 10.0[0m
+[0;32mI (23009) GPS_RX: Lat: 29.399841 | Lon: 82.400635 | Alt: 10.0[0m
+[0;32mI (24009) GPS_RX: Lat: 29.449841 | Lon: 82.450638 | Alt: 10.0[0m
+[0;32mI (25009) GPS_RX: Lat: 29.499840 | Lon: 82.500641 | Alt: 10.0[0m
+[0;32mI (26009) GPS_RX: Lat: 29.549839 | Lon: 82.550644 | Alt: 10.0[0m
+[0;32mI (28009) GPS_RX: Lat: 29.649837 | Lon: 82.650650 | Alt: 10.0[0m
+[0;32mI (32009) GPS_RX: Lat: 29.849834 | Lon: 82.850662 | Alt: 10.0[0m
+[0;32mI (33009) GPS_RX: Lat: 29.899834 | Lon: 82.900665 | Alt: 10.0[0m
+[0;32mI (34009) GPS_RX: Lat: 29.949833 | Lon: 82.950668 | Alt: 10.0[0m
+[0;32mI (35009) GPS_RX: Lat: 29.999832 | Lon: 83.000671 | Alt: 10.0[0m
+[0;32mI (36029) GPS_RX: Lat: 30.049831 | Lon: 83.050674 | Alt: 10.0[0m
+[0;32mI (40009) GPS_RX: Lat: 30.249828 | Lon: 83.250687 | Alt: 10.0[0m
+[0;32mI (41009) GPS_RX: Lat: 30.299828 | Lon: 83.300690 | Alt: 10.0[0m
+[0;32mI (43019) GPS_RX: Lat: 30.399826 | Lon: 83.400696 | Alt: 10.0[0m
+[0;32mI (52009) GPS_RX: Lat: 30.849819 | Lon: 83.850723 | Alt: 10.0[0m
+[0;32mI (55009) GPS_RX: Lat: 30.999817 | Lon: 84.000732 | Alt: 10.0[0m
+[0;32mI (56009) GPS_RX: Lat: 31.049816 | Lon: 84.050735 | Alt: 10.0[0m
+[0;32mI (58009) GPS_RX: Lat: 31.149815 | Lon: 84.150742 | Alt: 10.0[0m
+[0;32mI (59009) GPS_RX: Lat: 31.199814 | Lon: 84.200745 | Alt: 10.0[0m
+[0;32mI (60009) GPS_RX: Lat: 31.249813 | Lon: 84.250748 | Alt: 10.0[0m
+[0;32mI (61009) GPS_RX: Lat: 31.299812 | Lon: 84.300751 | Alt: 10.0[0m
+[0;32mI (62009) GPS_RX: Lat: 31.349812 | Lon: 84.350754 | Alt: 10.0[0m
+[0;32mI (65009) GPS_RX: Lat: 31.499809 | Lon: 84.500763 | Alt: 10.0[0m
+[0;32mI (66009) GPS_RX: Lat: 31.549809 | Lon: 84.550766 | Alt: 10.0[0m
+[0;32mI (67009) GPS_RX: Lat: 31.599808 | Lon: 84.600769 | Alt: 10.0[0m
+[0;32mI (68009) GPS_RX: Lat: 31.649807 | Lon: 84.650772 | Alt: 10.0[0m
+[0;32mI (69009) GPS_RX: Lat: 31.699806 | Lon: 84.700775 | Alt: 10.0[0m
+[0;32mI (70009) GPS_RX: Lat: 31.749805 | Lon: 84.750778 | Alt: 10.0[0m
+[0;32mI (71009) GPS_RX: Lat: 31.799805 | Lon: 84.800781 | Alt: 10.0[0m
+[0;32mI (72009) GPS_RX: Lat: 31.849804 | Lon: 84.850784 | Alt: 10.0[0m
+[0;32mI (73009) GPS_RX: Lat: 31.899803 | Lon: 84.900787 | Alt: 10.0[0m
+[0;32mI (74009) GPS_RX: Lat: 31.949802 | Lon: 84.950790 | Alt: 10.0[0m
+[0;32mI (75019) GPS_RX: Lat: 31.999802 | Lon: 85.000793 | Alt: 10.0[0m
+[0;32mI (76009) GPS_RX: Lat: 32.049801 | Lon: 85.050797 | Alt: 10.0[0m
+[0;32mI (77009) GPS_RX: Lat: 32.099800 | Lon: 85.100800 | Alt: 10.0[0m
+[0;32mI (78009) GPS_RX: Lat: 32.149799 | Lon: 85.150803 | Alt: 10.0[0m
+[0;32mI (79009) GPS_RX: Lat: 32.199799 | Lon: 85.200806 | Alt: 10.0[0m
+[0;32mI (80009) GPS_RX: Lat: 32.249798 | Lon: 85.250809 | Alt: 10.0[0m
+[0;32mI (81009) GPS_RX: Lat: 32.299797 | Lon: 85.300812 | Alt: 10.0[0m
+[0;32mI (82009) GPS_RX: Lat: 32.349796 | Lon: 85.350815 | Alt: 10.0[0m
+[0;32mI (83009) GPS_RX: Lat: 32.399796 | Lon: 85.400818 | Alt: 10.0[0m
+[0;32mI (84009) GPS_RX: Lat: 32.449795 | Lon: 85.450821 | Alt: 10.0[0m
+[0;32mI (85009) GPS_RX: Lat: 32.499794 | Lon: 85.500824 | Alt: 10.0[0m
+[0;32mI (86009) GPS_RX: Lat: 32.549793 | Lon: 85.550827 | Alt: 10.0[0m
+[0;32mI (87009) GPS_RX: Lat: 32.599792 | Lon: 85.600830 | Alt: 10.0[0m
+[0;32mI (88009) GPS_RX: Lat: 32.649792 | Lon: 85.650833 | Alt: 10.0[0m
+[0;32mI (89009) GPS_RX: Lat: 32.699791 | Lon: 85.700836 | Alt: 10.0[0m
+[0;32mI (90009) GPS_RX: Lat: 32.749790 | Lon: 85.750839 | Alt: 10.0[0m
+[0;32mI (91009) GPS_RX: Lat: 32.799789 | Lon: 85.800842 | Alt: 10.0[0m
+[0;32mI (92009) GPS_RX: Lat: 32.849789 | Lon: 85.850845 | Alt: 10.0[0m
+[0;32mI (93009) GPS_RX: Lat: 32.899788 | Lon: 85.900848 | Alt: 10.0[0m
+[0;32mI (94009) GPS_RX: Lat: 32.949787 | Lon: 85.950851 | Alt: 10.0[0m
+[0;32mI (95009) GPS_RX: Lat: 32.999786 | Lon: 86.000854 | Alt: 10.0[0m
+[0;32mI (96009) GPS_RX: Lat: 33.049786 | Lon: 86.050858 | Alt: 10.0[0m

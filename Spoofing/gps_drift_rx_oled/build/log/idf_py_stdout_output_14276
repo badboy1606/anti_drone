@@ -1,0 +1,1382 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2025 11:27:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20b00h (133888) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030b28 vaddr=3ffb0000 size=03d14h ( 15636) load[0m
+[0;32mI (157) esp_image: segment 2: paddr=00034844 vaddr=40080000 size=0b7d4h ( 47060) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=81ad0h (531152) map[0m
+[0;32mI (358) esp_image: segment 4: paddr=000c1af8 vaddr=4008b7d4 size=0b650h ( 46672) load[0m
+[0;32mI (388) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (388) boot: Disabling RNG early entropy source...[0m
+[0;32mI (399) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) cpu_start: Application information:[0m
+[0;32mI (411) cpu_start: Project name:     gps_drift_rx_oled[0m
+[0;32mI (417) cpu_start: App version:      1[0m
+[0;32mI (422) cpu_start: Compile time:     Dec 11 2025 11:24:43[0m
+[0;32mI (428) cpu_start: ELF file SHA256:  f44882088...[0m
+[0;32mI (433) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (439) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (443) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (448) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB7E28 len 000281D8 (160 KiB): DRAM[0m
+[0;32mI (472) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 40096E24 len 000091DC (36 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (514) main_task: Started on CPU0[0m
+[0;32mI (524) main_task: Calling app_main()[0m
+[0;32mI (554) wifi:wifi driver task: 3ffbf9dc, prio:23, stack:6656, core=0[0m
+[0;32mI (564) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (564) wifi:wifi certification version: v7.0[0m
+[0;32mI (564) wifi:config NVS flash: enabled[0m
+[0;32mI (564) wifi:config nano formating: disabled[0m
+[0;32mI (564) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (574) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (574) wifi:Init management short buffer num: 32[0m
+[0;32mI (584) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (584) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (594) wifi:Init static rx buffer num: 10[0m
+[0;32mI (594) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (594) wifi_init: rx ba win: 6[0m
+[0;32mI (604) wifi_init: tcpip mbox: 32[0m
+[0;32mI (604) wifi_init: udp mbox: 6[0m
+[0;32mI (604) wifi_init: tcp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp tx win: 5760[0m
+[0;32mI (614) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (624) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (634) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (724) wifi:mode : sta (88:57:21:c1:c7:3c)[0m
+[0;32mI (724) wifi:enable tsf[0m
+[0;32mI (724) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (724) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (844) GPS_RX: Display: Waiting...[0m
+[0;32mI (844) GPS_RX: Display: for data[0m
+[0;32mI (844) GPS_RX: Display: [0m
+[0;32mI (844) ESPNOW: espnow [version: 1.0] init[0m
+[0;32mI (844) main_task: Returned from app_main()[0m
+[0;32mI (1064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (1064) GPS_RX: Valid GPS: Lat: 33.199844 | Lon: 63.199463 | Alt: 25.0[0m
+[0;32mI (1064) GPS_RX: Display: Lat: 33.199844[0m
+[0;32mI (1074) GPS_RX: Display: Lon: 63.199463[0m
+[0;32mI (1074) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (1354) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (1354) GPS_RX: Valid GPS: Lat: 33.209843 | Lon: 63.209461 | Alt: 25.0[0m
+[0;32mI (1364) GPS_RX: Display: Lat: 33.209843[0m
+[0;32mI (1364) GPS_RX: Display: Lon: 63.209461[0m
+[0;32mI (1364) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (1654) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (1654) GPS_RX: Valid GPS: Lat: 33.219841 | Lon: 63.219460 | Alt: 25.0[0m
+[0;32mI (1654) GPS_RX: Display: Lat: 33.219841[0m
+[0;32mI (1664) GPS_RX: Display: Lon: 63.219460[0m
+[0;32mI (1664) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (1954) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (1954) GPS_RX: Valid GPS: Lat: 33.229839 | Lon: 63.229458 | Alt: 25.0[0m
+[0;32mI (1954) GPS_RX: Display: Lat: 33.229839[0m
+[0;32mI (1964) GPS_RX: Display: Lon: 63.229458[0m
+[0;32mI (1964) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (2264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (2264) GPS_RX: Valid GPS: Lat: 33.239838 | Lon: 63.239456 | Alt: 25.0[0m
+[0;32mI (2264) GPS_RX: Display: Lat: 33.239838[0m
+[0;32mI (2274) GPS_RX: Display: Lon: 63.239456[0m
+[0;32mI (2274) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (2554) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (2554) GPS_RX: Valid GPS: Lat: 33.249836 | Lon: 63.249454 | Alt: 25.0[0m
+[0;32mI (2554) GPS_RX: Display: Lat: 33.249836[0m
+[0;32mI (2564) GPS_RX: Display: Lon: 63.249454[0m
+[0;32mI (2564) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (2854) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (2854) GPS_RX: Valid GPS: Lat: 33.259834 | Lon: 63.259453 | Alt: 25.0[0m
+[0;32mI (2854) GPS_RX: Display: Lat: 33.259834[0m
+[0;32mI (2864) GPS_RX: Display: Lon: 63.259453[0m
+[0;32mI (2864) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (3154) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (3154) GPS_RX: Valid GPS: Lat: 33.269833 | Lon: 63.269451 | Alt: 25.0[0m
+[0;32mI (3154) GPS_RX: Display: Lat: 33.269833[0m
+[0;32mI (3164) GPS_RX: Display: Lon: 63.269451[0m
+[0;32mI (3164) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (3454) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (3454) GPS_RX: Valid GPS: Lat: 33.279831 | Lon: 63.279449 | Alt: 25.0[0m
+[0;32mI (3464) GPS_RX: Display: Lat: 33.279831[0m
+[0;32mI (3464) GPS_RX: Display: Lon: 63.279449[0m
+[0;32mI (3474) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (3754) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (3754) GPS_RX: Valid GPS: Lat: 33.289829 | Lon: 63.289448 | Alt: 25.0[0m
+[0;32mI (3754) GPS_RX: Display: Lat: 33.289829[0m
+[0;32mI (3764) GPS_RX: Display: Lon: 63.289448[0m
+[0;32mI (3764) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (4054) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (4054) GPS_RX: Valid GPS: Lat: 33.299828 | Lon: 63.299446 | Alt: 25.0[0m
+[0;32mI (4054) GPS_RX: Display: Lat: 33.299828[0m
+[0;32mI (4064) GPS_RX: Display: Lon: 63.299446[0m
+[0;32mI (4064) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (4354) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (4354) GPS_RX: Valid GPS: Lat: 33.309826 | Lon: 63.309444 | Alt: 25.0[0m
+[0;32mI (4354) GPS_RX: Display: Lat: 33.309826[0m
+[0;32mI (4364) GPS_RX: Display: Lon: 63.309444[0m
+[0;32mI (4364) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (4654) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (4654) GPS_RX: Valid GPS: Lat: 33.319824 | Lon: 63.319443 | Alt: 25.0[0m
+[0;32mI (4654) GPS_RX: Display: Lat: 33.319824[0m
+[0;32mI (4664) GPS_RX: Display: Lon: 63.319443[0m
+[0;32mI (4664) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (4954) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (4954) GPS_RX: Valid GPS: Lat: 33.329823 | Lon: 63.329441 | Alt: 25.0[0m
+[0;32mI (4954) GPS_RX: Display: Lat: 33.329823[0m
+[0;32mI (4964) GPS_RX: Display: Lon: 63.329441[0m
+[0;32mI (4964) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (5254) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (5254) GPS_RX: Valid GPS: Lat: 33.339821 | Lon: 63.339439 | Alt: 25.0[0m
+[0;32mI (5254) GPS_RX: Display: Lat: 33.339821[0m
+[0;32mI (5264) GPS_RX: Display: Lon: 63.339439[0m
+[0;32mI (5264) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (5554) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (5554) GPS_RX: Valid GPS: Lat: 33.349819 | Lon: 63.349438 | Alt: 25.0[0m
+[0;32mI (5554) GPS_RX: Display: Lat: 33.349819[0m
+[0;32mI (5564) GPS_RX: Display: Lon: 63.349438[0m
+[0;32mI (5564) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (5854) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (5854) GPS_RX: Valid GPS: Lat: 33.359818 | Lon: 63.359436 | Alt: 25.0[0m
+[0;32mI (5854) GPS_RX: Display: Lat: 33.359818[0m
+[0;32mI (5864) GPS_RX: Display: Lon: 63.359436[0m
+[0;32mI (5864) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (6154) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (6154) GPS_RX: Valid GPS: Lat: 33.369816 | Lon: 63.369434 | Alt: 25.0[0m
+[0;32mI (6154) GPS_RX: Display: Lat: 33.369816[0m
+[0;32mI (6164) GPS_RX: Display: Lon: 63.369434[0m
+[0;32mI (6164) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (6454) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (6454) GPS_RX: Valid GPS: Lat: 33.379814 | Lon: 63.379433 | Alt: 25.0[0m
+[0;32mI (6454) GPS_RX: Display: Lat: 33.379814[0m
+[0;32mI (6464) GPS_RX: Display: Lon: 63.379433[0m
+[0;32mI (6464) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (6764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (6764) GPS_RX: Valid GPS: Lat: 33.389812 | Lon: 63.389431 | Alt: 25.0[0m
+[0;32mI (6764) GPS_RX: Display: Lat: 33.389812[0m
+[0;32mI (6774) GPS_RX: Display: Lon: 63.389431[0m
+[0;32mI (6774) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (7054) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (7054) GPS_RX: Valid GPS: Lat: 33.399811 | Lon: 63.399429 | Alt: 25.0[0m
+[0;32mI (7064) GPS_RX: Display: Lat: 33.399811[0m
+[0;32mI (7064) GPS_RX: Display: Lon: 63.399429[0m
+[0;32mI (7074) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (7364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (7364) GPS_RX: Valid GPS: Lat: 33.409809 | Lon: 63.409428 | Alt: 25.0[0m
+[0;32mI (7364) GPS_RX: Display: Lat: 33.409809[0m
+[0;32mI (7364) GPS_RX: Display: Lon: 63.409428[0m
+[0;32mI (7374) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (7654) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (7654) GPS_RX: Valid GPS: Lat: 33.419807 | Lon: 63.419426 | Alt: 25.0[0m
+[0;32mI (7664) GPS_RX: Display: Lat: 33.419807[0m
+[0;32mI (7664) GPS_RX: Display: Lon: 63.419426[0m
+[0;32mI (7674) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (7964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (7964) GPS_RX: Valid GPS: Lat: 33.429806 | Lon: 63.429424 | Alt: 25.0[0m
+[0;32mI (7964) GPS_RX: Display: Lat: 33.429806[0m
+[0;32mI (7974) GPS_RX: Display: Lon: 63.429424[0m
+[0;32mI (7974) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8254) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (8254) GPS_RX: Valid GPS: Lat: 33.439804 | Lon: 63.439423 | Alt: 25.0[0m
+[0;32mI (8264) GPS_RX: Display: Lat: 33.439804[0m
+[0;32mI (8264) GPS_RX: Display: Lon: 63.439423[0m
+[0;32mI (8264) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8554) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (8554) GPS_RX: Valid GPS: Lat: 33.449802 | Lon: 63.449421 | Alt: 25.0[0m
+[0;32mI (8554) GPS_RX: Display: Lat: 33.449802[0m
+[0;32mI (8564) GPS_RX: Display: Lon: 63.449421[0m
+[0;32mI (8564) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8854) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (8854) GPS_RX: Valid GPS: Lat: 33.459801 | Lon: 63.459419 | Alt: 25.0[0m
+[0;32mI (8864) GPS_RX: Display: Lat: 33.459801[0m
+[0;32mI (8864) GPS_RX: Display: Lon: 63.459419[0m
+[0;32mI (8864) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (9154) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (9154) GPS_RX: Valid GPS: Lat: 33.469799 | Lon: 63.469418 | Alt: 25.0[0m
+[0;32mI (9164) GPS_RX: Display: Lat: 33.469799[0m
+[0;32mI (9164) GPS_RX: Display: Lon: 63.469418[0m
+[0;32mI (9174) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (9454) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (9454) GPS_RX: Valid GPS: Lat: 33.479797 | Lon: 63.479416 | Alt: 25.0[0m
+[0;32mI (9454) GPS_RX: Display: Lat: 33.479797[0m
+[0;32mI (9464) GPS_RX: Display: Lon: 63.479416[0m
+[0;32mI (9464) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (9754) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (9754) GPS_RX: Valid GPS: Lat: 33.489796 | Lon: 63.489414 | Alt: 25.0[0m
+[0;32mI (9754) GPS_RX: Display: Lat: 33.489796[0m
+[0;32mI (9764) GPS_RX: Display: Lon: 63.489414[0m
+[0;32mI (9764) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (10054) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (10054) GPS_RX: Valid GPS: Lat: 33.499794 | Lon: 63.499413 | Alt: 25.0[0m
+[0;32mI (10064) GPS_RX: Display: Lat: 33.499794[0m
+[0;32mI (10064) GPS_RX: Display: Lon: 63.499413[0m
+[0;32mI (10074) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (10354) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (10354) GPS_RX: Valid GPS: Lat: 33.509792 | Lon: 63.509411 | Alt: 25.0[0m
+[0;32mI (10364) GPS_RX: Display: Lat: 33.509792[0m
+[0;32mI (10364) GPS_RX: Display: Lon: 63.509411[0m
+[0;32mI (10374) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (10654) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (10654) GPS_RX: Valid GPS: Lat: 33.519791 | Lon: 63.519409 | Alt: 25.0[0m
+[0;32mI (10654) GPS_RX: Display: Lat: 33.519791[0m
+[0;32mI (10664) GPS_RX: Display: Lon: 63.519409[0m
+[0;32mI (10664) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (10954) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (10954) GPS_RX: Valid GPS: Lat: 33.529789 | Lon: 63.529408 | Alt: 25.0[0m
+[0;32mI (10954) GPS_RX: Display: Lat: 33.529789[0m
+[0;32mI (10964) GPS_RX: Display: Lon: 63.529408[0m
+[0;32mI (10964) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (11254) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (11254) GPS_RX: Valid GPS: Lat: 33.539787 | Lon: 63.539406 | Alt: 25.0[0m
+[0;32mI (11254) GPS_RX: Display: Lat: 33.539787[0m
+[0;32mI (11264) GPS_RX: Display: Lon: 63.539406[0m
+[0;32mI (11264) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (11554) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (11554) GPS_RX: Valid GPS: Lat: 33.549786 | Lon: 63.549404 | Alt: 25.0[0m
+[0;32mI (11554) GPS_RX: Display: Lat: 33.549786[0m
+[0;32mI (11564) GPS_RX: Display: Lon: 63.549404[0m
+[0;32mI (11564) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (11854) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (11854) GPS_RX: Valid GPS: Lat: 33.559784 | Lon: 63.559402 | Alt: 25.0[0m
+[0;32mI (11864) GPS_RX: Display: Lat: 33.559784[0m
+[0;32mI (11864) GPS_RX: Display: Lon: 63.559402[0m
+[0;32mI (11864) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (12154) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (12154) GPS_RX: Valid GPS: Lat: 33.569782 | Lon: 63.569401 | Alt: 25.0[0m
+[0;32mI (12164) GPS_RX: Display: Lat: 33.569782[0m
+[0;32mI (12164) GPS_RX: Display: Lon: 63.569401[0m
+[0;32mI (12174) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27074) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (27074) GPS_RX: Valid GPS: Lat: 30.000000 | Lon: 60.000000 | Alt: 25.0[0m
+[0;32mI (27074) GPS_RX: Display: Lat: 30.000000[0m
+[0;32mI (27084) GPS_RX: Display: Lon: 60.000000[0m
+[0;32mI (27084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (27364) GPS_RX: Valid GPS: Lat: 30.010000 | Lon: 60.009998 | Alt: 25.0[0m
+[0;32mI (27374) GPS_RX: Display: Lat: 30.010000[0m
+[0;32mI (27374) GPS_RX: Display: Lon: 60.009998[0m
+[0;32mI (27384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (27664) GPS_RX: Valid GPS: Lat: 30.020000 | Lon: 60.019997 | Alt: 25.0[0m
+[0;32mI (27674) GPS_RX: Display: Lat: 30.020000[0m
+[0;32mI (27674) GPS_RX: Display: Lon: 60.019997[0m
+[0;32mI (27684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (27964) GPS_RX: Valid GPS: Lat: 30.030001 | Lon: 60.029995 | Alt: 25.0[0m
+[0;32mI (27974) GPS_RX: Display: Lat: 30.030001[0m
+[0;32mI (27974) GPS_RX: Display: Lon: 60.029995[0m
+[0;32mI (27984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (28274) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (28274) GPS_RX: Valid GPS: Lat: 30.040001 | Lon: 60.039993 | Alt: 25.0[0m
+[0;32mI (28274) GPS_RX: Display: Lat: 30.040001[0m
+[0;32mI (28284) GPS_RX: Display: Lon: 60.039993[0m
+[0;32mI (28284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (28574) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (28574) GPS_RX: Valid GPS: Lat: 30.050001 | Lon: 60.049992 | Alt: 25.0[0m
+[0;32mI (28574) GPS_RX: Display: Lat: 30.050001[0m
+[0;32mI (28584) GPS_RX: Display: Lon: 60.049992[0m
+[0;32mI (28584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (28864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (28864) GPS_RX: Valid GPS: Lat: 30.060001 | Lon: 60.059990 | Alt: 25.0[0m
+[0;32mI (28874) GPS_RX: Display: Lat: 30.060001[0m
+[0;32mI (28874) GPS_RX: Display: Lon: 60.059990[0m
+[0;32mI (28884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (29164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (29164) GPS_RX: Valid GPS: Lat: 30.070002 | Lon: 60.069988 | Alt: 25.0[0m
+[0;32mI (29174) GPS_RX: Display: Lat: 30.070002[0m
+[0;32mI (29174) GPS_RX: Display: Lon: 60.069988[0m
+[0;32mI (29184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (29474) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (29474) GPS_RX: Valid GPS: Lat: 30.080002 | Lon: 60.079987 | Alt: 25.0[0m
+[0;32mI (29484) GPS_RX: Display: Lat: 30.080002[0m
+[0;32mI (29484) GPS_RX: Display: Lon: 60.079987[0m
+[0;32mI (29484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (29774) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (29774) GPS_RX: Valid GPS: Lat: 30.090002 | Lon: 60.089985 | Alt: 25.0[0m
+[0;32mI (29774) GPS_RX: Display: Lat: 30.090002[0m
+[0;32mI (29774) GPS_RX: Display: Lon: 60.089985[0m
+[0;32mI (29784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (30064) GPS_RX: Valid GPS: Lat: 30.100002 | Lon: 60.099983 | Alt: 25.0[0m
+[0;32mI (30074) GPS_RX: Display: Lat: 30.100002[0m
+[0;32mI (30074) GPS_RX: Display: Lon: 60.099983[0m
+[0;32mI (30084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30374) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (30374) GPS_RX: Valid GPS: Lat: 30.110003 | Lon: 60.109982 | Alt: 25.0[0m
+[0;32mI (30374) GPS_RX: Display: Lat: 30.110003[0m
+[0;32mI (30384) GPS_RX: Display: Lon: 60.109982[0m
+[0;32mI (30384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30674) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (30674) GPS_RX: Valid GPS: Lat: 30.120003 | Lon: 60.119980 | Alt: 25.0[0m
+[0;32mI (30674) GPS_RX: Display: Lat: 30.120003[0m
+[0;32mI (30684) GPS_RX: Display: Lon: 60.119980[0m
+[0;32mI (30684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (30964) GPS_RX: Valid GPS: Lat: 30.130003 | Lon: 60.129978 | Alt: 25.0[0m
+[0;32mI (30974) GPS_RX: Display: Lat: 30.130003[0m
+[0;32mI (30974) GPS_RX: Display: Lon: 60.129978[0m
+[0;32mI (30984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (31264) GPS_RX: Valid GPS: Lat: 30.140003 | Lon: 60.139977 | Alt: 25.0[0m
+[0;32mI (31274) GPS_RX: Display: Lat: 30.140003[0m
+[0;32mI (31274) GPS_RX: Display: Lon: 60.139977[0m
+[0;32mI (31284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31574) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (31574) GPS_RX: Valid GPS: Lat: 30.150003 | Lon: 60.149975 | Alt: 25.0[0m
+[0;32mI (31574) GPS_RX: Display: Lat: 30.150003[0m
+[0;32mI (31584) GPS_RX: Display: Lon: 60.149975[0m
+[0;32mI (31584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (31874) GPS_RX: Valid GPS: Lat: 30.160004 | Lon: 60.159973 | Alt: 25.0[0m
+[0;32mI (31884) GPS_RX: Display: Lat: 30.160004[0m
+[0;32mI (31884) GPS_RX: Display: Lon: 60.159973[0m
+[0;32mI (31884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (32164) GPS_RX: Valid GPS: Lat: 30.170004 | Lon: 60.169971 | Alt: 25.0[0m
+[0;32mI (32174) GPS_RX: Display: Lat: 30.170004[0m
+[0;32mI (32174) GPS_RX: Display: Lon: 60.169971[0m
+[0;32mI (32184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (32464) GPS_RX: Valid GPS: Lat: 30.180004 | Lon: 60.179970 | Alt: 25.0[0m
+[0;32mI (32474) GPS_RX: Display: Lat: 30.180004[0m
+[0;32mI (32474) GPS_RX: Display: Lon: 60.179970[0m
+[0;32mI (32484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32814) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (32814) GPS_RX: Valid GPS: Lat: 30.190004 | Lon: 60.189968 | Alt: 25.0[0m
+[0;32mI (32814) GPS_RX: Display: Lat: 30.190004[0m
+[0;32mI (32824) GPS_RX: Display: Lon: 60.189968[0m
+[0;32mI (32824) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33084) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (33084) GPS_RX: Valid GPS: Lat: 30.200005 | Lon: 60.199966 | Alt: 25.0[0m
+[0;32mI (33084) GPS_RX: Display: Lat: 30.200005[0m
+[0;32mI (33094) GPS_RX: Display: Lon: 60.199966[0m
+[0;32mI (33094) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (33364) GPS_RX: Valid GPS: Lat: 30.210005 | Lon: 60.209965 | Alt: 25.0[0m
+[0;32mI (33374) GPS_RX: Display: Lat: 30.210005[0m
+[0;32mI (33374) GPS_RX: Display: Lon: 60.209965[0m
+[0;32mI (33384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (33664) GPS_RX: Valid GPS: Lat: 30.220005 | Lon: 60.219963 | Alt: 25.0[0m
+[0;32mI (33674) GPS_RX: Display: Lat: 30.220005[0m
+[0;32mI (33674) GPS_RX: Display: Lon: 60.219963[0m
+[0;32mI (33684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (33964) GPS_RX: Valid GPS: Lat: 30.230005 | Lon: 60.229961 | Alt: 25.0[0m
+[0;32mI (33974) GPS_RX: Display: Lat: 30.230005[0m
+[0;32mI (33974) GPS_RX: Display: Lon: 60.229961[0m
+[0;32mI (33984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (34264) GPS_RX: Valid GPS: Lat: 30.240005 | Lon: 60.239960 | Alt: 25.0[0m
+[0;32mI (34274) GPS_RX: Display: Lat: 30.240005[0m
+[0;32mI (34274) GPS_RX: Display: Lon: 60.239960[0m
+[0;32mI (34284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (34564) GPS_RX: Valid GPS: Lat: 30.250006 | Lon: 60.249958 | Alt: 25.0[0m
+[0;32mI (34574) GPS_RX: Display: Lat: 30.250006[0m
+[0;32mI (34574) GPS_RX: Display: Lon: 60.249958[0m
+[0;32mI (34584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (34864) GPS_RX: Valid GPS: Lat: 30.260006 | Lon: 60.259956 | Alt: 25.0[0m
+[0;32mI (34874) GPS_RX: Display: Lat: 30.260006[0m
+[0;32mI (34874) GPS_RX: Display: Lon: 60.259956[0m
+[0;32mI (34884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (35164) GPS_RX: Valid GPS: Lat: 30.270006 | Lon: 60.269955 | Alt: 25.0[0m
+[0;32mI (35174) GPS_RX: Display: Lat: 30.270006[0m
+[0;32mI (35174) GPS_RX: Display: Lon: 60.269955[0m
+[0;32mI (35184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (35464) GPS_RX: Valid GPS: Lat: 30.280006 | Lon: 60.279953 | Alt: 25.0[0m
+[0;32mI (35474) GPS_RX: Display: Lat: 30.280006[0m
+[0;32mI (35474) GPS_RX: Display: Lon: 60.279953[0m
+[0;32mI (35484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35774) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (35774) GPS_RX: Valid GPS: Lat: 30.290007 | Lon: 60.289951 | Alt: 25.0[0m
+[0;32mI (35774) GPS_RX: Display: Lat: 30.290007[0m
+[0;32mI (35774) GPS_RX: Display: Lon: 60.289951[0m
+[0;32mI (35784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (36074) GPS_RX: Valid GPS: Lat: 30.300007 | Lon: 60.299950 | Alt: 25.0[0m
+[0;32mI (36074) GPS_RX: Display: Lat: 30.300007[0m
+[0;32mI (36074) GPS_RX: Display: Lon: 60.299950[0m
+[0;32mI (36084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36384) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (36384) GPS_RX: Valid GPS: Lat: 30.310007 | Lon: 60.309948 | Alt: 25.0[0m
+[0;32mI (36384) GPS_RX: Display: Lat: 30.310007[0m
+[0;32mI (36394) GPS_RX: Display: Lon: 60.309948[0m
+[0;32mI (36394) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (36664) GPS_RX: Valid GPS: Lat: 30.320007 | Lon: 60.319946 | Alt: 25.0[0m
+[0;32mI (36674) GPS_RX: Display: Lat: 30.320007[0m
+[0;32mI (36674) GPS_RX: Display: Lon: 60.319946[0m
+[0;32mI (36684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (36964) GPS_RX: Valid GPS: Lat: 30.330008 | Lon: 60.329945 | Alt: 25.0[0m
+[0;32mI (36974) GPS_RX: Display: Lat: 30.330008[0m
+[0;32mI (36974) GPS_RX: Display: Lon: 60.329945[0m
+[0;32mI (36984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (37264) GPS_RX: Valid GPS: Lat: 30.340008 | Lon: 60.339943 | Alt: 25.0[0m
+[0;32mI (37274) GPS_RX: Display: Lat: 30.340008[0m
+[0;32mI (37274) GPS_RX: Display: Lon: 60.339943[0m
+[0;32mI (37284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (37564) GPS_RX: Valid GPS: Lat: 30.350008 | Lon: 60.349941 | Alt: 25.0[0m
+[0;32mI (37574) GPS_RX: Display: Lat: 30.350008[0m
+[0;32mI (37574) GPS_RX: Display: Lon: 60.349941[0m
+[0;32mI (37584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (37864) GPS_RX: Valid GPS: Lat: 30.360008 | Lon: 60.359940 | Alt: 25.0[0m
+[0;32mI (37874) GPS_RX: Display: Lat: 30.360008[0m
+[0;32mI (37874) GPS_RX: Display: Lon: 60.359940[0m
+[0;32mI (37884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (38164) GPS_RX: Valid GPS: Lat: 30.370008 | Lon: 60.369938 | Alt: 25.0[0m
+[0;32mI (38174) GPS_RX: Display: Lat: 30.370008[0m
+[0;32mI (38174) GPS_RX: Display: Lon: 60.369938[0m
+[0;32mI (38184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38474) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (38474) GPS_RX: Valid GPS: Lat: 30.380009 | Lon: 60.379936 | Alt: 25.0[0m
+[0;32mI (38474) GPS_RX: Display: Lat: 30.380009[0m
+[0;32mI (38484) GPS_RX: Display: Lon: 60.379936[0m
+[0;32mI (38484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38774) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (38774) GPS_RX: Valid GPS: Lat: 30.390009 | Lon: 60.389935 | Alt: 25.0[0m
+[0;32mI (38774) GPS_RX: Display: Lat: 30.390009[0m
+[0;32mI (38774) GPS_RX: Display: Lon: 60.389935[0m
+[0;32mI (38784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (39064) GPS_RX: Valid GPS: Lat: 30.400009 | Lon: 60.399933 | Alt: 25.0[0m
+[0;32mI (39074) GPS_RX: Display: Lat: 30.400009[0m
+[0;32mI (39074) GPS_RX: Display: Lon: 60.399933[0m
+[0;32mI (39084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (39364) GPS_RX: Valid GPS: Lat: 30.410009 | Lon: 60.409931 | Alt: 25.0[0m
+[0;32mI (39374) GPS_RX: Display: Lat: 30.410009[0m
+[0;32mI (39374) GPS_RX: Display: Lon: 60.409931[0m
+[0;32mI (39384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (39664) GPS_RX: Valid GPS: Lat: 30.420010 | Lon: 60.419930 | Alt: 25.0[0m
+[0;32mI (39674) GPS_RX: Display: Lat: 30.420010[0m
+[0;32mI (39674) GPS_RX: Display: Lon: 60.419930[0m
+[0;32mI (39684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (39964) GPS_RX: Valid GPS: Lat: 30.430010 | Lon: 60.429928 | Alt: 25.0[0m
+[0;32mI (39974) GPS_RX: Display: Lat: 30.430010[0m
+[0;32mI (39974) GPS_RX: Display: Lon: 60.429928[0m
+[0;32mI (39984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40274) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (40274) GPS_RX: Valid GPS: Lat: 30.440010 | Lon: 60.439926 | Alt: 25.0[0m
+[0;32mI (40274) GPS_RX: Display: Lat: 30.440010[0m
+[0;32mI (40284) GPS_RX: Display: Lon: 60.439926[0m
+[0;32mI (40284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (40564) GPS_RX: Valid GPS: Lat: 30.450010 | Lon: 60.449924 | Alt: 25.0[0m
+[0;32mI (40574) GPS_RX: Display: Lat: 30.450010[0m
+[0;32mI (40574) GPS_RX: Display: Lon: 60.449924[0m
+[0;32mI (40584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (40864) GPS_RX: Valid GPS: Lat: 30.460011 | Lon: 60.459923 | Alt: 25.0[0m
+[0;32mI (40874) GPS_RX: Display: Lat: 30.460011[0m
+[0;32mI (40874) GPS_RX: Display: Lon: 60.459923[0m
+[0;32mI (40884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41174) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (41174) GPS_RX: Valid GPS: Lat: 30.470011 | Lon: 60.469921 | Alt: 25.0[0m
+[0;32mI (41174) GPS_RX: Display: Lat: 30.470011[0m
+[0;32mI (41174) GPS_RX: Display: Lon: 60.469921[0m
+[0;32mI (41184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (41464) GPS_RX: Valid GPS: Lat: 30.480011 | Lon: 60.479919 | Alt: 25.0[0m
+[0;32mI (41474) GPS_RX: Display: Lat: 30.480011[0m
+[0;32mI (41474) GPS_RX: Display: Lon: 60.479919[0m
+[0;32mI (41484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (41764) GPS_RX: Valid GPS: Lat: 30.490011 | Lon: 60.489918 | Alt: 25.0[0m
+[0;32mI (41774) GPS_RX: Display: Lat: 30.490011[0m
+[0;32mI (41774) GPS_RX: Display: Lon: 60.489918[0m
+[0;32mI (41784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (42064) GPS_RX: Valid GPS: Lat: 30.500011 | Lon: 60.499916 | Alt: 25.0[0m
+[0;32mI (42074) GPS_RX: Display: Lat: 30.500011[0m
+[0;32mI (42074) GPS_RX: Display: Lon: 60.499916[0m
+[0;32mI (42084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (42364) GPS_RX: Valid GPS: Lat: 30.510012 | Lon: 60.509914 | Alt: 25.0[0m
+[0;32mI (42374) GPS_RX: Display: Lat: 30.510012[0m
+[0;32mI (42374) GPS_RX: Display: Lon: 60.509914[0m
+[0;32mI (42384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (42664) GPS_RX: Valid GPS: Lat: 30.520012 | Lon: 60.519913 | Alt: 25.0[0m
+[0;32mI (42674) GPS_RX: Display: Lat: 30.520012[0m
+[0;32mI (42674) GPS_RX: Display: Lon: 60.519913[0m
+[0;32mI (42684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42984) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (42984) GPS_RX: Valid GPS: Lat: 30.530012 | Lon: 60.529911 | Alt: 25.0[0m
+[0;32mI (42984) GPS_RX: Display: Lat: 30.530012[0m
+[0;32mI (42994) GPS_RX: Display: Lon: 60.529911[0m
+[0;32mI (42994) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (43264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (43264) GPS_RX: Valid GPS: Lat: 30.540012 | Lon: 60.539909 | Alt: 25.0[0m
+[0;32mI (43274) GPS_RX: Display: Lat: 30.540012[0m
+[0;32mI (43274) GPS_RX: Display: Lon: 60.539909[0m
+[0;32mI (43284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (43564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (43564) GPS_RX: Valid GPS: Lat: 30.550013 | Lon: 60.549908 | Alt: 25.0[0m
+[0;32mI (43574) GPS_RX: Display: Lat: 30.550013[0m
+[0;32mI (43574) GPS_RX: Display: Lon: 60.549908[0m
+[0;32mI (43584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (43864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (43864) GPS_RX: Valid GPS: Lat: 30.560013 | Lon: 60.559906 | Alt: 25.0[0m
+[0;32mI (43874) GPS_RX: Display: Lat: 30.560013[0m
+[0;32mI (43874) GPS_RX: Display: Lon: 60.559906[0m
+[0;32mI (43884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (44164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (44164) GPS_RX: Valid GPS: Lat: 30.570013 | Lon: 60.569904 | Alt: 25.0[0m
+[0;32mI (44174) GPS_RX: Display: Lat: 30.570013[0m
+[0;32mI (44174) GPS_RX: Display: Lon: 60.569904[0m
+[0;32mI (44184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (44464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (44464) GPS_RX: Valid GPS: Lat: 30.580013 | Lon: 60.579903 | Alt: 25.0[0m
+[0;32mI (44474) GPS_RX: Display: Lat: 30.580013[0m
+[0;32mI (44474) GPS_RX: Display: Lon: 60.579903[0m
+[0;32mI (44484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (44764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (44764) GPS_RX: Valid GPS: Lat: 30.590014 | Lon: 60.589901 | Alt: 25.0[0m
+[0;32mI (44774) GPS_RX: Display: Lat: 30.590014[0m
+[0;32mI (44774) GPS_RX: Display: Lon: 60.589901[0m
+[0;32mI (44784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (45074) GPS_RX: Valid GPS: Lat: 30.600014 | Lon: 60.599899 | Alt: 25.0[0m
+[0;32mI (45074) GPS_RX: Display: Lat: 30.600014[0m
+[0;32mI (45074) GPS_RX: Display: Lon: 60.599899[0m
+[0;32mI (45084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45374) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (45374) GPS_RX: Valid GPS: Lat: 30.610014 | Lon: 60.609898 | Alt: 25.0[0m
+[0;32mI (45374) GPS_RX: Display: Lat: 30.610014[0m
+[0;32mI (45384) GPS_RX: Display: Lon: 60.609898[0m
+[0;32mI (45384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (45664) GPS_RX: Valid GPS: Lat: 30.620014 | Lon: 60.619896 | Alt: 25.0[0m
+[0;32mI (45674) GPS_RX: Display: Lat: 30.620014[0m
+[0;32mI (45674) GPS_RX: Display: Lon: 60.619896[0m
+[0;32mI (45684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (45964) GPS_RX: Valid GPS: Lat: 30.630014 | Lon: 60.629894 | Alt: 25.0[0m
+[0;32mI (45974) GPS_RX: Display: Lat: 30.630014[0m
+[0;32mI (45974) GPS_RX: Display: Lon: 60.629894[0m
+[0;32mI (45984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (46264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (46264) GPS_RX: Valid GPS: Lat: 30.640015 | Lon: 60.639893 | Alt: 25.0[0m
+[0;32mI (46274) GPS_RX: Display: Lat: 30.640015[0m
+[0;32mI (46274) GPS_RX: Display: Lon: 60.639893[0m
+[0;32mI (46284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (46564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (46564) GPS_RX: Valid GPS: Lat: 30.650015 | Lon: 60.649891 | Alt: 25.0[0m
+[0;32mI (46574) GPS_RX: Display: Lat: 30.650015[0m
+[0;32mI (46574) GPS_RX: Display: Lon: 60.649891[0m
+[0;32mI (46584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (46864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (46864) GPS_RX: Valid GPS: Lat: 30.660015 | Lon: 60.659889 | Alt: 25.0[0m
+[0;32mI (46874) GPS_RX: Display: Lat: 30.660015[0m
+[0;32mI (46874) GPS_RX: Display: Lon: 60.659889[0m
+[0;32mI (46884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (47174) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (47174) GPS_RX: Valid GPS: Lat: 30.670015 | Lon: 60.669888 | Alt: 25.0[0m
+[0;32mI (47174) GPS_RX: Display: Lat: 30.670015[0m
+[0;32mI (47184) GPS_RX: Display: Lon: 60.669888[0m
+[0;32mI (47184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (47464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (47464) GPS_RX: Valid GPS: Lat: 30.680016 | Lon: 60.679886 | Alt: 25.0[0m
+[0;32mI (47474) GPS_RX: Display: Lat: 30.680016[0m
+[0;32mI (47474) GPS_RX: Display: Lon: 60.679886[0m
+[0;32mI (47484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (47764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (47764) GPS_RX: Valid GPS: Lat: 30.690016 | Lon: 60.689884 | Alt: 25.0[0m
+[0;32mI (47774) GPS_RX: Display: Lat: 30.690016[0m
+[0;32mI (47774) GPS_RX: Display: Lon: 60.689884[0m
+[0;32mI (47784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (48064) GPS_RX: Valid GPS: Lat: 30.700016 | Lon: 60.699883 | Alt: 25.0[0m
+[0;32mI (48074) GPS_RX: Display: Lat: 30.700016[0m
+[0;32mI (48074) GPS_RX: Display: Lon: 60.699883[0m
+[0;32mI (48084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (48364) GPS_RX: Valid GPS: Lat: 30.710016 | Lon: 60.709881 | Alt: 25.0[0m
+[0;32mI (48374) GPS_RX: Display: Lat: 30.710016[0m
+[0;32mI (48374) GPS_RX: Display: Lon: 60.709881[0m
+[0;32mI (48384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (48664) GPS_RX: Valid GPS: Lat: 30.720016 | Lon: 60.719879 | Alt: 25.0[0m
+[0;32mI (48674) GPS_RX: Display: Lat: 30.720016[0m
+[0;32mI (48674) GPS_RX: Display: Lon: 60.719879[0m
+[0;32mI (48684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48974) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (48974) GPS_RX: Valid GPS: Lat: 30.730017 | Lon: 60.729877 | Alt: 25.0[0m
+[0;32mI (48974) GPS_RX: Display: Lat: 30.730017[0m
+[0;32mI (48984) GPS_RX: Display: Lon: 60.729877[0m
+[0;32mI (48984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (49264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (49264) GPS_RX: Valid GPS: Lat: 30.740017 | Lon: 60.739876 | Alt: 25.0[0m
+[0;32mI (49274) GPS_RX: Display: Lat: 30.740017[0m
+[0;32mI (49274) GPS_RX: Display: Lon: 60.739876[0m
+[0;32mI (49284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (49584) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (49584) GPS_RX: Valid GPS: Lat: 30.750017 | Lon: 60.749874 | Alt: 25.0[0m
+[0;32mI (49584) GPS_RX: Display: Lat: 30.750017[0m
+[0;32mI (49584) GPS_RX: Display: Lon: 60.749874[0m
+[0;32mI (49594) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (49874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (49874) GPS_RX: Valid GPS: Lat: 30.760017 | Lon: 60.759872 | Alt: 25.0[0m
+[0;32mI (49874) GPS_RX: Display: Lat: 30.760017[0m
+[0;32mI (49884) GPS_RX: Display: Lon: 60.759872[0m
+[0;32mI (49884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (50164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (50164) GPS_RX: Valid GPS: Lat: 30.770018 | Lon: 60.769871 | Alt: 25.0[0m
+[0;32mI (50174) GPS_RX: Display: Lat: 30.770018[0m
+[0;32mI (50174) GPS_RX: Display: Lon: 60.769871[0m
+[0;32mI (50184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (50464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (50464) GPS_RX: Valid GPS: Lat: 30.780018 | Lon: 60.779869 | Alt: 25.0[0m
+[0;32mI (50474) GPS_RX: Display: Lat: 30.780018[0m
+[0;32mI (50474) GPS_RX: Display: Lon: 60.779869[0m
+[0;32mI (50484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (50764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (50764) GPS_RX: Valid GPS: Lat: 30.790018 | Lon: 60.789867 | Alt: 25.0[0m
+[0;32mI (50774) GPS_RX: Display: Lat: 30.790018[0m
+[0;32mI (50774) GPS_RX: Display: Lon: 60.789867[0m
+[0;32mI (50784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51074) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (51074) GPS_RX: Valid GPS: Lat: 30.800018 | Lon: 60.799866 | Alt: 25.0[0m
+[0;32mI (51074) GPS_RX: Display: Lat: 30.800018[0m
+[0;32mI (51084) GPS_RX: Display: Lon: 60.799866[0m
+[0;32mI (51084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (51364) GPS_RX: Valid GPS: Lat: 30.810019 | Lon: 60.809864 | Alt: 25.0[0m
+[0;32mI (51374) GPS_RX: Display: Lat: 30.810019[0m
+[0;32mI (51374) GPS_RX: Display: Lon: 60.809864[0m
+[0;32mI (51384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (51664) GPS_RX: Valid GPS: Lat: 30.820019 | Lon: 60.819862 | Alt: 25.0[0m
+[0;32mI (51674) GPS_RX: Display: Lat: 30.820019[0m
+[0;32mI (51674) GPS_RX: Display: Lon: 60.819862[0m
+[0;32mI (51684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51974) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (51984) GPS_RX: Valid GPS: Lat: 30.830019 | Lon: 60.829861 | Alt: 25.0[0m
+[0;32mI (51984) GPS_RX: Display: Lat: 30.830019[0m
+[0;32mI (51984) GPS_RX: Display: Lon: 60.829861[0m
+[0;32mI (51994) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (52264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (52264) GPS_RX: Valid GPS: Lat: 30.840019 | Lon: 60.839859 | Alt: 25.0[0m
+[0;32mI (52274) GPS_RX: Display: Lat: 30.840019[0m
+[0;32mI (52274) GPS_RX: Display: Lon: 60.839859[0m
+[0;32mI (52284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (52564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (52564) GPS_RX: Valid GPS: Lat: 30.850019 | Lon: 60.849857 | Alt: 25.0[0m
+[0;32mI (52574) GPS_RX: Display: Lat: 30.850019[0m
+[0;32mI (52574) GPS_RX: Display: Lon: 60.849857[0m
+[0;32mI (52584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (52864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (52864) GPS_RX: Valid GPS: Lat: 30.860020 | Lon: 60.859856 | Alt: 25.0[0m
+[0;32mI (52874) GPS_RX: Display: Lat: 30.860020[0m
+[0;32mI (52874) GPS_RX: Display: Lon: 60.859856[0m
+[0;32mI (52884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (53174) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (53174) GPS_RX: Valid GPS: Lat: 30.870020 | Lon: 60.869854 | Alt: 25.0[0m
+[0;32mI (53174) GPS_RX: Display: Lat: 30.870020[0m
+[0;32mI (53184) GPS_RX: Display: Lon: 60.869854[0m
+[0;32mI (53184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (53464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (53464) GPS_RX: Valid GPS: Lat: 30.880020 | Lon: 60.879852 | Alt: 25.0[0m
+[0;32mI (53474) GPS_RX: Display: Lat: 30.880020[0m
+[0;32mI (53474) GPS_RX: Display: Lon: 60.879852[0m
+[0;32mI (53484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (53764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (53764) GPS_RX: Valid GPS: Lat: 30.890020 | Lon: 60.889851 | Alt: 25.0[0m
+[0;32mI (53774) GPS_RX: Display: Lat: 30.890020[0m
+[0;32mI (53774) GPS_RX: Display: Lon: 60.889851[0m
+[0;32mI (53784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54074) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (54074) GPS_RX: Valid GPS: Lat: 30.900021 | Lon: 60.899849 | Alt: 25.0[0m
+[0;32mI (54074) GPS_RX: Display: Lat: 30.900021[0m
+[0;32mI (54084) GPS_RX: Display: Lon: 60.899849[0m
+[0;32mI (54084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54374) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (54374) GPS_RX: Valid GPS: Lat: 30.910021 | Lon: 60.909847 | Alt: 25.0[0m
+[0;32mI (54374) GPS_RX: Display: Lat: 30.910021[0m
+[0;32mI (54374) GPS_RX: Display: Lon: 60.909847[0m
+[0;32mI (54384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54674) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (54674) GPS_RX: Valid GPS: Lat: 30.920021 | Lon: 60.919846 | Alt: 25.0[0m
+[0;32mI (54674) GPS_RX: Display: Lat: 30.920021[0m
+[0;32mI (54674) GPS_RX: Display: Lon: 60.919846[0m
+[0;32mI (54684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (54964) GPS_RX: Valid GPS: Lat: 30.930021 | Lon: 60.929844 | Alt: 25.0[0m
+[0;32mI (54974) GPS_RX: Display: Lat: 30.930021[0m
+[0;32mI (54974) GPS_RX: Display: Lon: 60.929844[0m
+[0;32mI (54984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (55274) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (55274) GPS_RX: Valid GPS: Lat: 30.940022 | Lon: 60.939842 | Alt: 25.0[0m
+[0;32mI (55274) GPS_RX: Display: Lat: 30.940022[0m
+[0;32mI (55284) GPS_RX: Display: Lon: 60.939842[0m
+[0;32mI (55284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (55564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (55564) GPS_RX: Valid GPS: Lat: 30.950022 | Lon: 60.949841 | Alt: 25.0[0m
+[0;32mI (55574) GPS_RX: Display: Lat: 30.950022[0m
+[0;32mI (55574) GPS_RX: Display: Lon: 60.949841[0m
+[0;32mI (55584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (55874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (55874) GPS_RX: Valid GPS: Lat: 30.960022 | Lon: 60.959839 | Alt: 25.0[0m
+[0;32mI (55874) GPS_RX: Display: Lat: 30.960022[0m
+[0;32mI (55884) GPS_RX: Display: Lon: 60.959839[0m
+[0;32mI (55884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (56164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (56164) GPS_RX: Valid GPS: Lat: 30.970022 | Lon: 60.969837 | Alt: 25.0[0m
+[0;32mI (56174) GPS_RX: Display: Lat: 30.970022[0m
+[0;32mI (56174) GPS_RX: Display: Lon: 60.969837[0m
+[0;32mI (56184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (56464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (56464) GPS_RX: Valid GPS: Lat: 30.980022 | Lon: 60.979836 | Alt: 25.0[0m
+[0;32mI (56474) GPS_RX: Display: Lat: 30.980022[0m
+[0;32mI (56474) GPS_RX: Display: Lon: 60.979836[0m
+[0;32mI (56484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (56764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (56764) GPS_RX: Valid GPS: Lat: 30.990023 | Lon: 60.989834 | Alt: 25.0[0m
+[0;32mI (56774) GPS_RX: Display: Lat: 30.990023[0m
+[0;32mI (56774) GPS_RX: Display: Lon: 60.989834[0m
+[0;32mI (56784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (57064) GPS_RX: Valid GPS: Lat: 31.000023 | Lon: 60.999832 | Alt: 25.0[0m
+[0;32mI (57074) GPS_RX: Display: Lat: 31.000023[0m
+[0;32mI (57074) GPS_RX: Display: Lon: 60.999832[0m
+[0;32mI (57084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (57364) GPS_RX: Valid GPS: Lat: 31.010023 | Lon: 61.009830 | Alt: 25.0[0m
+[0;32mI (57374) GPS_RX: Display: Lat: 31.010023[0m
+[0;32mI (57374) GPS_RX: Display: Lon: 61.009830[0m
+[0;32mI (57384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (57674) GPS_RX: Valid GPS: Lat: 31.020023 | Lon: 61.019829 | Alt: 25.0[0m
+[0;32mI (57674) GPS_RX: Display: Lat: 31.020023[0m
+[0;32mI (57674) GPS_RX: Display: Lon: 61.019829[0m
+[0;32mI (57684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57974) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (57974) GPS_RX: Valid GPS: Lat: 31.030024 | Lon: 61.029827 | Alt: 25.0[0m
+[0;32mI (57974) GPS_RX: Display: Lat: 31.030024[0m
+[0;32mI (57974) GPS_RX: Display: Lon: 61.029827[0m
+[0;32mI (57984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (58264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (58264) GPS_RX: Valid GPS: Lat: 31.040024 | Lon: 61.039825 | Alt: 25.0[0m
+[0;32mI (58274) GPS_RX: Display: Lat: 31.040024[0m
+[0;32mI (58274) GPS_RX: Display: Lon: 61.039825[0m
+[0;32mI (58284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (58564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (58574) GPS_RX: Valid GPS: Lat: 31.050024 | Lon: 61.049824 | Alt: 25.0[0m
+[0;32mI (58574) GPS_RX: Display: Lat: 31.050024[0m
+[0;32mI (58574) GPS_RX: Display: Lon: 61.049824[0m
+[0;32mI (58584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (58864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (58864) GPS_RX: Valid GPS: Lat: 31.060024 | Lon: 61.059822 | Alt: 25.0[0m
+[0;32mI (58874) GPS_RX: Display: Lat: 31.060024[0m
+[0;32mI (58874) GPS_RX: Display: Lon: 61.059822[0m
+[0;32mI (58884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (59164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (59164) GPS_RX: Valid GPS: Lat: 31.070024 | Lon: 61.069820 | Alt: 25.0[0m
+[0;32mI (59174) GPS_RX: Display: Lat: 31.070024[0m
+[0;32mI (59174) GPS_RX: Display: Lon: 61.069820[0m
+[0;32mI (59184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (59464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (59474) GPS_RX: Valid GPS: Lat: 31.080025 | Lon: 61.079819 | Alt: 25.0[0m
+[0;32mI (59474) GPS_RX: Display: Lat: 31.080025[0m
+[0;32mI (59474) GPS_RX: Display: Lon: 61.079819[0m
+[0;32mI (59484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (59774) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (59774) GPS_RX: Valid GPS: Lat: 31.090025 | Lon: 61.089817 | Alt: 25.0[0m
+[0;32mI (59784) GPS_RX: Display: Lat: 31.090025[0m
+[0;32mI (59784) GPS_RX: Display: Lon: 61.089817[0m
+[0;32mI (59794) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (60074) GPS_RX: Valid GPS: Lat: 31.100025 | Lon: 61.099815 | Alt: 25.0[0m
+[0;32mI (60074) GPS_RX: Display: Lat: 31.100025[0m
+[0;32mI (60074) GPS_RX: Display: Lon: 61.099815[0m
+[0;32mI (60084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (60364) GPS_RX: Valid GPS: Lat: 31.110025 | Lon: 61.109814 | Alt: 25.0[0m
+[0;32mI (60374) GPS_RX: Display: Lat: 31.110025[0m
+[0;32mI (60374) GPS_RX: Display: Lon: 61.109814[0m
+[0;32mI (60384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (60664) GPS_RX: Valid GPS: Lat: 31.120026 | Lon: 61.119812 | Alt: 25.0[0m
+[0;32mI (60674) GPS_RX: Display: Lat: 31.120026[0m
+[0;32mI (60674) GPS_RX: Display: Lon: 61.119812[0m
+[0;32mI (60684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (60964) GPS_RX: Valid GPS: Lat: 31.130026 | Lon: 61.129810 | Alt: 25.0[0m
+[0;32mI (60974) GPS_RX: Display: Lat: 31.130026[0m
+[0;32mI (60974) GPS_RX: Display: Lon: 61.129810[0m
+[0;32mI (60984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (61264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (61274) GPS_RX: Valid GPS: Lat: 31.140026 | Lon: 61.139809 | Alt: 25.0[0m
+[0;32mI (61274) GPS_RX: Display: Lat: 31.140026[0m
+[0;32mI (61274) GPS_RX: Display: Lon: 61.139809[0m
+[0;32mI (61284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (61564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (61564) GPS_RX: Valid GPS: Lat: 31.150026 | Lon: 61.149807 | Alt: 25.0[0m
+[0;32mI (61574) GPS_RX: Display: Lat: 31.150026[0m
+[0;32mI (61574) GPS_RX: Display: Lon: 61.149807[0m
+[0;32mI (61584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (61874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (61874) GPS_RX: Valid GPS: Lat: 31.160027 | Lon: 61.159805 | Alt: 25.0[0m
+[0;32mI (61874) GPS_RX: Display: Lat: 31.160027[0m
+[0;32mI (61874) GPS_RX: Display: Lon: 61.159805[0m
+[0;32mI (61884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (62164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (62164) GPS_RX: Valid GPS: Lat: 31.170027 | Lon: 61.169804 | Alt: 25.0[0m
+[0;32mI (62174) GPS_RX: Display: Lat: 31.170027[0m
+[0;32mI (62174) GPS_RX: Display: Lon: 61.169804[0m
+[0;32mI (62184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (62474) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (62474) GPS_RX: Valid GPS: Lat: 31.180027 | Lon: 61.179802 | Alt: 25.0[0m
+[0;32mI (62474) GPS_RX: Display: Lat: 31.180027[0m
+[0;32mI (62484) GPS_RX: Display: Lon: 61.179802[0m
+[0;32mI (62484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (62764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (62764) GPS_RX: Valid GPS: Lat: 31.190027 | Lon: 61.189800 | Alt: 25.0[0m
+[0;32mI (62774) GPS_RX: Display: Lat: 31.190027[0m
+[0;32mI (62774) GPS_RX: Display: Lon: 61.189800[0m
+[0;32mI (62784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (63064) GPS_RX: Valid GPS: Lat: 31.200027 | Lon: 61.199799 | Alt: 25.0[0m
+[0;32mI (63074) GPS_RX: Display: Lat: 31.200027[0m
+[0;32mI (63074) GPS_RX: Display: Lon: 61.199799[0m
+[0;32mI (63084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (63364) GPS_RX: Valid GPS: Lat: 31.210028 | Lon: 61.209797 | Alt: 25.0[0m
+[0;32mI (63374) GPS_RX: Display: Lat: 31.210028[0m
+[0;32mI (63374) GPS_RX: Display: Lon: 61.209797[0m
+[0;32mI (63384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (63664) GPS_RX: Valid GPS: Lat: 31.220028 | Lon: 61.219795 | Alt: 25.0[0m
+[0;32mI (63674) GPS_RX: Display: Lat: 31.220028[0m
+[0;32mI (63674) GPS_RX: Display: Lon: 61.219795[0m
+[0;32mI (63684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63974) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (63974) GPS_RX: Valid GPS: Lat: 31.230028 | Lon: 61.229794 | Alt: 25.0[0m
+[0;32mI (63984) GPS_RX: Display: Lat: 31.230028[0m
+[0;32mI (63984) GPS_RX: Display: Lon: 61.229794[0m
+[0;32mI (63984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (78874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (78874) GPS_RX: Valid GPS: Lat: 30.000000 | Lon: 60.000000 | Alt: 25.0[0m
+[0;32mI (78874) GPS_RX: Display: Lat: 30.000000[0m
+[0;32mI (78884) GPS_RX: Display: Lon: 60.000000[0m
+[0;32mI (78884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (79164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (79164) GPS_RX: Valid GPS: Lat: 30.010000 | Lon: 60.009998 | Alt: 25.0[0m
+[0;32mI (79174) GPS_RX: Display: Lat: 30.010000[0m
+[0;32mI (79174) GPS_RX: Display: Lon: 60.009998[0m
+[0;32mI (79174) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (79464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (79464) GPS_RX: Valid GPS: Lat: 30.020000 | Lon: 60.019997 | Alt: 25.0[0m
+[0;32mI (79474) GPS_RX: Display: Lat: 30.020000[0m
+[0;32mI (79474) GPS_RX: Display: Lon: 60.019997[0m
+[0;32mI (79474) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (79764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (79764) GPS_RX: Valid GPS: Lat: 30.030001 | Lon: 60.029995 | Alt: 25.0[0m
+[0;32mI (79774) GPS_RX: Display: Lat: 30.030001[0m
+[0;32mI (79774) GPS_RX: Display: Lon: 60.029995[0m
+[0;32mI (79774) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (80064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (80064) GPS_RX: Valid GPS: Lat: 30.040001 | Lon: 60.039993 | Alt: 25.0[0m
+[0;32mI (80074) GPS_RX: Display: Lat: 30.040001[0m
+[0;32mI (80074) GPS_RX: Display: Lon: 60.039993[0m
+[0;32mI (80074) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (80364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (80364) GPS_RX: Valid GPS: Lat: 30.050001 | Lon: 60.049992 | Alt: 25.0[0m
+[0;32mI (80374) GPS_RX: Display: Lat: 30.050001[0m
+[0;32mI (80374) GPS_RX: Display: Lon: 60.049992[0m
+[0;32mI (80374) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (80664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (80664) GPS_RX: Valid GPS: Lat: 30.060001 | Lon: 60.059990 | Alt: 25.0[0m
+[0;32mI (80674) GPS_RX: Display: Lat: 30.060001[0m
+[0;32mI (80674) GPS_RX: Display: Lon: 60.059990[0m
+[0;32mI (80684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (80974) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (80974) GPS_RX: Valid GPS: Lat: 30.070002 | Lon: 60.069988 | Alt: 25.0[0m
+[0;32mI (80974) GPS_RX: Display: Lat: 30.070002[0m
+[0;32mI (80984) GPS_RX: Display: Lon: 60.069988[0m
+[0;32mI (80984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (81274) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (81274) GPS_RX: Valid GPS: Lat: 30.080002 | Lon: 60.079987 | Alt: 25.0[0m
+[0;32mI (81274) GPS_RX: Display: Lat: 30.080002[0m
+[0;32mI (81274) GPS_RX: Display: Lon: 60.079987[0m
+[0;32mI (81284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (81564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (81564) GPS_RX: Valid GPS: Lat: 30.090002 | Lon: 60.089985 | Alt: 25.0[0m
+[0;32mI (81574) GPS_RX: Display: Lat: 30.090002[0m
+[0;32mI (81574) GPS_RX: Display: Lon: 60.089985[0m
+[0;32mI (81574) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (81874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (81874) GPS_RX: Valid GPS: Lat: 30.100002 | Lon: 60.099983 | Alt: 25.0[0m
+[0;32mI (81874) GPS_RX: Display: Lat: 30.100002[0m
+[0;32mI (81884) GPS_RX: Display: Lon: 60.099983[0m
+[0;32mI (81884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (82164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (82164) GPS_RX: Valid GPS: Lat: 30.110003 | Lon: 60.109982 | Alt: 25.0[0m
+[0;32mI (82174) GPS_RX: Display: Lat: 30.110003[0m
+[0;32mI (82174) GPS_RX: Display: Lon: 60.109982[0m
+[0;32mI (82184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (82464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (82464) GPS_RX: Valid GPS: Lat: 30.120003 | Lon: 60.119980 | Alt: 25.0[0m
+[0;32mI (82474) GPS_RX: Display: Lat: 30.120003[0m
+[0;32mI (82474) GPS_RX: Display: Lon: 60.119980[0m
+[0;32mI (82474) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (82764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (82764) GPS_RX: Valid GPS: Lat: 30.130003 | Lon: 60.129978 | Alt: 25.0[0m
+[0;32mI (82774) GPS_RX: Display: Lat: 30.130003[0m
+[0;32mI (82774) GPS_RX: Display: Lon: 60.129978[0m
+[0;32mI (82784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (83064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (83064) GPS_RX: Valid GPS: Lat: 30.140003 | Lon: 60.139977 | Alt: 25.0[0m
+[0;32mI (83074) GPS_RX: Display: Lat: 30.140003[0m
+[0;32mI (83074) GPS_RX: Display: Lon: 60.139977[0m
+[0;32mI (83084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (83364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (83364) GPS_RX: Valid GPS: Lat: 30.150003 | Lon: 60.149975 | Alt: 25.0[0m
+[0;32mI (83374) GPS_RX: Display: Lat: 30.150003[0m
+[0;32mI (83374) GPS_RX: Display: Lon: 60.149975[0m
+[0;32mI (83374) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (83664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (83664) GPS_RX: Valid GPS: Lat: 30.160004 | Lon: 60.159973 | Alt: 25.0[0m
+[0;32mI (83674) GPS_RX: Display: Lat: 30.160004[0m
+[0;32mI (83674) GPS_RX: Display: Lon: 60.159973[0m
+[0;32mI (83674) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (83964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (83964) GPS_RX: Valid GPS: Lat: 30.170004 | Lon: 60.169971 | Alt: 25.0[0m
+[0;32mI (83974) GPS_RX: Display: Lat: 30.170004[0m
+[0;32mI (83974) GPS_RX: Display: Lon: 60.169971[0m
+[0;32mI (83974) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (84264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (84264) GPS_RX: Valid GPS: Lat: 30.180004 | Lon: 60.179970 | Alt: 25.0[0m
+[0;32mI (84274) GPS_RX: Display: Lat: 30.180004[0m
+[0;32mI (84274) GPS_RX: Display: Lon: 60.179970[0m
+[0;32mI (84284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (84574) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (84584) GPS_RX: Valid GPS: Lat: 30.190004 | Lon: 60.189968 | Alt: 25.0[0m
+[0;32mI (84584) GPS_RX: Display: Lat: 30.190004[0m
+[0;32mI (84584) GPS_RX: Display: Lon: 60.189968[0m
+[0;32mI (84594) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (84864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (84864) GPS_RX: Valid GPS: Lat: 30.200005 | Lon: 60.199966 | Alt: 25.0[0m
+[0;32mI (84874) GPS_RX: Display: Lat: 30.200005[0m
+[0;32mI (84874) GPS_RX: Display: Lon: 60.199966[0m
+[0;32mI (84884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (85174) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (85174) GPS_RX: Valid GPS: Lat: 30.210005 | Lon: 60.209965 | Alt: 25.0[0m
+[0;32mI (85174) GPS_RX: Display: Lat: 30.210005[0m
+[0;32mI (85184) GPS_RX: Display: Lon: 60.209965[0m
+[0;32mI (85184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (85464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (85464) GPS_RX: Valid GPS: Lat: 30.220005 | Lon: 60.219963 | Alt: 25.0[0m
+[0;32mI (85474) GPS_RX: Display: Lat: 30.220005[0m
+[0;32mI (85474) GPS_RX: Display: Lon: 60.219963[0m
+[0;32mI (85474) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (85764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (85764) GPS_RX: Valid GPS: Lat: 30.230005 | Lon: 60.229961 | Alt: 25.0[0m
+[0;32mI (85774) GPS_RX: Display: Lat: 30.230005[0m
+[0;32mI (85774) GPS_RX: Display: Lon: 60.229961[0m
+[0;32mI (85774) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (86064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (86064) GPS_RX: Valid GPS: Lat: 30.240005 | Lon: 60.239960 | Alt: 25.0[0m
+[0;32mI (86074) GPS_RX: Display: Lat: 30.240005[0m
+[0;32mI (86074) GPS_RX: Display: Lon: 60.239960[0m
+[0;32mI (86074) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (86364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (86364) GPS_RX: Valid GPS: Lat: 30.250006 | Lon: 60.249958 | Alt: 25.0[0m
+[0;32mI (86374) GPS_RX: Display: Lat: 30.250006[0m
+[0;32mI (86374) GPS_RX: Display: Lon: 60.249958[0m
+[0;32mI (86384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (86664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (86664) GPS_RX: Valid GPS: Lat: 30.260006 | Lon: 60.259956 | Alt: 25.0[0m
+[0;32mI (86674) GPS_RX: Display: Lat: 30.260006[0m
+[0;32mI (86674) GPS_RX: Display: Lon: 60.259956[0m
+[0;32mI (86684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (86964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (86964) GPS_RX: Valid GPS: Lat: 30.270006 | Lon: 60.269955 | Alt: 25.0[0m
+[0;32mI (86974) GPS_RX: Display: Lat: 30.270006[0m
+[0;32mI (86974) GPS_RX: Display: Lon: 60.269955[0m
+[0;32mI (86974) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (87264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (87264) GPS_RX: Valid GPS: Lat: 30.280006 | Lon: 60.279953 | Alt: 25.0[0m
+[0;32mI (87274) GPS_RX: Display: Lat: 30.280006[0m
+[0;32mI (87274) GPS_RX: Display: Lon: 60.279953[0m
+[0;32mI (87274) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (87564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (87564) GPS_RX: Valid GPS: Lat: 30.290007 | Lon: 60.289951 | Alt: 25.0[0m
+[0;32mI (87574) GPS_RX: Display: Lat: 30.290007[0m
+[0;32mI (87574) GPS_RX: Display: Lon: 60.289951[0m
+[0;32mI (87574) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (87864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (87864) GPS_RX: Valid GPS: Lat: 30.300007 | Lon: 60.299950 | Alt: 25.0[0m
+[0;32mI (87874) GPS_RX: Display: Lat: 30.300007[0m
+[0;32mI (87874) GPS_RX: Display: Lon: 60.299950[0m
+[0;32mI (87884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (88164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (88164) GPS_RX: Valid GPS: Lat: 30.310007 | Lon: 60.309948 | Alt: 25.0[0m
+[0;32mI (88174) GPS_RX: Display: Lat: 30.310007[0m
+[0;32mI (88174) GPS_RX: Display: Lon: 60.309948[0m
+[0;32mI (88174) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (88464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (88464) GPS_RX: Valid GPS: Lat: 30.320007 | Lon: 60.319946 | Alt: 25.0[0m
+[0;32mI (88474) GPS_RX: Display: Lat: 30.320007[0m
+[0;32mI (88474) GPS_RX: Display: Lon: 60.319946[0m
+[0;32mI (88474) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (88764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (88764) GPS_RX: Valid GPS: Lat: 30.330008 | Lon: 60.329945 | Alt: 25.0[0m
+[0;32mI (88774) GPS_RX: Display: Lat: 30.330008[0m
+[0;32mI (88774) GPS_RX: Display: Lon: 60.329945[0m
+[0;32mI (88774) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (89064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (89064) GPS_RX: Valid GPS: Lat: 30.340008 | Lon: 60.339943 | Alt: 25.0[0m
+[0;32mI (89074) GPS_RX: Display: Lat: 30.340008[0m
+[0;32mI (89074) GPS_RX: Display: Lon: 60.339943[0m
+[0;32mI (89074) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (89374) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (89374) GPS_RX: Valid GPS: Lat: 30.350008 | Lon: 60.349941 | Alt: 25.0[0m
+[0;32mI (89374) GPS_RX: Display: Lat: 30.350008[0m
+[0;32mI (89374) GPS_RX: Display: Lon: 60.349941[0m
+[0;32mI (89384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (89664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (89664) GPS_RX: Valid GPS: Lat: 30.360008 | Lon: 60.359940 | Alt: 25.0[0m
+[0;32mI (89674) GPS_RX: Display: Lat: 30.360008[0m
+[0;32mI (89674) GPS_RX: Display: Lon: 60.359940[0m
+[0;32mI (89684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (89964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (89964) GPS_RX: Valid GPS: Lat: 30.370008 | Lon: 60.369938 | Alt: 25.0[0m
+[0;32mI (89974) GPS_RX: Display: Lat: 30.370008[0m
+[0;32mI (89974) GPS_RX: Display: Lon: 60.369938[0m
+[0;32mI (89974) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (90264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (90264) GPS_RX: Valid GPS: Lat: 30.380009 | Lon: 60.379936 | Alt: 25.0[0m
+[0;32mI (90274) GPS_RX: Display: Lat: 30.380009[0m
+[0;32mI (90274) GPS_RX: Display: Lon: 60.379936[0m
+[0;32mI (90274) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (90564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (90564) GPS_RX: Valid GPS: Lat: 30.390009 | Lon: 60.389935 | Alt: 25.0[0m
+[0;32mI (90574) GPS_RX: Display: Lat: 30.390009[0m
+[0;32mI (90574) GPS_RX: Display: Lon: 60.389935[0m
+[0;32mI (90574) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (90864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (90864) GPS_RX: Valid GPS: Lat: 30.400009 | Lon: 60.399933 | Alt: 25.0[0m
+[0;32mI (90874) GPS_RX: Display: Lat: 30.400009[0m
+[0;32mI (90874) GPS_RX: Display: Lon: 60.399933[0m
+[0;32mI (90884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (91164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (91164) GPS_RX: Valid GPS: Lat: 30.410009 | Lon: 60.409931 | Alt: 25.0[0m
+[0;32mI (91174) GPS_RX: Display: Lat: 30.410009[0m
+[0;32mI (91174) GPS_RX: Display: Lon: 60.409931[0m
+[0;32mI (91174) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (91464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (91464) GPS_RX: Valid GPS: Lat: 30.420010 | Lon: 60.419930 | Alt: 25.0[0m
+[0;32mI (91474) GPS_RX: Display: Lat: 30.420010[0m
+[0;32mI (91474) GPS_RX: Display: Lon: 60.419930[0m
+[0;32mI (91474) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (91764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (91764) GPS_RX: Valid GPS: Lat: 30.430010 | Lon: 60.429928 | Alt: 25.0[0m
+[0;32mI (91774) GPS_RX: Display: Lat: 30.430010[0m
+[0;32mI (91774) GPS_RX: Display: Lon: 60.429928[0m
+[0;32mI (91784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (92064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (92064) GPS_RX: Valid GPS: Lat: 30.440010 | Lon: 60.439926 | Alt: 25.0[0m
+[0;32mI (92074) GPS_RX: Display: Lat: 30.440010[0m
+[0;32mI (92074) GPS_RX: Display: Lon: 60.439926[0m
+[0;32mI (92084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (92364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (92364) GPS_RX: Valid GPS: Lat: 30.450010 | Lon: 60.449924 | Alt: 25.0[0m
+[0;32mI (92374) GPS_RX: Display: Lat: 30.450010[0m
+[0;32mI (92374) GPS_RX: Display: Lon: 60.449924[0m
+[0;32mI (92374) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (92664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (92664) GPS_RX: Valid GPS: Lat: 30.460011 | Lon: 60.459923 | Alt: 25.0[0m
+[0;32mI (92674) GPS_RX: Display: Lat: 30.460011[0m
+[0;32mI (92674) GPS_RX: Display: Lon: 60.459923[0m
+[0;32mI (92674) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (92964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (92964) GPS_RX: Valid GPS: Lat: 30.470011 | Lon: 60.469921 | Alt: 25.0[0m
+[0;32mI (92974) GPS_RX: Display: Lat: 30.470011[0m
+[0;32mI (92974) GPS_RX: Display: Lon: 60.469921[0m
+[0;32mI (92984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (93264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (93264) GPS_RX: Valid GPS: Lat: 30.480011 | Lon: 60.479919 | Alt: 25.0[0m
+[0;32mI (93274) GPS_RX: Display: Lat: 30.480011[0m
+[0;32mI (93274) GPS_RX: Display: Lon: 60.479919[0m
+[0;32mI (93274) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (93564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (93564) GPS_RX: Valid GPS: Lat: 30.490011 | Lon: 60.489918 | Alt: 25.0[0m
+[0;32mI (93574) GPS_RX: Display: Lat: 30.490011[0m
+[0;32mI (93574) GPS_RX: Display: Lon: 60.489918[0m
+[0;32mI (93584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (93874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (93884) GPS_RX: Valid GPS: Lat: 30.500011 | Lon: 60.499916 | Alt: 25.0[0m
+[0;32mI (93884) GPS_RX: Display: Lat: 30.500011[0m
+[0;32mI (93884) GPS_RX: Display: Lon: 60.499916[0m
+[0;32mI (93894) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (94164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (94164) GPS_RX: Valid GPS: Lat: 30.510012 | Lon: 60.509914 | Alt: 25.0[0m
+[0;32mI (94174) GPS_RX: Display: Lat: 30.510012[0m
+[0;32mI (94174) GPS_RX: Display: Lon: 60.509914[0m
+[0;32mI (94184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (94464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (94464) GPS_RX: Valid GPS: Lat: 30.520012 | Lon: 60.519913 | Alt: 25.0[0m
+[0;32mI (94474) GPS_RX: Display: Lat: 30.520012[0m
+[0;32mI (94474) GPS_RX: Display: Lon: 60.519913[0m
+[0;32mI (94484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (94764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (94764) GPS_RX: Valid GPS: Lat: 30.530012 | Lon: 60.529911 | Alt: 25.0[0m
+[0;32mI (94774) GPS_RX: Display: Lat: 30.530012[0m
+[0;32mI (94774) GPS_RX: Display: Lon: 60.529911[0m
+[0;32mI (94784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (95064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (95064) GPS_RX: Valid GPS: Lat: 30.540012 | Lon: 60.539909 | Alt: 25.0[0m
+[0;32mI (95074) GPS_RX: Display: Lat: 30.540012[0m
+[0;32mI (95074) GPS_RX: Display: Lon: 60.539909[0m
+[0;32mI (95074) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (95364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (95364) GPS_RX: Valid GPS: Lat: 30.550013 | Lon: 60.549908 | Alt: 25.0[0m
+[0;32mI (95374) GPS_RX: Display: Lat: 30.550013[0m
+[0;32mI (95374) GPS_RX: Display: Lon: 60.549908[0m
+[0;32mI (95374) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (95664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (95674) GPS_RX: Valid GPS: Lat: 30.560013 | Lon: 60.559906 | Alt: 25.0[0m
+[0;32mI (95674) GPS_RX: Display: Lat: 30.560013[0m
+[0;32mI (95674) GPS_RX: Display: Lon: 60.559906[0m
+[0;32mI (95684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (95964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (95964) GPS_RX: Valid GPS: Lat: 30.570013 | Lon: 60.569904 | Alt: 25.0[0m
+[0;32mI (95974) GPS_RX: Display: Lat: 30.570013[0m
+[0;32mI (95974) GPS_RX: Display: Lon: 60.569904[0m
+[0;32mI (95984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (96264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (96264) GPS_RX: Valid GPS: Lat: 30.580013 | Lon: 60.579903 | Alt: 25.0[0m
+[0;32mI (96274) GPS_RX: Display: Lat: 30.580013[0m
+[0;32mI (96274) GPS_RX: Display: Lon: 60.579903[0m
+[0;32mI (96274) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (96564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (96564) GPS_RX: Valid GPS: Lat: 30.590014 | Lon: 60.589901 | Alt: 25.0[0m
+[0;32mI (96574) GPS_RX: Display: Lat: 30.590014[0m
+[0;32mI (96574) GPS_RX: Display: Lon: 60.589901[0m
+[0;32mI (96574) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (96864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (96864) GPS_RX: Valid GPS: Lat: 30.600014 | Lon: 60.599899 | Alt: 25.0[0m
+[0;32mI (96874) GPS_RX: Display: Lat: 30.600014[0m
+[0;32mI (96874) GPS_RX: Display: Lon: 60.599899[0m
+[0;32mI (96884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (97164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (97164) GPS_RX: Valid GPS: Lat: 30.610014 | Lon: 60.609898 | Alt: 25.0[0m
+[0;32mI (97174) GPS_RX: Display: Lat: 30.610014[0m
+[0;32mI (97174) GPS_RX: Display: Lon: 60.609898[0m
+[0;32mI (97174) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (97464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (97464) GPS_RX: Valid GPS: Lat: 30.620014 | Lon: 60.619896 | Alt: 25.0[0m
+[0;32mI (97474) GPS_RX: Display: Lat: 30.620014[0m
+[0;32mI (97474) GPS_RX: Display: Lon: 60.619896[0m
+[0;32mI (97484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (97774) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (97774) GPS_RX: Valid GPS: Lat: 30.630014 | Lon: 60.629894 | Alt: 25.0[0m
+[0;32mI (97774) GPS_RX: Display: Lat: 30.630014[0m
+[0;32mI (97774) GPS_RX: Display: Lon: 60.629894[0m
+[0;32mI (97784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (98064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (98074) GPS_RX: Valid GPS: Lat: 30.640015 | Lon: 60.639893 | Alt: 25.0[0m
+[0;32mI (98074) GPS_RX: Display: Lat: 30.640015[0m
+[0;32mI (98074) GPS_RX: Display: Lon: 60.639893[0m
+[0;32mI (98084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (98364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (98364) GPS_RX: Valid GPS: Lat: 30.650015 | Lon: 60.649891 | Alt: 25.0[0m
+[0;32mI (98374) GPS_RX: Display: Lat: 30.650015[0m
+[0;32mI (98374) GPS_RX: Display: Lon: 60.649891[0m
+[0;32mI (98384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (98664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (98664) GPS_RX: Valid GPS: Lat: 30.660015 | Lon: 60.659889 | Alt: 25.0[0m
+[0;32mI (98674) GPS_RX: Display: Lat: 30.660015[0m
+[0;32mI (98674) GPS_RX: Display: Lon: 60.659889[0m
+[0;32mI (98684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (98964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (98964) GPS_RX: Valid GPS: Lat: 30.670015 | Lon: 60.669888 | Alt: 25.0[0m
+[0;32mI (98974) GPS_RX: Display: Lat: 30.670015[0m
+[0;32mI (98974) GPS_RX: Display: Lon: 60.669888[0m
+[0;32mI (98974) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (99264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (99264) GPS_RX: Valid GPS: Lat: 30.680016 | Lon: 60.679886 | Alt: 25.0[0m
+[0;32mI (99274) GPS_RX: Display: Lat: 30.680016[0m
+[0;32mI (99274) GPS_RX: Display: Lon: 60.679886[0m
+[0;32mI (99284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (99564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (99564) GPS_RX: Valid GPS: Lat: 30.690016 | Lon: 60.689884 | Alt: 25.0[0m
+[0;32mI (99574) GPS_RX: Display: Lat: 30.690016[0m
+[0;32mI (99574) GPS_RX: Display: Lon: 60.689884[0m
+[0;32mI (99574) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (99864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (99864) GPS_RX: Valid GPS: Lat: 30.700016 | Lon: 60.699883 | Alt: 25.0[0m
+[0;32mI (99874) GPS_RX: Display: Lat: 30.700016[0m
+[0;32mI (99874) GPS_RX: Display: Lon: 60.699883[0m
+[0;32mI (99874) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (100164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (100164) GPS_RX: Valid GPS: Lat: 30.710016 | Lon: 60.709881 | Alt: 25.0[0m
+[0;32mI (100174) GPS_RX: Display: Lat: 30.710016[0m
+[0;32mI (100174) GPS_RX: Display: Lon: 60.709881[0m
+[0;32mI (100184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (100464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (100464) GPS_RX: Valid GPS: Lat: 30.720016 | Lon: 60.719879 | Alt: 25.0[0m
+[0;32mI (100474) GPS_RX: Display: Lat: 30.720016[0m
+[0;32mI (100474) GPS_RX: Display: Lon: 60.719879[0m
+[0;32mI (100484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (100764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (100764) GPS_RX: Valid GPS: Lat: 30.730017 | Lon: 60.729877 | Alt: 25.0[0m
+[0;32mI (100774) GPS_RX: Display: Lat: 30.730017[0m
+[0;32mI (100774) GPS_RX: Display: Lon: 60.729877[0m
+[0;32mI (100784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (101064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (101064) GPS_RX: Valid GPS: Lat: 30.740017 | Lon: 60.739876 | Alt: 25.0[0m
+[0;32mI (101074) GPS_RX: Display: Lat: 30.740017[0m
+[0;32mI (101074) GPS_RX: Display: Lon: 60.739876[0m
+[0;32mI (101084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (101364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (101364) GPS_RX: Valid GPS: Lat: 30.750017 | Lon: 60.749874 | Alt: 25.0[0m
+[0;32mI (101374) GPS_RX: Display: Lat: 30.750017[0m
+[0;32mI (101374) GPS_RX: Display: Lon: 60.749874[0m
+[0;32mI (101384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (101664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (101664) GPS_RX: Valid GPS: Lat: 30.760017 | Lon: 60.759872 | Alt: 25.0[0m
+[0;32mI (101674) GPS_RX: Display: Lat: 30.760017[0m
+[0;32mI (101674) GPS_RX: Display: Lon: 60.759872[0m
+[0;32mI (101684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (101964) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (101964) GPS_RX: Valid GPS: Lat: 30.770018 | Lon: 60.769871 | Alt: 25.0[0m
+[0;32mI (101974) GPS_RX: Display: Lat: 30.770018[0m
+[0;32mI (101974) GPS_RX: Display: Lon: 60.769871[0m
+[0;32mI (101984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (102264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (102264) GPS_RX: Valid GPS: Lat: 30.780018 | Lon: 60.779869 | Alt: 25.0[0m
+[0;32mI (102274) GPS_RX: Display: Lat: 30.780018[0m
+[0;32mI (102274) GPS_RX: Display: Lon: 60.779869[0m
+[0;32mI (102284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (102564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (102564) GPS_RX: Valid GPS: Lat: 30.790018 | Lon: 60.789867 | Alt: 25.0[0m
+[0;32mI (102574) GPS_RX: Display: Lat: 30.790018[0m
+[0;32mI (102574) GPS_RX: Display: Lon: 60.789867[0m
+[0;32mI (102584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (102874) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (102874) GPS_RX: Valid GPS: Lat: 30.800018 | Lon: 60.799866 | Alt: 25.0[0m
+[0;32mI (102874) GPS_RX: Display: Lat: 30.800018[0m
+[0;32mI (102884) GPS_RX: Display: Lon: 60.799866[0m
+[0;32mI (102884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (103164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (103164) GPS_RX: Valid GPS: Lat: 30.810019 | Lon: 60.809864 | Alt: 25.0[0m
+[0;32mI (103174) GPS_RX: Display: Lat: 30.810019[0m
+[0;32mI (103174) GPS_RX: Display: Lon: 60.809864[0m
+[0;32mI (103184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (103464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (103464) GPS_RX: Valid GPS: Lat: 30.820019 | Lon: 60.819862 | Alt: 25.0[0m
+[0;32mI (103474) GPS_RX: Display: Lat: 30.820019[0m
+[0;32mI (103474) GPS_RX: Display: Lon: 60.819862[0m
+[0;32mI (103484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (103764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (103764) GPS_RX: Valid GPS: Lat: 30.830019 | Lon: 60.829861 | Alt: 25.0[0m
+[0;32mI (103774) GPS_RX: Display: Lat: 30.830019[0m
+[0;32mI (103774) GPS_RX: Display: Lon: 60.829861[0m
+[0;32mI (103784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (104064) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (104064) GPS_RX: Valid GPS: Lat: 30.840019 | Lon: 60.839859 | Alt: 25.0[0m
+[0;32mI (104074) GPS_RX: Display: Lat: 30.840019[0m
+[0;32mI (104074) GPS_RX: Display: Lon: 60.839859[0m
+[0;32mI (104084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (104364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (104364) GPS_RX: Valid GPS: Lat: 30.850019 | Lon: 60.849857 | Alt: 25.0[0m
+[0;32mI (104374) GPS_RX: Display: Lat: 30.850019[0m
+[0;32mI (104374) GPS_RX: Display: Lon: 60.849857[0m
+[0;32mI (104384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (104664) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (104664) GPS_RX: Valid GPS: Lat: 30.860020 | Lon: 60.859856 | Alt: 25.0[0m
+[0;32mI (104674) GPS_RX: Display: Lat: 30.860020[0m
+[0;32mI (104674) GPS_RX: Display: Lon: 60.859856[0m
+[0;32mI (104684) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (104974) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (104974) GPS_RX: Valid GPS: Lat: 30.870020 | Lon: 60.869854 | Alt: 25.0[0m
+[0;32mI (104974) GPS_RX: Display: Lat: 30.870020[0m
+[0;32mI (104974) GPS_RX: Display: Lon: 60.869854[0m
+[0;32mI (104984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (105264) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (105264) GPS_RX: Valid GPS: Lat: 30.880020 | Lon: 60.879852 | Alt: 25.0[0m
+[0;32mI (105274) GPS_RX: Display: Lat: 30.880020[0m
+[0;32mI (105274) GPS_RX: Display: Lon: 60.879852[0m
+[0;32mI (105284) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (105564) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (105564) GPS_RX: Valid GPS: Lat: 30.890020 | Lon: 60.889851 | Alt: 25.0[0m
+[0;32mI (105574) GPS_RX: Display: Lat: 30.890020[0m
+[0;32mI (105574) GPS_RX: Display: Lon: 60.889851[0m
+[0;32mI (105584) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (105864) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (105864) GPS_RX: Valid GPS: Lat: 30.900021 | Lon: 60.899849 | Alt: 25.0[0m
+[0;32mI (105874) GPS_RX: Display: Lat: 30.900021[0m
+[0;32mI (105874) GPS_RX: Display: Lon: 60.899849[0m
+[0;32mI (105884) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (106164) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (106164) GPS_RX: Valid GPS: Lat: 30.910021 | Lon: 60.909847 | Alt: 25.0[0m
+[0;32mI (106174) GPS_RX: Display: Lat: 30.910021[0m
+[0;32mI (106174) GPS_RX: Display: Lon: 60.909847[0m
+[0;32mI (106184) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (106464) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (106464) GPS_RX: Valid GPS: Lat: 30.920021 | Lon: 60.919846 | Alt: 25.0[0m
+[0;32mI (106474) GPS_RX: Display: Lat: 30.920021[0m
+[0;32mI (106474) GPS_RX: Display: Lon: 60.919846[0m
+[0;32mI (106484) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (106764) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (106774) GPS_RX: Valid GPS: Lat: 30.930021 | Lon: 60.929844 | Alt: 25.0[0m
+[0;32mI (106774) GPS_RX: Display: Lat: 30.930021[0m
+[0;32mI (106774) GPS_RX: Display: Lon: 60.929844[0m
+[0;32mI (106784) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (107074) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (107074) GPS_RX: Valid GPS: Lat: 30.940022 | Lon: 60.939842 | Alt: 25.0[0m
+[0;32mI (107074) GPS_RX: Display: Lat: 30.940022[0m
+[0;32mI (107084) GPS_RX: Display: Lon: 60.939842[0m
+[0;32mI (107084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (107364) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (107364) GPS_RX: Valid GPS: Lat: 30.950022 | Lon: 60.949841 | Alt: 25.0[0m
+[0;32mI (107374) GPS_RX: Display: Lat: 30.950022[0m
+[0;32mI (107374) GPS_RX: Display: Lon: 60.949841[0m
+[0;32mI (107384) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (107674) GPS_RX: ESP-NOW packet received! Size: 12 bytes from 88:57:21:B3:4E:38[0m
+[0;32mI (107674) GPS_RX: Valid GPS: Lat: 30.960022 | Lon: 60.959839 | Alt: 25.0[0m
+[0;32mI (107674) GPS_RX: Display: Lat: 30.960022[0m
+[0;32mI (107684) GPS_RX: Display: Lon: 60.959839[0m
+[0;32mI (107684) GPS_RX: Display: Alt: 25.0[0m

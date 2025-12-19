@@ -1,0 +1,1427 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2025 11:27:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20ba0h (134048) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030bc8 vaddr=3ffb0000 size=03d14h ( 15636) load[0m
+[0;32mI (157) esp_image: segment 2: paddr=000348e4 vaddr=40080000 size=0b734h ( 46900) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=81bd0h (531408) map[0m
+[0;32mI (358) esp_image: segment 4: paddr=000c1bf8 vaddr=4008b734 size=0b6f0h ( 46832) load[0m
+[0;32mI (388) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (388) boot: Disabling RNG early entropy source...[0m
+[0;32mI (399) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (409) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (409) cpu_start: Application information:[0m
+[0;32mI (412) cpu_start: Project name:     gps_drift_rx_oled[0m
+[0;32mI (417) cpu_start: App version:      1[0m
+[0;32mI (422) cpu_start: Compile time:     Dec 11 2025 11:24:43[0m
+[0;32mI (428) cpu_start: ELF file SHA256:  3c506910d...[0m
+[0;32mI (433) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (439) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (443) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (448) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB7E28 len 000281D8 (160 KiB): DRAM[0m
+[0;32mI (472) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 40096E24 len 000091DC (36 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (514) main_task: Started on CPU0[0m
+[0;32mI (524) main_task: Calling app_main()[0m
+[0;32mI (554) wifi:wifi driver task: 3ffbfa60, prio:23, stack:6656, core=0[0m
+[0;32mI (564) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (564) wifi:wifi certification version: v7.0[0m
+[0;32mI (564) wifi:config NVS flash: enabled[0m
+[0;32mI (564) wifi:config nano formating: disabled[0m
+[0;32mI (564) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (574) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (574) wifi:Init management short buffer num: 32[0m
+[0;32mI (584) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (584) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (594) wifi:Init static rx buffer num: 10[0m
+[0;32mI (594) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (594) wifi_init: rx ba win: 6[0m
+[0;32mI (604) wifi_init: tcpip mbox: 32[0m
+[0;32mI (604) wifi_init: udp mbox: 6[0m
+[0;32mI (604) wifi_init: tcp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp tx win: 5760[0m
+[0;32mI (614) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (624) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (634) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (724) wifi:mode : sta (88:57:21:c1:c7:3c)[0m
+[0;32mI (724) wifi:enable tsf[0m
+[0;32mI (724) GPS_RX: Receiver MAC: 88:57:21:C1:C7:3C[0m
+[0;32mI (724) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (734) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (844) GPS_RX: Display: Lat: 19.000000[0m
+[0;32mI (844) GPS_RX: Display: Lon: 72.000000[0m
+[0;32mI (844) GPS_RX: Display: Alt: 0.0[0m
+[0;32mI (844) ESPNOW: espnow [version: 1.0] init[0m
+[0;32mI (844) GPS_RX: Ready. Displaying original position (19, 72)...[0m
+[0;32mI (854) main_task: Returned from app_main()[0m
+[0;32mI (954) GPS_RX: First signal detected from 88:57:21:B3:4E:38[0m
+[0;32mI (7954) GPS_RX: Now displaying spoofed coordinates[0m
+[0;32mI (7954) GPS_RX: GPS: Lat: 30.960022 | Lon: 60.959839 | Alt: 25.0[0m
+[0;32mI (7954) GPS_RX: Display: Lat: 30.960022[0m
+[0;32mI (7954) GPS_RX: Display: Lon: 60.959839[0m
+[0;32mI (7964) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (7964) GPS_RX: GPS: Lat: 30.970022 | Lon: 60.969837 | Alt: 25.0[0m
+[0;32mI (7974) GPS_RX: Display: Lat: 30.970022[0m
+[0;32mI (7974) GPS_RX: Display: Lon: 60.969837[0m
+[0;32mI (7984) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (7984) GPS_RX: GPS: Lat: 30.980022 | Lon: 60.979836 | Alt: 25.0[0m
+[0;32mI (7994) GPS_RX: Display: Lat: 30.980022[0m
+[0;32mI (7994) GPS_RX: Display: Lon: 60.979836[0m
+[0;32mI (8004) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8004) GPS_RX: GPS: Lat: 30.990023 | Lon: 60.989834 | Alt: 25.0[0m
+[0;32mI (8014) GPS_RX: Display: Lat: 30.990023[0m
+[0;32mI (8014) GPS_RX: Display: Lon: 60.989834[0m
+[0;32mI (8024) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8024) GPS_RX: GPS: Lat: 31.000023 | Lon: 60.999832 | Alt: 25.0[0m
+[0;32mI (8034) GPS_RX: Display: Lat: 31.000023[0m
+[0;32mI (8034) GPS_RX: Display: Lon: 60.999832[0m
+[0;32mI (8044) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8044) GPS_RX: GPS: Lat: 31.010023 | Lon: 61.009830 | Alt: 25.0[0m
+[0;32mI (8054) GPS_RX: Display: Lat: 31.010023[0m
+[0;32mI (8054) GPS_RX: Display: Lon: 61.009830[0m
+[0;32mI (8064) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8064) GPS_RX: GPS: Lat: 31.020023 | Lon: 61.019829 | Alt: 25.0[0m
+[0;32mI (8074) GPS_RX: Display: Lat: 31.020023[0m
+[0;32mI (8074) GPS_RX: Display: Lon: 61.019829[0m
+[0;32mI (8084) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8084) GPS_RX: GPS: Lat: 31.030024 | Lon: 61.029827 | Alt: 25.0[0m
+[0;32mI (8094) GPS_RX: Display: Lat: 31.030024[0m
+[0;32mI (8094) GPS_RX: Display: Lon: 61.029827[0m
+[0;32mI (8104) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8104) GPS_RX: GPS: Lat: 31.040024 | Lon: 61.039825 | Alt: 25.0[0m
+[0;32mI (8114) GPS_RX: Display: Lat: 31.040024[0m
+[0;32mI (8114) GPS_RX: Display: Lon: 61.039825[0m
+[0;32mI (8124) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8124) GPS_RX: GPS: Lat: 31.050024 | Lon: 61.049824 | Alt: 25.0[0m
+[0;32mI (8134) GPS_RX: Display: Lat: 31.050024[0m
+[0;32mI (8134) GPS_RX: Display: Lon: 61.049824[0m
+[0;32mI (8144) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8154) GPS_RX: GPS: Lat: 31.190027 | Lon: 61.189800 | Alt: 25.0[0m
+[0;32mI (8154) GPS_RX: Display: Lat: 31.190027[0m
+[0;32mI (8154) GPS_RX: Display: Lon: 61.189800[0m
+[0;32mI (8164) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8454) GPS_RX: GPS: Lat: 31.200027 | Lon: 61.199799 | Alt: 25.0[0m
+[0;32mI (8454) GPS_RX: Display: Lat: 31.200027[0m
+[0;32mI (8454) GPS_RX: Display: Lon: 61.199799[0m
+[0;32mI (8454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (8754) GPS_RX: GPS: Lat: 31.210028 | Lon: 61.209797 | Alt: 25.0[0m
+[0;32mI (8754) GPS_RX: Display: Lat: 31.210028[0m
+[0;32mI (8754) GPS_RX: Display: Lon: 61.209797[0m
+[0;32mI (8754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (9054) GPS_RX: GPS: Lat: 31.220028 | Lon: 61.219795 | Alt: 25.0[0m
+[0;32mI (9054) GPS_RX: Display: Lat: 31.220028[0m
+[0;32mI (9054) GPS_RX: Display: Lon: 61.219795[0m
+[0;32mI (9054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (9354) GPS_RX: GPS: Lat: 31.230028 | Lon: 61.229794 | Alt: 25.0[0m
+[0;32mI (9354) GPS_RX: Display: Lat: 31.230028[0m
+[0;32mI (9354) GPS_RX: Display: Lon: 61.229794[0m
+[0;32mI (9354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (9654) GPS_RX: GPS: Lat: 31.240028 | Lon: 61.239792 | Alt: 25.0[0m
+[0;32mI (9654) GPS_RX: Display: Lat: 31.240028[0m
+[0;32mI (9654) GPS_RX: Display: Lon: 61.239792[0m
+[0;32mI (9654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (9954) GPS_RX: GPS: Lat: 31.250029 | Lon: 61.249790 | Alt: 25.0[0m
+[0;32mI (9954) GPS_RX: Display: Lat: 31.250029[0m
+[0;32mI (9954) GPS_RX: Display: Lon: 61.249790[0m
+[0;32mI (9954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (10254) GPS_RX: GPS: Lat: 31.260029 | Lon: 61.259789 | Alt: 25.0[0m
+[0;32mI (10254) GPS_RX: Display: Lat: 31.260029[0m
+[0;32mI (10254) GPS_RX: Display: Lon: 61.259789[0m
+[0;32mI (10254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (10554) GPS_RX: GPS: Lat: 31.270029 | Lon: 61.269787 | Alt: 25.0[0m
+[0;32mI (10554) GPS_RX: Display: Lat: 31.270029[0m
+[0;32mI (10554) GPS_RX: Display: Lon: 61.269787[0m
+[0;32mI (10554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (10854) GPS_RX: GPS: Lat: 31.280029 | Lon: 61.279785 | Alt: 25.0[0m
+[0;32mI (10854) GPS_RX: Display: Lat: 31.280029[0m
+[0;32mI (10854) GPS_RX: Display: Lon: 61.279785[0m
+[0;32mI (10854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (11154) GPS_RX: GPS: Lat: 31.290030 | Lon: 61.289783 | Alt: 25.0[0m
+[0;32mI (11154) GPS_RX: Display: Lat: 31.290030[0m
+[0;32mI (11154) GPS_RX: Display: Lon: 61.289783[0m
+[0;32mI (11154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (11454) GPS_RX: GPS: Lat: 31.300030 | Lon: 61.299782 | Alt: 25.0[0m
+[0;32mI (11454) GPS_RX: Display: Lat: 31.300030[0m
+[0;32mI (11454) GPS_RX: Display: Lon: 61.299782[0m
+[0;32mI (11454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (11754) GPS_RX: GPS: Lat: 31.310030 | Lon: 61.309780 | Alt: 25.0[0m
+[0;32mI (11754) GPS_RX: Display: Lat: 31.310030[0m
+[0;32mI (11754) GPS_RX: Display: Lon: 61.309780[0m
+[0;32mI (11754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (12054) GPS_RX: GPS: Lat: 31.320030 | Lon: 61.319778 | Alt: 25.0[0m
+[0;32mI (12054) GPS_RX: Display: Lat: 31.320030[0m
+[0;32mI (12054) GPS_RX: Display: Lon: 61.319778[0m
+[0;32mI (12054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (12354) GPS_RX: GPS: Lat: 31.330030 | Lon: 61.329777 | Alt: 25.0[0m
+[0;32mI (12354) GPS_RX: Display: Lat: 31.330030[0m
+[0;32mI (12354) GPS_RX: Display: Lon: 61.329777[0m
+[0;32mI (12354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (12654) GPS_RX: GPS: Lat: 31.340031 | Lon: 61.339775 | Alt: 25.0[0m
+[0;32mI (12654) GPS_RX: Display: Lat: 31.340031[0m
+[0;32mI (12654) GPS_RX: Display: Lon: 61.339775[0m
+[0;32mI (12654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (12954) GPS_RX: GPS: Lat: 31.350031 | Lon: 61.349773 | Alt: 25.0[0m
+[0;32mI (12954) GPS_RX: Display: Lat: 31.350031[0m
+[0;32mI (12954) GPS_RX: Display: Lon: 61.349773[0m
+[0;32mI (12954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (13254) GPS_RX: GPS: Lat: 31.360031 | Lon: 61.359772 | Alt: 25.0[0m
+[0;32mI (13254) GPS_RX: Display: Lat: 31.360031[0m
+[0;32mI (13254) GPS_RX: Display: Lon: 61.359772[0m
+[0;32mI (13254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (13554) GPS_RX: GPS: Lat: 31.370031 | Lon: 61.369770 | Alt: 25.0[0m
+[0;32mI (13554) GPS_RX: Display: Lat: 31.370031[0m
+[0;32mI (13554) GPS_RX: Display: Lon: 61.369770[0m
+[0;32mI (13554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (13854) GPS_RX: GPS: Lat: 31.380032 | Lon: 61.379768 | Alt: 25.0[0m
+[0;32mI (13854) GPS_RX: Display: Lat: 31.380032[0m
+[0;32mI (13854) GPS_RX: Display: Lon: 61.379768[0m
+[0;32mI (13854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (14154) GPS_RX: GPS: Lat: 31.390032 | Lon: 61.389767 | Alt: 25.0[0m
+[0;32mI (14154) GPS_RX: Display: Lat: 31.390032[0m
+[0;32mI (14154) GPS_RX: Display: Lon: 61.389767[0m
+[0;32mI (14154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (14454) GPS_RX: GPS: Lat: 31.400032 | Lon: 61.399765 | Alt: 25.0[0m
+[0;32mI (14454) GPS_RX: Display: Lat: 31.400032[0m
+[0;32mI (14454) GPS_RX: Display: Lon: 61.399765[0m
+[0;32mI (14454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (14754) GPS_RX: GPS: Lat: 31.410032 | Lon: 61.409763 | Alt: 25.0[0m
+[0;32mI (14754) GPS_RX: Display: Lat: 31.410032[0m
+[0;32mI (14754) GPS_RX: Display: Lon: 61.409763[0m
+[0;32mI (14754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (15054) GPS_RX: GPS: Lat: 31.420033 | Lon: 61.419762 | Alt: 25.0[0m
+[0;32mI (15054) GPS_RX: Display: Lat: 31.420033[0m
+[0;32mI (15054) GPS_RX: Display: Lon: 61.419762[0m
+[0;32mI (15054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (15354) GPS_RX: GPS: Lat: 31.430033 | Lon: 61.429760 | Alt: 25.0[0m
+[0;32mI (15354) GPS_RX: Display: Lat: 31.430033[0m
+[0;32mI (15354) GPS_RX: Display: Lon: 61.429760[0m
+[0;32mI (15354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (15654) GPS_RX: GPS: Lat: 31.440033 | Lon: 61.439758 | Alt: 25.0[0m
+[0;32mI (15654) GPS_RX: Display: Lat: 31.440033[0m
+[0;32mI (15654) GPS_RX: Display: Lon: 61.439758[0m
+[0;32mI (15654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (15954) GPS_RX: GPS: Lat: 31.450033 | Lon: 61.449757 | Alt: 25.0[0m
+[0;32mI (15954) GPS_RX: Display: Lat: 31.450033[0m
+[0;32mI (15954) GPS_RX: Display: Lon: 61.449757[0m
+[0;32mI (15954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (16254) GPS_RX: GPS: Lat: 31.460033 | Lon: 61.459755 | Alt: 25.0[0m
+[0;32mI (16254) GPS_RX: Display: Lat: 31.460033[0m
+[0;32mI (16254) GPS_RX: Display: Lon: 61.459755[0m
+[0;32mI (16254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (16554) GPS_RX: GPS: Lat: 31.470034 | Lon: 61.469753 | Alt: 25.0[0m
+[0;32mI (16554) GPS_RX: Display: Lat: 31.470034[0m
+[0;32mI (16554) GPS_RX: Display: Lon: 61.469753[0m
+[0;32mI (16554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (16854) GPS_RX: GPS: Lat: 31.480034 | Lon: 61.479752 | Alt: 25.0[0m
+[0;32mI (16854) GPS_RX: Display: Lat: 31.480034[0m
+[0;32mI (16854) GPS_RX: Display: Lon: 61.479752[0m
+[0;32mI (16854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (17154) GPS_RX: GPS: Lat: 31.490034 | Lon: 61.489750 | Alt: 25.0[0m
+[0;32mI (17154) GPS_RX: Display: Lat: 31.490034[0m
+[0;32mI (17154) GPS_RX: Display: Lon: 61.489750[0m
+[0;32mI (17154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (17454) GPS_RX: GPS: Lat: 31.500034 | Lon: 61.499748 | Alt: 25.0[0m
+[0;32mI (17454) GPS_RX: Display: Lat: 31.500034[0m
+[0;32mI (17454) GPS_RX: Display: Lon: 61.499748[0m
+[0;32mI (17454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (17754) GPS_RX: GPS: Lat: 31.510035 | Lon: 61.509747 | Alt: 25.0[0m
+[0;32mI (17754) GPS_RX: Display: Lat: 31.510035[0m
+[0;32mI (17754) GPS_RX: Display: Lon: 61.509747[0m
+[0;32mI (17754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (18054) GPS_RX: GPS: Lat: 31.520035 | Lon: 61.519745 | Alt: 25.0[0m
+[0;32mI (18054) GPS_RX: Display: Lat: 31.520035[0m
+[0;32mI (18054) GPS_RX: Display: Lon: 61.519745[0m
+[0;32mI (18054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (18354) GPS_RX: GPS: Lat: 31.530035 | Lon: 61.529743 | Alt: 25.0[0m
+[0;32mI (18354) GPS_RX: Display: Lat: 31.530035[0m
+[0;32mI (18354) GPS_RX: Display: Lon: 61.529743[0m
+[0;32mI (18354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (18654) GPS_RX: GPS: Lat: 31.540035 | Lon: 61.539742 | Alt: 25.0[0m
+[0;32mI (18654) GPS_RX: Display: Lat: 31.540035[0m
+[0;32mI (18654) GPS_RX: Display: Lon: 61.539742[0m
+[0;32mI (18654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (18954) GPS_RX: GPS: Lat: 31.550035 | Lon: 61.549740 | Alt: 25.0[0m
+[0;32mI (18954) GPS_RX: Display: Lat: 31.550035[0m
+[0;32mI (18954) GPS_RX: Display: Lon: 61.549740[0m
+[0;32mI (18954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (19254) GPS_RX: GPS: Lat: 31.560036 | Lon: 61.559738 | Alt: 25.0[0m
+[0;32mI (19254) GPS_RX: Display: Lat: 31.560036[0m
+[0;32mI (19254) GPS_RX: Display: Lon: 61.559738[0m
+[0;32mI (19254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (19554) GPS_RX: GPS: Lat: 31.570036 | Lon: 61.569736 | Alt: 25.0[0m
+[0;32mI (19554) GPS_RX: Display: Lat: 31.570036[0m
+[0;32mI (19554) GPS_RX: Display: Lon: 61.569736[0m
+[0;32mI (19554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (19854) GPS_RX: GPS: Lat: 31.580036 | Lon: 61.579735 | Alt: 25.0[0m
+[0;32mI (19854) GPS_RX: Display: Lat: 31.580036[0m
+[0;32mI (19854) GPS_RX: Display: Lon: 61.579735[0m
+[0;32mI (19854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (20154) GPS_RX: GPS: Lat: 31.590036 | Lon: 61.589733 | Alt: 25.0[0m
+[0;32mI (20154) GPS_RX: Display: Lat: 31.590036[0m
+[0;32mI (20154) GPS_RX: Display: Lon: 61.589733[0m
+[0;32mI (20164) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (20454) GPS_RX: GPS: Lat: 31.600037 | Lon: 61.599731 | Alt: 25.0[0m
+[0;32mI (20454) GPS_RX: Display: Lat: 31.600037[0m
+[0;32mI (20454) GPS_RX: Display: Lon: 61.599731[0m
+[0;32mI (20454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (20754) GPS_RX: GPS: Lat: 31.610037 | Lon: 61.609730 | Alt: 25.0[0m
+[0;32mI (20754) GPS_RX: Display: Lat: 31.610037[0m
+[0;32mI (20754) GPS_RX: Display: Lon: 61.609730[0m
+[0;32mI (20754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (21054) GPS_RX: GPS: Lat: 31.620037 | Lon: 61.619728 | Alt: 25.0[0m
+[0;32mI (21054) GPS_RX: Display: Lat: 31.620037[0m
+[0;32mI (21054) GPS_RX: Display: Lon: 61.619728[0m
+[0;32mI (21054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (21354) GPS_RX: GPS: Lat: 31.630037 | Lon: 61.629726 | Alt: 25.0[0m
+[0;32mI (21354) GPS_RX: Display: Lat: 31.630037[0m
+[0;32mI (21354) GPS_RX: Display: Lon: 61.629726[0m
+[0;32mI (21354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (21654) GPS_RX: GPS: Lat: 31.640038 | Lon: 61.639725 | Alt: 25.0[0m
+[0;32mI (21654) GPS_RX: Display: Lat: 31.640038[0m
+[0;32mI (21654) GPS_RX: Display: Lon: 61.639725[0m
+[0;32mI (21654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (21954) GPS_RX: GPS: Lat: 31.650038 | Lon: 61.649723 | Alt: 25.0[0m
+[0;32mI (21954) GPS_RX: Display: Lat: 31.650038[0m
+[0;32mI (21954) GPS_RX: Display: Lon: 61.649723[0m
+[0;32mI (21954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (22254) GPS_RX: GPS: Lat: 31.660038 | Lon: 61.659721 | Alt: 25.0[0m
+[0;32mI (22254) GPS_RX: Display: Lat: 31.660038[0m
+[0;32mI (22254) GPS_RX: Display: Lon: 61.659721[0m
+[0;32mI (22254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (22554) GPS_RX: GPS: Lat: 31.670038 | Lon: 61.669720 | Alt: 25.0[0m
+[0;32mI (22554) GPS_RX: Display: Lat: 31.670038[0m
+[0;32mI (22554) GPS_RX: Display: Lon: 61.669720[0m
+[0;32mI (22554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (22854) GPS_RX: GPS: Lat: 31.680038 | Lon: 61.679718 | Alt: 25.0[0m
+[0;32mI (22854) GPS_RX: Display: Lat: 31.680038[0m
+[0;32mI (22854) GPS_RX: Display: Lon: 61.679718[0m
+[0;32mI (22854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (23154) GPS_RX: GPS: Lat: 31.690039 | Lon: 61.689716 | Alt: 25.0[0m
+[0;32mI (23154) GPS_RX: Display: Lat: 31.690039[0m
+[0;32mI (23154) GPS_RX: Display: Lon: 61.689716[0m
+[0;32mI (23154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (23454) GPS_RX: GPS: Lat: 31.700039 | Lon: 61.699715 | Alt: 25.0[0m
+[0;32mI (23454) GPS_RX: Display: Lat: 31.700039[0m
+[0;32mI (23454) GPS_RX: Display: Lon: 61.699715[0m
+[0;32mI (23454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (23754) GPS_RX: GPS: Lat: 31.710039 | Lon: 61.709713 | Alt: 25.0[0m
+[0;32mI (23754) GPS_RX: Display: Lat: 31.710039[0m
+[0;32mI (23754) GPS_RX: Display: Lon: 61.709713[0m
+[0;32mI (23754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (24054) GPS_RX: GPS: Lat: 31.720039 | Lon: 61.719711 | Alt: 25.0[0m
+[0;32mI (24054) GPS_RX: Display: Lat: 31.720039[0m
+[0;32mI (24054) GPS_RX: Display: Lon: 61.719711[0m
+[0;32mI (24054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (24354) GPS_RX: GPS: Lat: 31.730040 | Lon: 61.729710 | Alt: 25.0[0m
+[0;32mI (24354) GPS_RX: Display: Lat: 31.730040[0m
+[0;32mI (24354) GPS_RX: Display: Lon: 61.729710[0m
+[0;32mI (24354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (24654) GPS_RX: GPS: Lat: 31.740040 | Lon: 61.739708 | Alt: 25.0[0m
+[0;32mI (24654) GPS_RX: Display: Lat: 31.740040[0m
+[0;32mI (24654) GPS_RX: Display: Lon: 61.739708[0m
+[0;32mI (24654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (24954) GPS_RX: GPS: Lat: 31.750040 | Lon: 61.749706 | Alt: 25.0[0m
+[0;32mI (24954) GPS_RX: Display: Lat: 31.750040[0m
+[0;32mI (24954) GPS_RX: Display: Lon: 61.749706[0m
+[0;32mI (24954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (25254) GPS_RX: GPS: Lat: 31.760040 | Lon: 61.759705 | Alt: 25.0[0m
+[0;32mI (25254) GPS_RX: Display: Lat: 31.760040[0m
+[0;32mI (25254) GPS_RX: Display: Lon: 61.759705[0m
+[0;32mI (25254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (25554) GPS_RX: GPS: Lat: 31.770041 | Lon: 61.769703 | Alt: 25.0[0m
+[0;32mI (25554) GPS_RX: Display: Lat: 31.770041[0m
+[0;32mI (25554) GPS_RX: Display: Lon: 61.769703[0m
+[0;32mI (25554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (25854) GPS_RX: GPS: Lat: 31.780041 | Lon: 61.779701 | Alt: 25.0[0m
+[0;32mI (25854) GPS_RX: Display: Lat: 31.780041[0m
+[0;32mI (25854) GPS_RX: Display: Lon: 61.779701[0m
+[0;32mI (25854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (26154) GPS_RX: GPS: Lat: 31.790041 | Lon: 61.789700 | Alt: 25.0[0m
+[0;32mI (26154) GPS_RX: Display: Lat: 31.790041[0m
+[0;32mI (26154) GPS_RX: Display: Lon: 61.789700[0m
+[0;32mI (26154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (26454) GPS_RX: GPS: Lat: 31.800041 | Lon: 61.799698 | Alt: 25.0[0m
+[0;32mI (26454) GPS_RX: Display: Lat: 31.800041[0m
+[0;32mI (26454) GPS_RX: Display: Lon: 61.799698[0m
+[0;32mI (26454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (26754) GPS_RX: GPS: Lat: 31.810041 | Lon: 61.809696 | Alt: 25.0[0m
+[0;32mI (26754) GPS_RX: Display: Lat: 31.810041[0m
+[0;32mI (26754) GPS_RX: Display: Lon: 61.809696[0m
+[0;32mI (26754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27054) GPS_RX: GPS: Lat: 31.820042 | Lon: 61.819695 | Alt: 25.0[0m
+[0;32mI (27054) GPS_RX: Display: Lat: 31.820042[0m
+[0;32mI (27054) GPS_RX: Display: Lon: 61.819695[0m
+[0;32mI (27054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27354) GPS_RX: GPS: Lat: 31.830042 | Lon: 61.829693 | Alt: 25.0[0m
+[0;32mI (27354) GPS_RX: Display: Lat: 31.830042[0m
+[0;32mI (27354) GPS_RX: Display: Lon: 61.829693[0m
+[0;32mI (27354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27654) GPS_RX: GPS: Lat: 31.840042 | Lon: 61.839691 | Alt: 25.0[0m
+[0;32mI (27654) GPS_RX: Display: Lat: 31.840042[0m
+[0;32mI (27654) GPS_RX: Display: Lon: 61.839691[0m
+[0;32mI (27654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (27954) GPS_RX: GPS: Lat: 31.850042 | Lon: 61.849689 | Alt: 25.0[0m
+[0;32mI (27954) GPS_RX: Display: Lat: 31.850042[0m
+[0;32mI (27954) GPS_RX: Display: Lon: 61.849689[0m
+[0;32mI (27954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (28254) GPS_RX: GPS: Lat: 31.860043 | Lon: 61.859688 | Alt: 25.0[0m
+[0;32mI (28254) GPS_RX: Display: Lat: 31.860043[0m
+[0;32mI (28254) GPS_RX: Display: Lon: 61.859688[0m
+[0;32mI (28254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (28554) GPS_RX: GPS: Lat: 31.870043 | Lon: 61.869686 | Alt: 25.0[0m
+[0;32mI (28554) GPS_RX: Display: Lat: 31.870043[0m
+[0;32mI (28554) GPS_RX: Display: Lon: 61.869686[0m
+[0;32mI (28554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (28854) GPS_RX: GPS: Lat: 31.880043 | Lon: 61.879684 | Alt: 25.0[0m
+[0;32mI (28854) GPS_RX: Display: Lat: 31.880043[0m
+[0;32mI (28854) GPS_RX: Display: Lon: 61.879684[0m
+[0;32mI (28854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (29154) GPS_RX: GPS: Lat: 31.890043 | Lon: 61.889683 | Alt: 25.0[0m
+[0;32mI (29154) GPS_RX: Display: Lat: 31.890043[0m
+[0;32mI (29154) GPS_RX: Display: Lon: 61.889683[0m
+[0;32mI (29154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (29454) GPS_RX: GPS: Lat: 31.900043 | Lon: 61.899681 | Alt: 25.0[0m
+[0;32mI (29454) GPS_RX: Display: Lat: 31.900043[0m
+[0;32mI (29454) GPS_RX: Display: Lon: 61.899681[0m
+[0;32mI (29454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (29754) GPS_RX: GPS: Lat: 31.910044 | Lon: 61.909679 | Alt: 25.0[0m
+[0;32mI (29754) GPS_RX: Display: Lat: 31.910044[0m
+[0;32mI (29754) GPS_RX: Display: Lon: 61.909679[0m
+[0;32mI (29754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30054) GPS_RX: GPS: Lat: 31.920044 | Lon: 61.919678 | Alt: 25.0[0m
+[0;32mI (30054) GPS_RX: Display: Lat: 31.920044[0m
+[0;32mI (30054) GPS_RX: Display: Lon: 61.919678[0m
+[0;32mI (30054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30354) GPS_RX: GPS: Lat: 31.930044 | Lon: 61.929676 | Alt: 25.0[0m
+[0;32mI (30354) GPS_RX: Display: Lat: 31.930044[0m
+[0;32mI (30354) GPS_RX: Display: Lon: 61.929676[0m
+[0;32mI (30354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30654) GPS_RX: GPS: Lat: 31.940044 | Lon: 61.939674 | Alt: 25.0[0m
+[0;32mI (30654) GPS_RX: Display: Lat: 31.940044[0m
+[0;32mI (30654) GPS_RX: Display: Lon: 61.939674[0m
+[0;32mI (30654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (30954) GPS_RX: GPS: Lat: 31.950045 | Lon: 61.949673 | Alt: 25.0[0m
+[0;32mI (30954) GPS_RX: Display: Lat: 31.950045[0m
+[0;32mI (30954) GPS_RX: Display: Lon: 61.949673[0m
+[0;32mI (30954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31254) GPS_RX: GPS: Lat: 31.960045 | Lon: 61.959671 | Alt: 25.0[0m
+[0;32mI (31254) GPS_RX: Display: Lat: 31.960045[0m
+[0;32mI (31254) GPS_RX: Display: Lon: 61.959671[0m
+[0;32mI (31254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31554) GPS_RX: GPS: Lat: 31.970045 | Lon: 61.969669 | Alt: 25.0[0m
+[0;32mI (31554) GPS_RX: Display: Lat: 31.970045[0m
+[0;32mI (31554) GPS_RX: Display: Lon: 61.969669[0m
+[0;32mI (31554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (31854) GPS_RX: GPS: Lat: 31.980045 | Lon: 61.979668 | Alt: 25.0[0m
+[0;32mI (31854) GPS_RX: Display: Lat: 31.980045[0m
+[0;32mI (31854) GPS_RX: Display: Lon: 61.979668[0m
+[0;32mI (31854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32154) GPS_RX: GPS: Lat: 31.990046 | Lon: 61.989666 | Alt: 25.0[0m
+[0;32mI (32154) GPS_RX: Display: Lat: 31.990046[0m
+[0;32mI (32154) GPS_RX: Display: Lon: 61.989666[0m
+[0;32mI (32154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32454) GPS_RX: GPS: Lat: 32.000046 | Lon: 61.999664 | Alt: 25.0[0m
+[0;32mI (32454) GPS_RX: Display: Lat: 32.000046[0m
+[0;32mI (32454) GPS_RX: Display: Lon: 61.999664[0m
+[0;32mI (32454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (32754) GPS_RX: GPS: Lat: 32.010044 | Lon: 62.009663 | Alt: 25.0[0m
+[0;32mI (32754) GPS_RX: Display: Lat: 32.010044[0m
+[0;32mI (32754) GPS_RX: Display: Lon: 62.009663[0m
+[0;32mI (32754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33054) GPS_RX: GPS: Lat: 32.020042 | Lon: 62.019661 | Alt: 25.0[0m
+[0;32mI (33054) GPS_RX: Display: Lat: 32.020042[0m
+[0;32mI (33054) GPS_RX: Display: Lon: 62.019661[0m
+[0;32mI (33054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33354) GPS_RX: GPS: Lat: 32.030041 | Lon: 62.029659 | Alt: 25.0[0m
+[0;32mI (33354) GPS_RX: Display: Lat: 32.030041[0m
+[0;32mI (33354) GPS_RX: Display: Lon: 62.029659[0m
+[0;32mI (33354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33654) GPS_RX: GPS: Lat: 32.040039 | Lon: 62.039658 | Alt: 25.0[0m
+[0;32mI (33654) GPS_RX: Display: Lat: 32.040039[0m
+[0;32mI (33654) GPS_RX: Display: Lon: 62.039658[0m
+[0;32mI (33654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (33954) GPS_RX: GPS: Lat: 32.050037 | Lon: 62.049656 | Alt: 25.0[0m
+[0;32mI (33954) GPS_RX: Display: Lat: 32.050037[0m
+[0;32mI (33954) GPS_RX: Display: Lon: 62.049656[0m
+[0;32mI (33954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34254) GPS_RX: GPS: Lat: 32.060036 | Lon: 62.059654 | Alt: 25.0[0m
+[0;32mI (34254) GPS_RX: Display: Lat: 32.060036[0m
+[0;32mI (34254) GPS_RX: Display: Lon: 62.059654[0m
+[0;32mI (34254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34554) GPS_RX: GPS: Lat: 32.070034 | Lon: 62.069653 | Alt: 25.0[0m
+[0;32mI (34554) GPS_RX: Display: Lat: 32.070034[0m
+[0;32mI (34554) GPS_RX: Display: Lon: 62.069653[0m
+[0;32mI (34554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (34854) GPS_RX: GPS: Lat: 32.080032 | Lon: 62.079651 | Alt: 25.0[0m
+[0;32mI (34854) GPS_RX: Display: Lat: 32.080032[0m
+[0;32mI (34854) GPS_RX: Display: Lon: 62.079651[0m
+[0;32mI (34854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35154) GPS_RX: GPS: Lat: 32.090031 | Lon: 62.089649 | Alt: 25.0[0m
+[0;32mI (35154) GPS_RX: Display: Lat: 32.090031[0m
+[0;32mI (35154) GPS_RX: Display: Lon: 62.089649[0m
+[0;32mI (35154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35454) GPS_RX: GPS: Lat: 32.100029 | Lon: 62.099648 | Alt: 25.0[0m
+[0;32mI (35454) GPS_RX: Display: Lat: 32.100029[0m
+[0;32mI (35454) GPS_RX: Display: Lon: 62.099648[0m
+[0;32mI (35454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (35754) GPS_RX: GPS: Lat: 32.110027 | Lon: 62.109646 | Alt: 25.0[0m
+[0;32mI (35754) GPS_RX: Display: Lat: 32.110027[0m
+[0;32mI (35754) GPS_RX: Display: Lon: 62.109646[0m
+[0;32mI (35754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36054) GPS_RX: GPS: Lat: 32.120026 | Lon: 62.119644 | Alt: 25.0[0m
+[0;32mI (36054) GPS_RX: Display: Lat: 32.120026[0m
+[0;32mI (36054) GPS_RX: Display: Lon: 62.119644[0m
+[0;32mI (36054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36354) GPS_RX: GPS: Lat: 32.130024 | Lon: 62.129642 | Alt: 25.0[0m
+[0;32mI (36354) GPS_RX: Display: Lat: 32.130024[0m
+[0;32mI (36354) GPS_RX: Display: Lon: 62.129642[0m
+[0;32mI (36354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36654) GPS_RX: GPS: Lat: 32.140022 | Lon: 62.139641 | Alt: 25.0[0m
+[0;32mI (36654) GPS_RX: Display: Lat: 32.140022[0m
+[0;32mI (36654) GPS_RX: Display: Lon: 62.139641[0m
+[0;32mI (36654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (36954) GPS_RX: GPS: Lat: 32.150021 | Lon: 62.149639 | Alt: 25.0[0m
+[0;32mI (36954) GPS_RX: Display: Lat: 32.150021[0m
+[0;32mI (36954) GPS_RX: Display: Lon: 62.149639[0m
+[0;32mI (36954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37254) GPS_RX: GPS: Lat: 32.160019 | Lon: 62.159637 | Alt: 25.0[0m
+[0;32mI (37254) GPS_RX: Display: Lat: 32.160019[0m
+[0;32mI (37254) GPS_RX: Display: Lon: 62.159637[0m
+[0;32mI (37254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37554) GPS_RX: GPS: Lat: 32.170017 | Lon: 62.169636 | Alt: 25.0[0m
+[0;32mI (37554) GPS_RX: Display: Lat: 32.170017[0m
+[0;32mI (37554) GPS_RX: Display: Lon: 62.169636[0m
+[0;32mI (37554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (37854) GPS_RX: GPS: Lat: 32.180016 | Lon: 62.179634 | Alt: 25.0[0m
+[0;32mI (37854) GPS_RX: Display: Lat: 32.180016[0m
+[0;32mI (37854) GPS_RX: Display: Lon: 62.179634[0m
+[0;32mI (37854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38154) GPS_RX: GPS: Lat: 32.190014 | Lon: 62.189632 | Alt: 25.0[0m
+[0;32mI (38154) GPS_RX: Display: Lat: 32.190014[0m
+[0;32mI (38154) GPS_RX: Display: Lon: 62.189632[0m
+[0;32mI (38154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38454) GPS_RX: GPS: Lat: 32.200012 | Lon: 62.199631 | Alt: 25.0[0m
+[0;32mI (38454) GPS_RX: Display: Lat: 32.200012[0m
+[0;32mI (38454) GPS_RX: Display: Lon: 62.199631[0m
+[0;32mI (38454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (38754) GPS_RX: GPS: Lat: 32.210011 | Lon: 62.209629 | Alt: 25.0[0m
+[0;32mI (38754) GPS_RX: Display: Lat: 32.210011[0m
+[0;32mI (38754) GPS_RX: Display: Lon: 62.209629[0m
+[0;32mI (38754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39054) GPS_RX: GPS: Lat: 32.220009 | Lon: 62.219627 | Alt: 25.0[0m
+[0;32mI (39054) GPS_RX: Display: Lat: 32.220009[0m
+[0;32mI (39054) GPS_RX: Display: Lon: 62.219627[0m
+[0;32mI (39054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39354) GPS_RX: GPS: Lat: 32.230007 | Lon: 62.229626 | Alt: 25.0[0m
+[0;32mI (39354) GPS_RX: Display: Lat: 32.230007[0m
+[0;32mI (39354) GPS_RX: Display: Lon: 62.229626[0m
+[0;32mI (39354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39654) GPS_RX: GPS: Lat: 32.240005 | Lon: 62.239624 | Alt: 25.0[0m
+[0;32mI (39654) GPS_RX: Display: Lat: 32.240005[0m
+[0;32mI (39654) GPS_RX: Display: Lon: 62.239624[0m
+[0;32mI (39654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (39954) GPS_RX: GPS: Lat: 32.250004 | Lon: 62.249622 | Alt: 25.0[0m
+[0;32mI (39954) GPS_RX: Display: Lat: 32.250004[0m
+[0;32mI (39954) GPS_RX: Display: Lon: 62.249622[0m
+[0;32mI (39954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40254) GPS_RX: GPS: Lat: 32.260002 | Lon: 62.259621 | Alt: 25.0[0m
+[0;32mI (40254) GPS_RX: Display: Lat: 32.260002[0m
+[0;32mI (40254) GPS_RX: Display: Lon: 62.259621[0m
+[0;32mI (40254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40554) GPS_RX: GPS: Lat: 32.270000 | Lon: 62.269619 | Alt: 25.0[0m
+[0;32mI (40554) GPS_RX: Display: Lat: 32.270000[0m
+[0;32mI (40554) GPS_RX: Display: Lon: 62.269619[0m
+[0;32mI (40554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (40854) GPS_RX: GPS: Lat: 32.279999 | Lon: 62.279617 | Alt: 25.0[0m
+[0;32mI (40854) GPS_RX: Display: Lat: 32.279999[0m
+[0;32mI (40854) GPS_RX: Display: Lon: 62.279617[0m
+[0;32mI (40854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41154) GPS_RX: GPS: Lat: 32.289997 | Lon: 62.289616 | Alt: 25.0[0m
+[0;32mI (41154) GPS_RX: Display: Lat: 32.289997[0m
+[0;32mI (41154) GPS_RX: Display: Lon: 62.289616[0m
+[0;32mI (41164) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41454) GPS_RX: GPS: Lat: 32.299995 | Lon: 62.299614 | Alt: 25.0[0m
+[0;32mI (41454) GPS_RX: Display: Lat: 32.299995[0m
+[0;32mI (41454) GPS_RX: Display: Lon: 62.299614[0m
+[0;32mI (41454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (41754) GPS_RX: GPS: Lat: 32.309994 | Lon: 62.309612 | Alt: 25.0[0m
+[0;32mI (41754) GPS_RX: Display: Lat: 32.309994[0m
+[0;32mI (41754) GPS_RX: Display: Lon: 62.309612[0m
+[0;32mI (41754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42054) GPS_RX: GPS: Lat: 32.319992 | Lon: 62.319611 | Alt: 25.0[0m
+[0;32mI (42054) GPS_RX: Display: Lat: 32.319992[0m
+[0;32mI (42054) GPS_RX: Display: Lon: 62.319611[0m
+[0;32mI (42054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42354) GPS_RX: GPS: Lat: 32.329990 | Lon: 62.329609 | Alt: 25.0[0m
+[0;32mI (42354) GPS_RX: Display: Lat: 32.329990[0m
+[0;32mI (42354) GPS_RX: Display: Lon: 62.329609[0m
+[0;32mI (42354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42654) GPS_RX: GPS: Lat: 32.339989 | Lon: 62.339607 | Alt: 25.0[0m
+[0;32mI (42654) GPS_RX: Display: Lat: 32.339989[0m
+[0;32mI (42654) GPS_RX: Display: Lon: 62.339607[0m
+[0;32mI (42664) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (42954) GPS_RX: GPS: Lat: 32.349987 | Lon: 62.349606 | Alt: 25.0[0m
+[0;32mI (42954) GPS_RX: Display: Lat: 32.349987[0m
+[0;32mI (42954) GPS_RX: Display: Lon: 62.349606[0m
+[0;32mI (42954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (43254) GPS_RX: GPS: Lat: 32.359985 | Lon: 62.359604 | Alt: 25.0[0m
+[0;32mI (43254) GPS_RX: Display: Lat: 32.359985[0m
+[0;32mI (43254) GPS_RX: Display: Lon: 62.359604[0m
+[0;32mI (43254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (43554) GPS_RX: GPS: Lat: 32.369984 | Lon: 62.369602 | Alt: 25.0[0m
+[0;32mI (43554) GPS_RX: Display: Lat: 32.369984[0m
+[0;32mI (43554) GPS_RX: Display: Lon: 62.369602[0m
+[0;32mI (43554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (43854) GPS_RX: GPS: Lat: 32.379982 | Lon: 62.379601 | Alt: 25.0[0m
+[0;32mI (43854) GPS_RX: Display: Lat: 32.379982[0m
+[0;32mI (43854) GPS_RX: Display: Lon: 62.379601[0m
+[0;32mI (43854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (44154) GPS_RX: GPS: Lat: 32.389980 | Lon: 62.389599 | Alt: 25.0[0m
+[0;32mI (44154) GPS_RX: Display: Lat: 32.389980[0m
+[0;32mI (44154) GPS_RX: Display: Lon: 62.389599[0m
+[0;32mI (44154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (44454) GPS_RX: GPS: Lat: 32.399979 | Lon: 62.399597 | Alt: 25.0[0m
+[0;32mI (44454) GPS_RX: Display: Lat: 32.399979[0m
+[0;32mI (44454) GPS_RX: Display: Lon: 62.399597[0m
+[0;32mI (44454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (44754) GPS_RX: GPS: Lat: 32.409977 | Lon: 62.409595 | Alt: 25.0[0m
+[0;32mI (44754) GPS_RX: Display: Lat: 32.409977[0m
+[0;32mI (44754) GPS_RX: Display: Lon: 62.409595[0m
+[0;32mI (44754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45054) GPS_RX: GPS: Lat: 32.419975 | Lon: 62.419594 | Alt: 25.0[0m
+[0;32mI (45054) GPS_RX: Display: Lat: 32.419975[0m
+[0;32mI (45054) GPS_RX: Display: Lon: 62.419594[0m
+[0;32mI (45054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45354) GPS_RX: GPS: Lat: 32.429974 | Lon: 62.429592 | Alt: 25.0[0m
+[0;32mI (45354) GPS_RX: Display: Lat: 32.429974[0m
+[0;32mI (45354) GPS_RX: Display: Lon: 62.429592[0m
+[0;32mI (45354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45654) GPS_RX: GPS: Lat: 32.439972 | Lon: 62.439590 | Alt: 25.0[0m
+[0;32mI (45654) GPS_RX: Display: Lat: 32.439972[0m
+[0;32mI (45654) GPS_RX: Display: Lon: 62.439590[0m
+[0;32mI (45654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (45954) GPS_RX: GPS: Lat: 32.449970 | Lon: 62.449589 | Alt: 25.0[0m
+[0;32mI (45954) GPS_RX: Display: Lat: 32.449970[0m
+[0;32mI (45954) GPS_RX: Display: Lon: 62.449589[0m
+[0;32mI (45954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (46254) GPS_RX: GPS: Lat: 32.459969 | Lon: 62.459587 | Alt: 25.0[0m
+[0;32mI (46254) GPS_RX: Display: Lat: 32.459969[0m
+[0;32mI (46254) GPS_RX: Display: Lon: 62.459587[0m
+[0;32mI (46254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (46554) GPS_RX: GPS: Lat: 32.469967 | Lon: 62.469585 | Alt: 25.0[0m
+[0;32mI (46554) GPS_RX: Display: Lat: 32.469967[0m
+[0;32mI (46554) GPS_RX: Display: Lon: 62.469585[0m
+[0;32mI (46554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (46854) GPS_RX: GPS: Lat: 32.479965 | Lon: 62.479584 | Alt: 25.0[0m
+[0;32mI (46854) GPS_RX: Display: Lat: 32.479965[0m
+[0;32mI (46854) GPS_RX: Display: Lon: 62.479584[0m
+[0;32mI (46854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (47154) GPS_RX: GPS: Lat: 32.489964 | Lon: 62.489582 | Alt: 25.0[0m
+[0;32mI (47154) GPS_RX: Display: Lat: 32.489964[0m
+[0;32mI (47154) GPS_RX: Display: Lon: 62.489582[0m
+[0;32mI (47154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (47454) GPS_RX: GPS: Lat: 32.499962 | Lon: 62.499580 | Alt: 25.0[0m
+[0;32mI (47454) GPS_RX: Display: Lat: 32.499962[0m
+[0;32mI (47454) GPS_RX: Display: Lon: 62.499580[0m
+[0;32mI (47454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (47754) GPS_RX: GPS: Lat: 32.509960 | Lon: 62.509579 | Alt: 25.0[0m
+[0;32mI (47754) GPS_RX: Display: Lat: 32.509960[0m
+[0;32mI (47754) GPS_RX: Display: Lon: 62.509579[0m
+[0;32mI (47754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48054) GPS_RX: GPS: Lat: 32.519958 | Lon: 62.519577 | Alt: 25.0[0m
+[0;32mI (48054) GPS_RX: Display: Lat: 32.519958[0m
+[0;32mI (48054) GPS_RX: Display: Lon: 62.519577[0m
+[0;32mI (48054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48354) GPS_RX: GPS: Lat: 32.529957 | Lon: 62.529575 | Alt: 25.0[0m
+[0;32mI (48354) GPS_RX: Display: Lat: 32.529957[0m
+[0;32mI (48354) GPS_RX: Display: Lon: 62.529575[0m
+[0;32mI (48354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48654) GPS_RX: GPS: Lat: 32.539955 | Lon: 62.539574 | Alt: 25.0[0m
+[0;32mI (48654) GPS_RX: Display: Lat: 32.539955[0m
+[0;32mI (48654) GPS_RX: Display: Lon: 62.539574[0m
+[0;32mI (48654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (48954) GPS_RX: GPS: Lat: 32.549953 | Lon: 62.549572 | Alt: 25.0[0m
+[0;32mI (48954) GPS_RX: Display: Lat: 32.549953[0m
+[0;32mI (48954) GPS_RX: Display: Lon: 62.549572[0m
+[0;32mI (48954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (49254) GPS_RX: GPS: Lat: 32.559952 | Lon: 62.559570 | Alt: 25.0[0m
+[0;32mI (49254) GPS_RX: Display: Lat: 32.559952[0m
+[0;32mI (49254) GPS_RX: Display: Lon: 62.559570[0m
+[0;32mI (49254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (49554) GPS_RX: GPS: Lat: 32.569950 | Lon: 62.569569 | Alt: 25.0[0m
+[0;32mI (49554) GPS_RX: Display: Lat: 32.569950[0m
+[0;32mI (49554) GPS_RX: Display: Lon: 62.569569[0m
+[0;32mI (49554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (49854) GPS_RX: GPS: Lat: 32.579948 | Lon: 62.579567 | Alt: 25.0[0m
+[0;32mI (49854) GPS_RX: Display: Lat: 32.579948[0m
+[0;32mI (49854) GPS_RX: Display: Lon: 62.579567[0m
+[0;32mI (49854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (50154) GPS_RX: GPS: Lat: 32.589947 | Lon: 62.589565 | Alt: 25.0[0m
+[0;32mI (50154) GPS_RX: Display: Lat: 32.589947[0m
+[0;32mI (50154) GPS_RX: Display: Lon: 62.589565[0m
+[0;32mI (50154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (50454) GPS_RX: GPS: Lat: 32.599945 | Lon: 62.599564 | Alt: 25.0[0m
+[0;32mI (50454) GPS_RX: Display: Lat: 32.599945[0m
+[0;32mI (50454) GPS_RX: Display: Lon: 62.599564[0m
+[0;32mI (50454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (50754) GPS_RX: GPS: Lat: 32.609943 | Lon: 62.609562 | Alt: 25.0[0m
+[0;32mI (50754) GPS_RX: Display: Lat: 32.609943[0m
+[0;32mI (50754) GPS_RX: Display: Lon: 62.609562[0m
+[0;32mI (50754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51054) GPS_RX: GPS: Lat: 32.619942 | Lon: 62.619560 | Alt: 25.0[0m
+[0;32mI (51054) GPS_RX: Display: Lat: 32.619942[0m
+[0;32mI (51054) GPS_RX: Display: Lon: 62.619560[0m
+[0;32mI (51054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51354) GPS_RX: GPS: Lat: 32.629940 | Lon: 62.629559 | Alt: 25.0[0m
+[0;32mI (51354) GPS_RX: Display: Lat: 32.629940[0m
+[0;32mI (51354) GPS_RX: Display: Lon: 62.629559[0m
+[0;32mI (51354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51654) GPS_RX: GPS: Lat: 32.639938 | Lon: 62.639557 | Alt: 25.0[0m
+[0;32mI (51654) GPS_RX: Display: Lat: 32.639938[0m
+[0;32mI (51654) GPS_RX: Display: Lon: 62.639557[0m
+[0;32mI (51654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (51954) GPS_RX: GPS: Lat: 32.649937 | Lon: 62.649555 | Alt: 25.0[0m
+[0;32mI (51954) GPS_RX: Display: Lat: 32.649937[0m
+[0;32mI (51954) GPS_RX: Display: Lon: 62.649555[0m
+[0;32mI (51954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (52254) GPS_RX: GPS: Lat: 32.659935 | Lon: 62.659554 | Alt: 25.0[0m
+[0;32mI (52254) GPS_RX: Display: Lat: 32.659935[0m
+[0;32mI (52254) GPS_RX: Display: Lon: 62.659554[0m
+[0;32mI (52254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (52554) GPS_RX: GPS: Lat: 32.669933 | Lon: 62.669552 | Alt: 25.0[0m
+[0;32mI (52554) GPS_RX: Display: Lat: 32.669933[0m
+[0;32mI (52554) GPS_RX: Display: Lon: 62.669552[0m
+[0;32mI (52554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (52854) GPS_RX: GPS: Lat: 32.679932 | Lon: 62.679550 | Alt: 25.0[0m
+[0;32mI (52854) GPS_RX: Display: Lat: 32.679932[0m
+[0;32mI (52854) GPS_RX: Display: Lon: 62.679550[0m
+[0;32mI (52864) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (53154) GPS_RX: GPS: Lat: 32.689930 | Lon: 62.689548 | Alt: 25.0[0m
+[0;32mI (53154) GPS_RX: Display: Lat: 32.689930[0m
+[0;32mI (53154) GPS_RX: Display: Lon: 62.689548[0m
+[0;32mI (53154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (53454) GPS_RX: GPS: Lat: 32.699928 | Lon: 62.699547 | Alt: 25.0[0m
+[0;32mI (53454) GPS_RX: Display: Lat: 32.699928[0m
+[0;32mI (53454) GPS_RX: Display: Lon: 62.699547[0m
+[0;32mI (53454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (53754) GPS_RX: GPS: Lat: 32.709927 | Lon: 62.709545 | Alt: 25.0[0m
+[0;32mI (53754) GPS_RX: Display: Lat: 32.709927[0m
+[0;32mI (53754) GPS_RX: Display: Lon: 62.709545[0m
+[0;32mI (53754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54054) GPS_RX: GPS: Lat: 32.719925 | Lon: 62.719543 | Alt: 25.0[0m
+[0;32mI (54054) GPS_RX: Display: Lat: 32.719925[0m
+[0;32mI (54054) GPS_RX: Display: Lon: 62.719543[0m
+[0;32mI (54054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54354) GPS_RX: GPS: Lat: 32.729923 | Lon: 62.729542 | Alt: 25.0[0m
+[0;32mI (54354) GPS_RX: Display: Lat: 32.729923[0m
+[0;32mI (54354) GPS_RX: Display: Lon: 62.729542[0m
+[0;32mI (54354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54654) GPS_RX: GPS: Lat: 32.739922 | Lon: 62.739540 | Alt: 25.0[0m
+[0;32mI (54654) GPS_RX: Display: Lat: 32.739922[0m
+[0;32mI (54654) GPS_RX: Display: Lon: 62.739540[0m
+[0;32mI (54654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (54954) GPS_RX: GPS: Lat: 32.749920 | Lon: 62.749538 | Alt: 25.0[0m
+[0;32mI (54954) GPS_RX: Display: Lat: 32.749920[0m
+[0;32mI (54954) GPS_RX: Display: Lon: 62.749538[0m
+[0;32mI (54964) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (55254) GPS_RX: GPS: Lat: 32.759918 | Lon: 62.759537 | Alt: 25.0[0m
+[0;32mI (55254) GPS_RX: Display: Lat: 32.759918[0m
+[0;32mI (55254) GPS_RX: Display: Lon: 62.759537[0m
+[0;32mI (55254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (55554) GPS_RX: GPS: Lat: 32.769917 | Lon: 62.769535 | Alt: 25.0[0m
+[0;32mI (55554) GPS_RX: Display: Lat: 32.769917[0m
+[0;32mI (55554) GPS_RX: Display: Lon: 62.769535[0m
+[0;32mI (55554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (55854) GPS_RX: GPS: Lat: 32.779915 | Lon: 62.779533 | Alt: 25.0[0m
+[0;32mI (55854) GPS_RX: Display: Lat: 32.779915[0m
+[0;32mI (55854) GPS_RX: Display: Lon: 62.779533[0m
+[0;32mI (55854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (56154) GPS_RX: GPS: Lat: 32.789913 | Lon: 62.789532 | Alt: 25.0[0m
+[0;32mI (56154) GPS_RX: Display: Lat: 32.789913[0m
+[0;32mI (56154) GPS_RX: Display: Lon: 62.789532[0m
+[0;32mI (56154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (56454) GPS_RX: GPS: Lat: 32.799911 | Lon: 62.799530 | Alt: 25.0[0m
+[0;32mI (56454) GPS_RX: Display: Lat: 32.799911[0m
+[0;32mI (56454) GPS_RX: Display: Lon: 62.799530[0m
+[0;32mI (56454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (56754) GPS_RX: GPS: Lat: 32.809910 | Lon: 62.809528 | Alt: 25.0[0m
+[0;32mI (56754) GPS_RX: Display: Lat: 32.809910[0m
+[0;32mI (56754) GPS_RX: Display: Lon: 62.809528[0m
+[0;32mI (56754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57054) GPS_RX: GPS: Lat: 32.819908 | Lon: 62.819527 | Alt: 25.0[0m
+[0;32mI (57054) GPS_RX: Display: Lat: 32.819908[0m
+[0;32mI (57054) GPS_RX: Display: Lon: 62.819527[0m
+[0;32mI (57054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57354) GPS_RX: GPS: Lat: 32.829906 | Lon: 62.829525 | Alt: 25.0[0m
+[0;32mI (57354) GPS_RX: Display: Lat: 32.829906[0m
+[0;32mI (57354) GPS_RX: Display: Lon: 62.829525[0m
+[0;32mI (57354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57654) GPS_RX: GPS: Lat: 32.839905 | Lon: 62.839523 | Alt: 25.0[0m
+[0;32mI (57654) GPS_RX: Display: Lat: 32.839905[0m
+[0;32mI (57654) GPS_RX: Display: Lon: 62.839523[0m
+[0;32mI (57654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (57954) GPS_RX: GPS: Lat: 32.849903 | Lon: 62.849522 | Alt: 25.0[0m
+[0;32mI (57954) GPS_RX: Display: Lat: 32.849903[0m
+[0;32mI (57954) GPS_RX: Display: Lon: 62.849522[0m
+[0;32mI (57954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (58254) GPS_RX: GPS: Lat: 32.859901 | Lon: 62.859520 | Alt: 25.0[0m
+[0;32mI (58254) GPS_RX: Display: Lat: 32.859901[0m
+[0;32mI (58254) GPS_RX: Display: Lon: 62.859520[0m
+[0;32mI (58254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (58554) GPS_RX: GPS: Lat: 32.869900 | Lon: 62.869518 | Alt: 25.0[0m
+[0;32mI (58554) GPS_RX: Display: Lat: 32.869900[0m
+[0;32mI (58554) GPS_RX: Display: Lon: 62.869518[0m
+[0;32mI (58554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (58854) GPS_RX: GPS: Lat: 32.879898 | Lon: 62.879517 | Alt: 25.0[0m
+[0;32mI (58854) GPS_RX: Display: Lat: 32.879898[0m
+[0;32mI (58854) GPS_RX: Display: Lon: 62.879517[0m
+[0;32mI (58854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (59154) GPS_RX: GPS: Lat: 32.889896 | Lon: 62.889515 | Alt: 25.0[0m
+[0;32mI (59154) GPS_RX: Display: Lat: 32.889896[0m
+[0;32mI (59154) GPS_RX: Display: Lon: 62.889515[0m
+[0;32mI (59154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (59454) GPS_RX: GPS: Lat: 32.899895 | Lon: 62.899513 | Alt: 25.0[0m
+[0;32mI (59454) GPS_RX: Display: Lat: 32.899895[0m
+[0;32mI (59454) GPS_RX: Display: Lon: 62.899513[0m
+[0;32mI (59454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (59754) GPS_RX: GPS: Lat: 32.909893 | Lon: 62.909512 | Alt: 25.0[0m
+[0;32mI (59754) GPS_RX: Display: Lat: 32.909893[0m
+[0;32mI (59754) GPS_RX: Display: Lon: 62.909512[0m
+[0;32mI (59754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60054) GPS_RX: GPS: Lat: 32.919891 | Lon: 62.919510 | Alt: 25.0[0m
+[0;32mI (60054) GPS_RX: Display: Lat: 32.919891[0m
+[0;32mI (60054) GPS_RX: Display: Lon: 62.919510[0m
+[0;32mI (60054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60354) GPS_RX: GPS: Lat: 32.929890 | Lon: 62.929508 | Alt: 25.0[0m
+[0;32mI (60354) GPS_RX: Display: Lat: 32.929890[0m
+[0;32mI (60354) GPS_RX: Display: Lon: 62.929508[0m
+[0;32mI (60354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60654) GPS_RX: GPS: Lat: 32.939888 | Lon: 62.939507 | Alt: 25.0[0m
+[0;32mI (60654) GPS_RX: Display: Lat: 32.939888[0m
+[0;32mI (60654) GPS_RX: Display: Lon: 62.939507[0m
+[0;32mI (60654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (60954) GPS_RX: GPS: Lat: 32.949886 | Lon: 62.949505 | Alt: 25.0[0m
+[0;32mI (60954) GPS_RX: Display: Lat: 32.949886[0m
+[0;32mI (60954) GPS_RX: Display: Lon: 62.949505[0m
+[0;32mI (60954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (61254) GPS_RX: GPS: Lat: 32.959885 | Lon: 62.959503 | Alt: 25.0[0m
+[0;32mI (61254) GPS_RX: Display: Lat: 32.959885[0m
+[0;32mI (61254) GPS_RX: Display: Lon: 62.959503[0m
+[0;32mI (61254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (61554) GPS_RX: GPS: Lat: 32.969883 | Lon: 62.969501 | Alt: 25.0[0m
+[0;32mI (61554) GPS_RX: Display: Lat: 32.969883[0m
+[0;32mI (61554) GPS_RX: Display: Lon: 62.969501[0m
+[0;32mI (61554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (61854) GPS_RX: GPS: Lat: 32.979881 | Lon: 62.979500 | Alt: 25.0[0m
+[0;32mI (61854) GPS_RX: Display: Lat: 32.979881[0m
+[0;32mI (61854) GPS_RX: Display: Lon: 62.979500[0m
+[0;32mI (61854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (62154) GPS_RX: GPS: Lat: 32.989880 | Lon: 62.989498 | Alt: 25.0[0m
+[0;32mI (62154) GPS_RX: Display: Lat: 32.989880[0m
+[0;32mI (62154) GPS_RX: Display: Lon: 62.989498[0m
+[0;32mI (62154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (62454) GPS_RX: GPS: Lat: 32.999878 | Lon: 62.999496 | Alt: 25.0[0m
+[0;32mI (62454) GPS_RX: Display: Lat: 32.999878[0m
+[0;32mI (62454) GPS_RX: Display: Lon: 62.999496[0m
+[0;32mI (62454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (62754) GPS_RX: GPS: Lat: 33.009876 | Lon: 63.009495 | Alt: 25.0[0m
+[0;32mI (62754) GPS_RX: Display: Lat: 33.009876[0m
+[0;32mI (62754) GPS_RX: Display: Lon: 63.009495[0m
+[0;32mI (62754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63054) GPS_RX: GPS: Lat: 33.019875 | Lon: 63.019493 | Alt: 25.0[0m
+[0;32mI (63054) GPS_RX: Display: Lat: 33.019875[0m
+[0;32mI (63054) GPS_RX: Display: Lon: 63.019493[0m
+[0;32mI (63054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63354) GPS_RX: GPS: Lat: 33.029873 | Lon: 63.029491 | Alt: 25.0[0m
+[0;32mI (63354) GPS_RX: Display: Lat: 33.029873[0m
+[0;32mI (63354) GPS_RX: Display: Lon: 63.029491[0m
+[0;32mI (63354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63654) GPS_RX: GPS: Lat: 33.039871 | Lon: 63.039490 | Alt: 25.0[0m
+[0;32mI (63654) GPS_RX: Display: Lat: 33.039871[0m
+[0;32mI (63654) GPS_RX: Display: Lon: 63.039490[0m
+[0;32mI (63654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (63954) GPS_RX: GPS: Lat: 33.049870 | Lon: 63.049488 | Alt: 25.0[0m
+[0;32mI (63954) GPS_RX: Display: Lat: 33.049870[0m
+[0;32mI (63954) GPS_RX: Display: Lon: 63.049488[0m
+[0;32mI (63954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (64254) GPS_RX: GPS: Lat: 33.059868 | Lon: 63.059486 | Alt: 25.0[0m
+[0;32mI (64254) GPS_RX: Display: Lat: 33.059868[0m
+[0;32mI (64254) GPS_RX: Display: Lon: 63.059486[0m
+[0;32mI (64254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (64554) GPS_RX: GPS: Lat: 33.069866 | Lon: 63.069485 | Alt: 25.0[0m
+[0;32mI (64554) GPS_RX: Display: Lat: 33.069866[0m
+[0;32mI (64554) GPS_RX: Display: Lon: 63.069485[0m
+[0;32mI (64554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (64854) GPS_RX: GPS: Lat: 33.079865 | Lon: 63.079483 | Alt: 25.0[0m
+[0;32mI (64854) GPS_RX: Display: Lat: 33.079865[0m
+[0;32mI (64854) GPS_RX: Display: Lon: 63.079483[0m
+[0;32mI (64854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (65154) GPS_RX: GPS: Lat: 33.089863 | Lon: 63.089481 | Alt: 25.0[0m
+[0;32mI (65154) GPS_RX: Display: Lat: 33.089863[0m
+[0;32mI (65154) GPS_RX: Display: Lon: 63.089481[0m
+[0;32mI (65154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (65454) GPS_RX: GPS: Lat: 33.099861 | Lon: 63.099480 | Alt: 25.0[0m
+[0;32mI (65454) GPS_RX: Display: Lat: 33.099861[0m
+[0;32mI (65454) GPS_RX: Display: Lon: 63.099480[0m
+[0;32mI (65464) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (65754) GPS_RX: GPS: Lat: 33.109859 | Lon: 63.109478 | Alt: 25.0[0m
+[0;32mI (65754) GPS_RX: Display: Lat: 33.109859[0m
+[0;32mI (65754) GPS_RX: Display: Lon: 63.109478[0m
+[0;32mI (65754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (66054) GPS_RX: GPS: Lat: 33.119858 | Lon: 63.119476 | Alt: 25.0[0m
+[0;32mI (66054) GPS_RX: Display: Lat: 33.119858[0m
+[0;32mI (66054) GPS_RX: Display: Lon: 63.119476[0m
+[0;32mI (66054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (66354) GPS_RX: GPS: Lat: 33.129856 | Lon: 63.129475 | Alt: 25.0[0m
+[0;32mI (66354) GPS_RX: Display: Lat: 33.129856[0m
+[0;32mI (66354) GPS_RX: Display: Lon: 63.129475[0m
+[0;32mI (66354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (66654) GPS_RX: GPS: Lat: 33.139854 | Lon: 63.139473 | Alt: 25.0[0m
+[0;32mI (66654) GPS_RX: Display: Lat: 33.139854[0m
+[0;32mI (66654) GPS_RX: Display: Lon: 63.139473[0m
+[0;32mI (66654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (66954) GPS_RX: GPS: Lat: 33.149853 | Lon: 63.149471 | Alt: 25.0[0m
+[0;32mI (66954) GPS_RX: Display: Lat: 33.149853[0m
+[0;32mI (66954) GPS_RX: Display: Lon: 63.149471[0m
+[0;32mI (66954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (67254) GPS_RX: GPS: Lat: 33.159851 | Lon: 63.159470 | Alt: 25.0[0m
+[0;32mI (67254) GPS_RX: Display: Lat: 33.159851[0m
+[0;32mI (67254) GPS_RX: Display: Lon: 63.159470[0m
+[0;32mI (67254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (67554) GPS_RX: GPS: Lat: 33.169849 | Lon: 63.169468 | Alt: 25.0[0m
+[0;32mI (67554) GPS_RX: Display: Lat: 33.169849[0m
+[0;32mI (67554) GPS_RX: Display: Lon: 63.169468[0m
+[0;32mI (67554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (67854) GPS_RX: GPS: Lat: 33.179848 | Lon: 63.179466 | Alt: 25.0[0m
+[0;32mI (67854) GPS_RX: Display: Lat: 33.179848[0m
+[0;32mI (67854) GPS_RX: Display: Lon: 63.179466[0m
+[0;32mI (67854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (68154) GPS_RX: GPS: Lat: 33.189846 | Lon: 63.189465 | Alt: 25.0[0m
+[0;32mI (68154) GPS_RX: Display: Lat: 33.189846[0m
+[0;32mI (68154) GPS_RX: Display: Lon: 63.189465[0m
+[0;32mI (68154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (68454) GPS_RX: GPS: Lat: 33.199844 | Lon: 63.199463 | Alt: 25.0[0m
+[0;32mI (68454) GPS_RX: Display: Lat: 33.199844[0m
+[0;32mI (68454) GPS_RX: Display: Lon: 63.199463[0m
+[0;32mI (68454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (68754) GPS_RX: GPS: Lat: 33.209843 | Lon: 63.209461 | Alt: 25.0[0m
+[0;32mI (68754) GPS_RX: Display: Lat: 33.209843[0m
+[0;32mI (68754) GPS_RX: Display: Lon: 63.209461[0m
+[0;32mI (68754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (69054) GPS_RX: GPS: Lat: 33.219841 | Lon: 63.219460 | Alt: 25.0[0m
+[0;32mI (69054) GPS_RX: Display: Lat: 33.219841[0m
+[0;32mI (69054) GPS_RX: Display: Lon: 63.219460[0m
+[0;32mI (69054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (69354) GPS_RX: GPS: Lat: 33.229839 | Lon: 63.229458 | Alt: 25.0[0m
+[0;32mI (69354) GPS_RX: Display: Lat: 33.229839[0m
+[0;32mI (69354) GPS_RX: Display: Lon: 63.229458[0m
+[0;32mI (69354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (69654) GPS_RX: GPS: Lat: 33.239838 | Lon: 63.239456 | Alt: 25.0[0m
+[0;32mI (69654) GPS_RX: Display: Lat: 33.239838[0m
+[0;32mI (69654) GPS_RX: Display: Lon: 63.239456[0m
+[0;32mI (69654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (69954) GPS_RX: GPS: Lat: 33.249836 | Lon: 63.249454 | Alt: 25.0[0m
+[0;32mI (69954) GPS_RX: Display: Lat: 33.249836[0m
+[0;32mI (69954) GPS_RX: Display: Lon: 63.249454[0m
+[0;32mI (69954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (70254) GPS_RX: GPS: Lat: 33.259834 | Lon: 63.259453 | Alt: 25.0[0m
+[0;32mI (70254) GPS_RX: Display: Lat: 33.259834[0m
+[0;32mI (70254) GPS_RX: Display: Lon: 63.259453[0m
+[0;32mI (70254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (70554) GPS_RX: GPS: Lat: 33.269833 | Lon: 63.269451 | Alt: 25.0[0m
+[0;32mI (70554) GPS_RX: Display: Lat: 33.269833[0m
+[0;32mI (70554) GPS_RX: Display: Lon: 63.269451[0m
+[0;32mI (70554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (70854) GPS_RX: GPS: Lat: 33.279831 | Lon: 63.279449 | Alt: 25.0[0m
+[0;32mI (70854) GPS_RX: Display: Lat: 33.279831[0m
+[0;32mI (70854) GPS_RX: Display: Lon: 63.279449[0m
+[0;32mI (70854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (71454) GPS_RX: GPS: Lat: 33.299828 | Lon: 63.299446 | Alt: 25.0[0m
+[0;32mI (71454) GPS_RX: Display: Lat: 33.299828[0m
+[0;32mI (71454) GPS_RX: Display: Lon: 63.299446[0m
+[0;32mI (71454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (71754) GPS_RX: GPS: Lat: 33.309826 | Lon: 63.309444 | Alt: 25.0[0m
+[0;32mI (71754) GPS_RX: Display: Lat: 33.309826[0m
+[0;32mI (71754) GPS_RX: Display: Lon: 63.309444[0m
+[0;32mI (71754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (72054) GPS_RX: GPS: Lat: 33.319824 | Lon: 63.319443 | Alt: 25.0[0m
+[0;32mI (72054) GPS_RX: Display: Lat: 33.319824[0m
+[0;32mI (72054) GPS_RX: Display: Lon: 63.319443[0m
+[0;32mI (72054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (72654) GPS_RX: GPS: Lat: 33.339821 | Lon: 63.339439 | Alt: 25.0[0m
+[0;32mI (72654) GPS_RX: Display: Lat: 33.339821[0m
+[0;32mI (72654) GPS_RX: Display: Lon: 63.339439[0m
+[0;32mI (72654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (72954) GPS_RX: GPS: Lat: 33.349819 | Lon: 63.349438 | Alt: 25.0[0m
+[0;32mI (72954) GPS_RX: Display: Lat: 33.349819[0m
+[0;32mI (72954) GPS_RX: Display: Lon: 63.349438[0m
+[0;32mI (72954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (73254) GPS_RX: GPS: Lat: 33.359818 | Lon: 63.359436 | Alt: 25.0[0m
+[0;32mI (73254) GPS_RX: Display: Lat: 33.359818[0m
+[0;32mI (73254) GPS_RX: Display: Lon: 63.359436[0m
+[0;32mI (73254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (73554) GPS_RX: GPS: Lat: 33.369816 | Lon: 63.369434 | Alt: 25.0[0m
+[0;32mI (73554) GPS_RX: Display: Lat: 33.369816[0m
+[0;32mI (73554) GPS_RX: Display: Lon: 63.369434[0m
+[0;32mI (73554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (73854) GPS_RX: GPS: Lat: 33.379814 | Lon: 63.379433 | Alt: 25.0[0m
+[0;32mI (73854) GPS_RX: Display: Lat: 33.379814[0m
+[0;32mI (73854) GPS_RX: Display: Lon: 63.379433[0m
+[0;32mI (73854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (74154) GPS_RX: GPS: Lat: 33.389812 | Lon: 63.389431 | Alt: 25.0[0m
+[0;32mI (74154) GPS_RX: Display: Lat: 33.389812[0m
+[0;32mI (74154) GPS_RX: Display: Lon: 63.389431[0m
+[0;32mI (74164) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (74454) GPS_RX: GPS: Lat: 33.399811 | Lon: 63.399429 | Alt: 25.0[0m
+[0;32mI (74454) GPS_RX: Display: Lat: 33.399811[0m
+[0;32mI (74454) GPS_RX: Display: Lon: 63.399429[0m
+[0;32mI (74454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (74754) GPS_RX: GPS: Lat: 33.409809 | Lon: 63.409428 | Alt: 25.0[0m
+[0;32mI (74754) GPS_RX: Display: Lat: 33.409809[0m
+[0;32mI (74754) GPS_RX: Display: Lon: 63.409428[0m
+[0;32mI (74754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (75054) GPS_RX: GPS: Lat: 33.419807 | Lon: 63.419426 | Alt: 25.0[0m
+[0;32mI (75054) GPS_RX: Display: Lat: 33.419807[0m
+[0;32mI (75054) GPS_RX: Display: Lon: 63.419426[0m
+[0;32mI (75054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (75354) GPS_RX: GPS: Lat: 33.429806 | Lon: 63.429424 | Alt: 25.0[0m
+[0;32mI (75354) GPS_RX: Display: Lat: 33.429806[0m
+[0;32mI (75354) GPS_RX: Display: Lon: 63.429424[0m
+[0;32mI (75364) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (75654) GPS_RX: GPS: Lat: 33.439804 | Lon: 63.439423 | Alt: 25.0[0m
+[0;32mI (75654) GPS_RX: Display: Lat: 33.439804[0m
+[0;32mI (75654) GPS_RX: Display: Lon: 63.439423[0m
+[0;32mI (75654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (75954) GPS_RX: GPS: Lat: 33.449802 | Lon: 63.449421 | Alt: 25.0[0m
+[0;32mI (75954) GPS_RX: Display: Lat: 33.449802[0m
+[0;32mI (75954) GPS_RX: Display: Lon: 63.449421[0m
+[0;32mI (75954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (76254) GPS_RX: GPS: Lat: 33.459801 | Lon: 63.459419 | Alt: 25.0[0m
+[0;32mI (76254) GPS_RX: Display: Lat: 33.459801[0m
+[0;32mI (76254) GPS_RX: Display: Lon: 63.459419[0m
+[0;32mI (76254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (76554) GPS_RX: GPS: Lat: 33.469799 | Lon: 63.469418 | Alt: 25.0[0m
+[0;32mI (76554) GPS_RX: Display: Lat: 33.469799[0m
+[0;32mI (76554) GPS_RX: Display: Lon: 63.469418[0m
+[0;32mI (76554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (76854) GPS_RX: GPS: Lat: 33.479797 | Lon: 63.479416 | Alt: 25.0[0m
+[0;32mI (76854) GPS_RX: Display: Lat: 33.479797[0m
+[0;32mI (76854) GPS_RX: Display: Lon: 63.479416[0m
+[0;32mI (76854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (77154) GPS_RX: GPS: Lat: 33.489796 | Lon: 63.489414 | Alt: 25.0[0m
+[0;32mI (77154) GPS_RX: Display: Lat: 33.489796[0m
+[0;32mI (77154) GPS_RX: Display: Lon: 63.489414[0m
+[0;32mI (77154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (77454) GPS_RX: GPS: Lat: 33.499794 | Lon: 63.499413 | Alt: 25.0[0m
+[0;32mI (77454) GPS_RX: Display: Lat: 33.499794[0m
+[0;32mI (77454) GPS_RX: Display: Lon: 63.499413[0m
+[0;32mI (77454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (77754) GPS_RX: GPS: Lat: 33.509792 | Lon: 63.509411 | Alt: 25.0[0m
+[0;32mI (77754) GPS_RX: Display: Lat: 33.509792[0m
+[0;32mI (77754) GPS_RX: Display: Lon: 63.509411[0m
+[0;32mI (77754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (78054) GPS_RX: GPS: Lat: 33.519791 | Lon: 63.519409 | Alt: 25.0[0m
+[0;32mI (78054) GPS_RX: Display: Lat: 33.519791[0m
+[0;32mI (78054) GPS_RX: Display: Lon: 63.519409[0m
+[0;32mI (78054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (78354) GPS_RX: GPS: Lat: 33.529789 | Lon: 63.529408 | Alt: 25.0[0m
+[0;32mI (78354) GPS_RX: Display: Lat: 33.529789[0m
+[0;32mI (78354) GPS_RX: Display: Lon: 63.529408[0m
+[0;32mI (78354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (78654) GPS_RX: GPS: Lat: 33.539787 | Lon: 63.539406 | Alt: 25.0[0m
+[0;32mI (78654) GPS_RX: Display: Lat: 33.539787[0m
+[0;32mI (78654) GPS_RX: Display: Lon: 63.539406[0m
+[0;32mI (78654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (78954) GPS_RX: GPS: Lat: 33.549786 | Lon: 63.549404 | Alt: 25.0[0m
+[0;32mI (78954) GPS_RX: Display: Lat: 33.549786[0m
+[0;32mI (78954) GPS_RX: Display: Lon: 63.549404[0m
+[0;32mI (78954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (79254) GPS_RX: GPS: Lat: 33.559784 | Lon: 63.559402 | Alt: 25.0[0m
+[0;32mI (79254) GPS_RX: Display: Lat: 33.559784[0m
+[0;32mI (79254) GPS_RX: Display: Lon: 63.559402[0m
+[0;32mI (79254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (79554) GPS_RX: GPS: Lat: 33.569782 | Lon: 63.569401 | Alt: 25.0[0m
+[0;32mI (79554) GPS_RX: Display: Lat: 33.569782[0m
+[0;32mI (79554) GPS_RX: Display: Lon: 63.569401[0m
+[0;32mI (79564) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (79854) GPS_RX: GPS: Lat: 33.579781 | Lon: 63.579399 | Alt: 25.0[0m
+[0;32mI (79854) GPS_RX: Display: Lat: 33.579781[0m
+[0;32mI (79854) GPS_RX: Display: Lon: 63.579399[0m
+[0;32mI (79854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (80154) GPS_RX: GPS: Lat: 33.589779 | Lon: 63.589397 | Alt: 25.0[0m
+[0;32mI (80154) GPS_RX: Display: Lat: 33.589779[0m
+[0;32mI (80154) GPS_RX: Display: Lon: 63.589397[0m
+[0;32mI (80154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (80454) GPS_RX: GPS: Lat: 33.599777 | Lon: 63.599396 | Alt: 25.0[0m
+[0;32mI (80454) GPS_RX: Display: Lat: 33.599777[0m
+[0;32mI (80454) GPS_RX: Display: Lon: 63.599396[0m
+[0;32mI (80454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (80754) GPS_RX: GPS: Lat: 33.609776 | Lon: 63.609394 | Alt: 25.0[0m
+[0;32mI (80754) GPS_RX: Display: Lat: 33.609776[0m
+[0;32mI (80754) GPS_RX: Display: Lon: 63.609394[0m
+[0;32mI (80754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (81054) GPS_RX: GPS: Lat: 33.619774 | Lon: 63.619392 | Alt: 25.0[0m
+[0;32mI (81054) GPS_RX: Display: Lat: 33.619774[0m
+[0;32mI (81054) GPS_RX: Display: Lon: 63.619392[0m
+[0;32mI (81054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (81354) GPS_RX: GPS: Lat: 33.629772 | Lon: 63.629391 | Alt: 25.0[0m
+[0;32mI (81354) GPS_RX: Display: Lat: 33.629772[0m
+[0;32mI (81354) GPS_RX: Display: Lon: 63.629391[0m
+[0;32mI (81354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (81654) GPS_RX: GPS: Lat: 33.639771 | Lon: 63.639389 | Alt: 25.0[0m
+[0;32mI (81654) GPS_RX: Display: Lat: 33.639771[0m
+[0;32mI (81654) GPS_RX: Display: Lon: 63.639389[0m
+[0;32mI (81654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (81954) GPS_RX: GPS: Lat: 33.649769 | Lon: 63.649387 | Alt: 25.0[0m
+[0;32mI (81954) GPS_RX: Display: Lat: 33.649769[0m
+[0;32mI (81954) GPS_RX: Display: Lon: 63.649387[0m
+[0;32mI (81954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (82254) GPS_RX: GPS: Lat: 33.659767 | Lon: 63.659386 | Alt: 25.0[0m
+[0;32mI (82254) GPS_RX: Display: Lat: 33.659767[0m
+[0;32mI (82254) GPS_RX: Display: Lon: 63.659386[0m
+[0;32mI (82264) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (82554) GPS_RX: GPS: Lat: 33.669765 | Lon: 63.669384 | Alt: 25.0[0m
+[0;32mI (82554) GPS_RX: Display: Lat: 33.669765[0m
+[0;32mI (82554) GPS_RX: Display: Lon: 63.669384[0m
+[0;32mI (82554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (82854) GPS_RX: GPS: Lat: 33.679764 | Lon: 63.679382 | Alt: 25.0[0m
+[0;32mI (82854) GPS_RX: Display: Lat: 33.679764[0m
+[0;32mI (82854) GPS_RX: Display: Lon: 63.679382[0m
+[0;32mI (82864) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (83154) GPS_RX: GPS: Lat: 33.689762 | Lon: 63.689381 | Alt: 25.0[0m
+[0;32mI (83154) GPS_RX: Display: Lat: 33.689762[0m
+[0;32mI (83154) GPS_RX: Display: Lon: 63.689381[0m
+[0;32mI (83154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (83454) GPS_RX: GPS: Lat: 33.699760 | Lon: 63.699379 | Alt: 25.0[0m
+[0;32mI (83454) GPS_RX: Display: Lat: 33.699760[0m
+[0;32mI (83454) GPS_RX: Display: Lon: 63.699379[0m
+[0;32mI (83454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (83754) GPS_RX: GPS: Lat: 33.709759 | Lon: 63.709377 | Alt: 25.0[0m
+[0;32mI (83754) GPS_RX: Display: Lat: 33.709759[0m
+[0;32mI (83754) GPS_RX: Display: Lon: 63.709377[0m
+[0;32mI (83764) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (84054) GPS_RX: GPS: Lat: 33.719757 | Lon: 63.719376 | Alt: 25.0[0m
+[0;32mI (84054) GPS_RX: Display: Lat: 33.719757[0m
+[0;32mI (84054) GPS_RX: Display: Lon: 63.719376[0m
+[0;32mI (84054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (84354) GPS_RX: GPS: Lat: 33.729755 | Lon: 63.729374 | Alt: 25.0[0m
+[0;32mI (84354) GPS_RX: Display: Lat: 33.729755[0m
+[0;32mI (84354) GPS_RX: Display: Lon: 63.729374[0m
+[0;32mI (84354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (84654) GPS_RX: GPS: Lat: 33.739754 | Lon: 63.739372 | Alt: 25.0[0m
+[0;32mI (84654) GPS_RX: Display: Lat: 33.739754[0m
+[0;32mI (84654) GPS_RX: Display: Lon: 63.739372[0m
+[0;32mI (84654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (84954) GPS_RX: GPS: Lat: 33.749752 | Lon: 63.749371 | Alt: 25.0[0m
+[0;32mI (84954) GPS_RX: Display: Lat: 33.749752[0m
+[0;32mI (84954) GPS_RX: Display: Lon: 63.749371[0m
+[0;32mI (84954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (85254) GPS_RX: GPS: Lat: 33.759750 | Lon: 63.759369 | Alt: 25.0[0m
+[0;32mI (85254) GPS_RX: Display: Lat: 33.759750[0m
+[0;32mI (85254) GPS_RX: Display: Lon: 63.759369[0m
+[0;32mI (85254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (85554) GPS_RX: GPS: Lat: 33.769749 | Lon: 63.769367 | Alt: 25.0[0m
+[0;32mI (85554) GPS_RX: Display: Lat: 33.769749[0m
+[0;32mI (85554) GPS_RX: Display: Lon: 63.769367[0m
+[0;32mI (85554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (85854) GPS_RX: GPS: Lat: 33.779747 | Lon: 63.779366 | Alt: 25.0[0m
+[0;32mI (85854) GPS_RX: Display: Lat: 33.779747[0m
+[0;32mI (85854) GPS_RX: Display: Lon: 63.779366[0m
+[0;32mI (85854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (86154) GPS_RX: GPS: Lat: 33.789745 | Lon: 63.789364 | Alt: 25.0[0m
+[0;32mI (86154) GPS_RX: Display: Lat: 33.789745[0m
+[0;32mI (86154) GPS_RX: Display: Lon: 63.789364[0m
+[0;32mI (86154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (86454) GPS_RX: GPS: Lat: 33.799744 | Lon: 63.799362 | Alt: 25.0[0m
+[0;32mI (86454) GPS_RX: Display: Lat: 33.799744[0m
+[0;32mI (86454) GPS_RX: Display: Lon: 63.799362[0m
+[0;32mI (86454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (86754) GPS_RX: GPS: Lat: 33.809742 | Lon: 63.809361 | Alt: 25.0[0m
+[0;32mI (86754) GPS_RX: Display: Lat: 33.809742[0m
+[0;32mI (86754) GPS_RX: Display: Lon: 63.809361[0m
+[0;32mI (86754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (87054) GPS_RX: GPS: Lat: 33.819740 | Lon: 63.819359 | Alt: 25.0[0m
+[0;32mI (87054) GPS_RX: Display: Lat: 33.819740[0m
+[0;32mI (87054) GPS_RX: Display: Lon: 63.819359[0m
+[0;32mI (87054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (87354) GPS_RX: GPS: Lat: 33.829739 | Lon: 63.829357 | Alt: 25.0[0m
+[0;32mI (87354) GPS_RX: Display: Lat: 33.829739[0m
+[0;32mI (87354) GPS_RX: Display: Lon: 63.829357[0m
+[0;32mI (87354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (87654) GPS_RX: GPS: Lat: 33.839737 | Lon: 63.839355 | Alt: 25.0[0m
+[0;32mI (87654) GPS_RX: Display: Lat: 33.839737[0m
+[0;32mI (87654) GPS_RX: Display: Lon: 63.839355[0m
+[0;32mI (87654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (87954) GPS_RX: GPS: Lat: 33.849735 | Lon: 63.849354 | Alt: 25.0[0m
+[0;32mI (87954) GPS_RX: Display: Lat: 33.849735[0m
+[0;32mI (87954) GPS_RX: Display: Lon: 63.849354[0m
+[0;32mI (87954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (88254) GPS_RX: GPS: Lat: 33.859734 | Lon: 63.859352 | Alt: 25.0[0m
+[0;32mI (88254) GPS_RX: Display: Lat: 33.859734[0m
+[0;32mI (88254) GPS_RX: Display: Lon: 63.859352[0m
+[0;32mI (88254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (88554) GPS_RX: GPS: Lat: 33.869732 | Lon: 63.869350 | Alt: 25.0[0m
+[0;32mI (88554) GPS_RX: Display: Lat: 33.869732[0m
+[0;32mI (88554) GPS_RX: Display: Lon: 63.869350[0m
+[0;32mI (88554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (88854) GPS_RX: GPS: Lat: 33.879730 | Lon: 63.879349 | Alt: 25.0[0m
+[0;32mI (88854) GPS_RX: Display: Lat: 33.879730[0m
+[0;32mI (88854) GPS_RX: Display: Lon: 63.879349[0m
+[0;32mI (88854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (89154) GPS_RX: GPS: Lat: 33.889729 | Lon: 63.889347 | Alt: 25.0[0m
+[0;32mI (89154) GPS_RX: Display: Lat: 33.889729[0m
+[0;32mI (89154) GPS_RX: Display: Lon: 63.889347[0m
+[0;32mI (89154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (89454) GPS_RX: GPS: Lat: 33.899727 | Lon: 63.899345 | Alt: 25.0[0m
+[0;32mI (89454) GPS_RX: Display: Lat: 33.899727[0m
+[0;32mI (89454) GPS_RX: Display: Lon: 63.899345[0m
+[0;32mI (89454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (89754) GPS_RX: GPS: Lat: 33.909725 | Lon: 63.909344 | Alt: 25.0[0m
+[0;32mI (89754) GPS_RX: Display: Lat: 33.909725[0m
+[0;32mI (89754) GPS_RX: Display: Lon: 63.909344[0m
+[0;32mI (89754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (90054) GPS_RX: GPS: Lat: 33.919724 | Lon: 63.919342 | Alt: 25.0[0m
+[0;32mI (90054) GPS_RX: Display: Lat: 33.919724[0m
+[0;32mI (90054) GPS_RX: Display: Lon: 63.919342[0m
+[0;32mI (90054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (90354) GPS_RX: GPS: Lat: 33.929722 | Lon: 63.929340 | Alt: 25.0[0m
+[0;32mI (90354) GPS_RX: Display: Lat: 33.929722[0m
+[0;32mI (90354) GPS_RX: Display: Lon: 63.929340[0m
+[0;32mI (90354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (90654) GPS_RX: GPS: Lat: 33.939720 | Lon: 63.939339 | Alt: 25.0[0m
+[0;32mI (90654) GPS_RX: Display: Lat: 33.939720[0m
+[0;32mI (90654) GPS_RX: Display: Lon: 63.939339[0m
+[0;32mI (90654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (90954) GPS_RX: GPS: Lat: 33.949718 | Lon: 63.949337 | Alt: 25.0[0m
+[0;32mI (90954) GPS_RX: Display: Lat: 33.949718[0m
+[0;32mI (90954) GPS_RX: Display: Lon: 63.949337[0m
+[0;32mI (90954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (91254) GPS_RX: GPS: Lat: 33.959717 | Lon: 63.959335 | Alt: 25.0[0m
+[0;32mI (91254) GPS_RX: Display: Lat: 33.959717[0m
+[0;32mI (91254) GPS_RX: Display: Lon: 63.959335[0m
+[0;32mI (91254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (91554) GPS_RX: GPS: Lat: 33.969715 | Lon: 63.969334 | Alt: 25.0[0m
+[0;32mI (91554) GPS_RX: Display: Lat: 33.969715[0m
+[0;32mI (91554) GPS_RX: Display: Lon: 63.969334[0m
+[0;32mI (91554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (91854) GPS_RX: GPS: Lat: 33.979713 | Lon: 63.979332 | Alt: 25.0[0m
+[0;32mI (91854) GPS_RX: Display: Lat: 33.979713[0m
+[0;32mI (91854) GPS_RX: Display: Lon: 63.979332[0m
+[0;32mI (91854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (92154) GPS_RX: GPS: Lat: 33.989712 | Lon: 63.989330 | Alt: 25.0[0m
+[0;32mI (92154) GPS_RX: Display: Lat: 33.989712[0m
+[0;32mI (92154) GPS_RX: Display: Lon: 63.989330[0m
+[0;32mI (92154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (92454) GPS_RX: GPS: Lat: 33.999710 | Lon: 63.999329 | Alt: 25.0[0m
+[0;32mI (92454) GPS_RX: Display: Lat: 33.999710[0m
+[0;32mI (92454) GPS_RX: Display: Lon: 63.999329[0m
+[0;32mI (92464) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (92754) GPS_RX: GPS: Lat: 34.009708 | Lon: 64.009331 | Alt: 25.0[0m
+[0;32mI (92754) GPS_RX: Display: Lat: 34.009708[0m
+[0;32mI (92754) GPS_RX: Display: Lon: 64.009331[0m
+[0;32mI (92754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (93054) GPS_RX: GPS: Lat: 34.019707 | Lon: 64.019333 | Alt: 25.0[0m
+[0;32mI (93054) GPS_RX: Display: Lat: 34.019707[0m
+[0;32mI (93054) GPS_RX: Display: Lon: 64.019333[0m
+[0;32mI (93054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (93354) GPS_RX: GPS: Lat: 34.029705 | Lon: 64.029335 | Alt: 25.0[0m
+[0;32mI (93354) GPS_RX: Display: Lat: 34.029705[0m
+[0;32mI (93354) GPS_RX: Display: Lon: 64.029335[0m
+[0;32mI (93354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (93654) GPS_RX: GPS: Lat: 34.039703 | Lon: 64.039337 | Alt: 25.0[0m
+[0;32mI (93654) GPS_RX: Display: Lat: 34.039703[0m
+[0;32mI (93654) GPS_RX: Display: Lon: 64.039337[0m
+[0;32mI (93654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (93954) GPS_RX: GPS: Lat: 34.049702 | Lon: 64.049339 | Alt: 25.0[0m
+[0;32mI (93954) GPS_RX: Display: Lat: 34.049702[0m
+[0;32mI (93954) GPS_RX: Display: Lon: 64.049339[0m
+[0;32mI (93954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (94254) GPS_RX: GPS: Lat: 34.059700 | Lon: 64.059341 | Alt: 25.0[0m
+[0;32mI (94254) GPS_RX: Display: Lat: 34.059700[0m
+[0;32mI (94254) GPS_RX: Display: Lon: 64.059341[0m
+[0;32mI (94254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (94554) GPS_RX: GPS: Lat: 34.069698 | Lon: 64.069344 | Alt: 25.0[0m
+[0;32mI (94554) GPS_RX: Display: Lat: 34.069698[0m
+[0;32mI (94554) GPS_RX: Display: Lon: 64.069344[0m
+[0;32mI (94554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (94854) GPS_RX: GPS: Lat: 34.079697 | Lon: 64.079346 | Alt: 25.0[0m
+[0;32mI (94854) GPS_RX: Display: Lat: 34.079697[0m
+[0;32mI (94854) GPS_RX: Display: Lon: 64.079346[0m
+[0;32mI (94854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (95154) GPS_RX: GPS: Lat: 34.089695 | Lon: 64.089348 | Alt: 25.0[0m
+[0;32mI (95154) GPS_RX: Display: Lat: 34.089695[0m
+[0;32mI (95154) GPS_RX: Display: Lon: 64.089348[0m
+[0;32mI (95154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (95454) GPS_RX: GPS: Lat: 34.099693 | Lon: 64.099350 | Alt: 25.0[0m
+[0;32mI (95454) GPS_RX: Display: Lat: 34.099693[0m
+[0;32mI (95454) GPS_RX: Display: Lon: 64.099350[0m
+[0;32mI (95454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (95754) GPS_RX: GPS: Lat: 34.109692 | Lon: 64.109352 | Alt: 25.0[0m
+[0;32mI (95754) GPS_RX: Display: Lat: 34.109692[0m
+[0;32mI (95754) GPS_RX: Display: Lon: 64.109352[0m
+[0;32mI (95754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (96054) GPS_RX: GPS: Lat: 34.119690 | Lon: 64.119354 | Alt: 25.0[0m
+[0;32mI (96054) GPS_RX: Display: Lat: 34.119690[0m
+[0;32mI (96054) GPS_RX: Display: Lon: 64.119354[0m
+[0;32mI (96054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (96354) GPS_RX: GPS: Lat: 34.129688 | Lon: 64.129356 | Alt: 25.0[0m
+[0;32mI (96354) GPS_RX: Display: Lat: 34.129688[0m
+[0;32mI (96354) GPS_RX: Display: Lon: 64.129356[0m
+[0;32mI (96354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (96654) GPS_RX: GPS: Lat: 34.139687 | Lon: 64.139359 | Alt: 25.0[0m
+[0;32mI (96654) GPS_RX: Display: Lat: 34.139687[0m
+[0;32mI (96654) GPS_RX: Display: Lon: 64.139359[0m
+[0;32mI (96664) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (96954) GPS_RX: GPS: Lat: 34.149685 | Lon: 64.149361 | Alt: 25.0[0m
+[0;32mI (96954) GPS_RX: Display: Lat: 34.149685[0m
+[0;32mI (96954) GPS_RX: Display: Lon: 64.149361[0m
+[0;32mI (96954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (97254) GPS_RX: GPS: Lat: 34.159683 | Lon: 64.159363 | Alt: 25.0[0m
+[0;32mI (97254) GPS_RX: Display: Lat: 34.159683[0m
+[0;32mI (97254) GPS_RX: Display: Lon: 64.159363[0m
+[0;32mI (97254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (97554) GPS_RX: GPS: Lat: 34.169682 | Lon: 64.169365 | Alt: 25.0[0m
+[0;32mI (97554) GPS_RX: Display: Lat: 34.169682[0m
+[0;32mI (97554) GPS_RX: Display: Lon: 64.169365[0m
+[0;32mI (97554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (97854) GPS_RX: GPS: Lat: 34.179680 | Lon: 64.179367 | Alt: 25.0[0m
+[0;32mI (97854) GPS_RX: Display: Lat: 34.179680[0m
+[0;32mI (97854) GPS_RX: Display: Lon: 64.179367[0m
+[0;32mI (97854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (98154) GPS_RX: GPS: Lat: 34.189678 | Lon: 64.189369 | Alt: 25.0[0m
+[0;32mI (98154) GPS_RX: Display: Lat: 34.189678[0m
+[0;32mI (98154) GPS_RX: Display: Lon: 64.189369[0m
+[0;32mI (98154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (98454) GPS_RX: GPS: Lat: 34.199677 | Lon: 64.199371 | Alt: 25.0[0m
+[0;32mI (98454) GPS_RX: Display: Lat: 34.199677[0m
+[0;32mI (98454) GPS_RX: Display: Lon: 64.199371[0m
+[0;32mI (98454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (98754) GPS_RX: GPS: Lat: 34.209675 | Lon: 64.209373 | Alt: 25.0[0m
+[0;32mI (98754) GPS_RX: Display: Lat: 34.209675[0m
+[0;32mI (98754) GPS_RX: Display: Lon: 64.209373[0m
+[0;32mI (98754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (99054) GPS_RX: GPS: Lat: 34.219673 | Lon: 64.219376 | Alt: 25.0[0m
+[0;32mI (99054) GPS_RX: Display: Lat: 34.219673[0m
+[0;32mI (99054) GPS_RX: Display: Lon: 64.219376[0m
+[0;32mI (99054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (99354) GPS_RX: GPS: Lat: 34.229671 | Lon: 64.229378 | Alt: 25.0[0m
+[0;32mI (99354) GPS_RX: Display: Lat: 34.229671[0m
+[0;32mI (99354) GPS_RX: Display: Lon: 64.229378[0m
+[0;32mI (99354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (99654) GPS_RX: GPS: Lat: 34.239670 | Lon: 64.239380 | Alt: 25.0[0m
+[0;32mI (99654) GPS_RX: Display: Lat: 34.239670[0m
+[0;32mI (99654) GPS_RX: Display: Lon: 64.239380[0m
+[0;32mI (99654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (99954) GPS_RX: GPS: Lat: 34.249668 | Lon: 64.249382 | Alt: 25.0[0m
+[0;32mI (99954) GPS_RX: Display: Lat: 34.249668[0m
+[0;32mI (99954) GPS_RX: Display: Lon: 64.249382[0m
+[0;32mI (99954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (100254) GPS_RX: GPS: Lat: 34.259666 | Lon: 64.259384 | Alt: 25.0[0m
+[0;32mI (100254) GPS_RX: Display: Lat: 34.259666[0m
+[0;32mI (100254) GPS_RX: Display: Lon: 64.259384[0m
+[0;32mI (100264) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (100554) GPS_RX: GPS: Lat: 34.269665 | Lon: 64.269386 | Alt: 25.0[0m
+[0;32mI (100554) GPS_RX: Display: Lat: 34.269665[0m
+[0;32mI (100554) GPS_RX: Display: Lon: 64.269386[0m
+[0;32mI (100554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (100854) GPS_RX: GPS: Lat: 34.279663 | Lon: 64.279388 | Alt: 25.0[0m
+[0;32mI (100854) GPS_RX: Display: Lat: 34.279663[0m
+[0;32mI (100854) GPS_RX: Display: Lon: 64.279388[0m
+[0;32mI (100854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (101154) GPS_RX: GPS: Lat: 34.289661 | Lon: 64.289391 | Alt: 25.0[0m
+[0;32mI (101154) GPS_RX: Display: Lat: 34.289661[0m
+[0;32mI (101154) GPS_RX: Display: Lon: 64.289391[0m
+[0;32mI (101154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (101454) GPS_RX: GPS: Lat: 34.299660 | Lon: 64.299393 | Alt: 25.0[0m
+[0;32mI (101454) GPS_RX: Display: Lat: 34.299660[0m
+[0;32mI (101454) GPS_RX: Display: Lon: 64.299393[0m
+[0;32mI (101454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (101754) GPS_RX: GPS: Lat: 34.309658 | Lon: 64.309395 | Alt: 25.0[0m
+[0;32mI (101754) GPS_RX: Display: Lat: 34.309658[0m
+[0;32mI (101754) GPS_RX: Display: Lon: 64.309395[0m
+[0;32mI (101754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (102054) GPS_RX: GPS: Lat: 34.319656 | Lon: 64.319397 | Alt: 25.0[0m
+[0;32mI (102054) GPS_RX: Display: Lat: 34.319656[0m
+[0;32mI (102054) GPS_RX: Display: Lon: 64.319397[0m
+[0;32mI (102054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (102354) GPS_RX: GPS: Lat: 34.329655 | Lon: 64.329399 | Alt: 25.0[0m
+[0;32mI (102354) GPS_RX: Display: Lat: 34.329655[0m
+[0;32mI (102354) GPS_RX: Display: Lon: 64.329399[0m
+[0;32mI (102354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (102654) GPS_RX: GPS: Lat: 34.339653 | Lon: 64.339401 | Alt: 25.0[0m
+[0;32mI (102654) GPS_RX: Display: Lat: 34.339653[0m
+[0;32mI (102654) GPS_RX: Display: Lon: 64.339401[0m
+[0;32mI (102654) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (102954) GPS_RX: GPS: Lat: 34.349651 | Lon: 64.349403 | Alt: 25.0[0m
+[0;32mI (102954) GPS_RX: Display: Lat: 34.349651[0m
+[0;32mI (102954) GPS_RX: Display: Lon: 64.349403[0m
+[0;32mI (102954) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (103254) GPS_RX: GPS: Lat: 34.359650 | Lon: 64.359406 | Alt: 25.0[0m
+[0;32mI (103254) GPS_RX: Display: Lat: 34.359650[0m
+[0;32mI (103254) GPS_RX: Display: Lon: 64.359406[0m
+[0;32mI (103254) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (103554) GPS_RX: GPS: Lat: 34.369648 | Lon: 64.369408 | Alt: 25.0[0m
+[0;32mI (103554) GPS_RX: Display: Lat: 34.369648[0m
+[0;32mI (103554) GPS_RX: Display: Lon: 64.369408[0m
+[0;32mI (103554) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (103854) GPS_RX: GPS: Lat: 34.379646 | Lon: 64.379410 | Alt: 25.0[0m
+[0;32mI (103854) GPS_RX: Display: Lat: 34.379646[0m
+[0;32mI (103854) GPS_RX: Display: Lon: 64.379410[0m
+[0;32mI (103854) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (104154) GPS_RX: GPS: Lat: 34.389645 | Lon: 64.389412 | Alt: 25.0[0m
+[0;32mI (104154) GPS_RX: Display: Lat: 34.389645[0m
+[0;32mI (104154) GPS_RX: Display: Lon: 64.389412[0m
+[0;32mI (104154) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (104454) GPS_RX: GPS: Lat: 34.399643 | Lon: 64.399414 | Alt: 25.0[0m
+[0;32mI (104454) GPS_RX: Display: Lat: 34.399643[0m
+[0;32mI (104454) GPS_RX: Display: Lon: 64.399414[0m
+[0;32mI (104454) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (104754) GPS_RX: GPS: Lat: 34.409641 | Lon: 64.409416 | Alt: 25.0[0m
+[0;32mI (104754) GPS_RX: Display: Lat: 34.409641[0m
+[0;32mI (104754) GPS_RX: Display: Lon: 64.409416[0m
+[0;32mI (104754) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (105054) GPS_RX: GPS: Lat: 34.419640 | Lon: 64.419418 | Alt: 25.0[0m
+[0;32mI (105054) GPS_RX: Display: Lat: 34.419640[0m
+[0;32mI (105054) GPS_RX: Display: Lon: 64.419418[0m
+[0;32mI (105054) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (105354) GPS_RX: GPS: Lat: 34.429638 | Lon: 64.429420 | Alt: 25.0[0m
+[0;32mI (105354) GPS_RX: Display: Lat: 34.429638[0m
+[0;32mI (105354) GPS_RX: Display: Lon: 64.429420[0m
+[0;32mI (105354) GPS_RX: Display: Alt: 25.0[0m
+[0;32mI (105654) GPS_RX: GPS: Lat: 34.439636 | Lon: 64.439423 | Alt: 25.0[0m
+[0;32mI (105654) GPS_RX: Display: Lat: 34.439636[0m
+[0;32mI (105654) GPS_RX: Display: Lon: 64.439423[0m
+[0;32mI (105654) GPS_RX: Display: Alt: 25.0[0m
